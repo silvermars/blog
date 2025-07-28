@@ -1,31 +1,38 @@
-/* Hexo博客背景图片样式 */
-body {
-    background-image: url('/blog/DSC_9085.JPG');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    min-height: 100vh;
+/* Fluid 主题背景图片样式 */
+.banner {
+    background-image: url('/blog/DSC_9085.JPG') !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
 }
 
-/* 确保内容在背景图片上可读 */
-.content-wrapper,
-.main-content {
-    background-color: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(2px);
+/* 为不同页面设置背景 */
+.banner-variant-1 {
+    background-image: url('/blog/DSC_9168.JPG') !important;
+}
+
+/* 内容区域样式优化 */
+.container-fluid {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* 文章卡片样式 */
+.post-preview,
+.post-content {
+    background-color: rgba(255, 255, 255, 0.98);
     border-radius: 8px;
     padding: 20px;
-    margin: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
-/* 为文章内容添加背景，提高可读性 */
-article,
-.post,
-.post-content {
-    background-color: rgba(255, 255, 255, 0.95);
-    border-radius: 6px;
-    padding: 15px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+/* 导航栏透明效果 */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(10px);
 }
 
 /* 响应式设计 - 在小屏幕上调整背景 */
