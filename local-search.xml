@@ -17,11 +17,30 @@
   
   
   <entry>
+    <title>hexo有的一些功能</title>
+    <link href="/blog/2025/07/31/hexo%E6%9C%89%E7%9A%84%E4%B8%80%E4%BA%9B%E5%8A%9F%E8%83%BD/"/>
+    <url>/blog/2025/07/31/hexo%E6%9C%89%E7%9A%84%E4%B8%80%E4%BA%9B%E5%8A%9F%E8%83%BD/</url>
+    
+    <content type="html"><![CDATA[<p>hexo可以调整上方的菜单栏中的内容</p><p>下面的footer也是可以调整的</p><p>可以尝试链接在不同的文章中间做交叉引用，这在你突然被某些文章引发了灵感的时候非常的好用</p><p>可以尝试设置一个密码，这样子就可以让别人</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>hexo学习笔记</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>7.31做了虾米</title>
     <link href="/blog/2025/07/31/7.31/"/>
     <url>/blog/2025/07/31/7.31/</url>
     
-    <content type="html"><![CDATA[<h2 id="上午要做的事情"><a href="#上午要做的事情" class="headerlink" title="上午要做的事情"></a>上午要做的事情</h2><h3 id="关于数字孪生要做的事情"><a href="#关于数字孪生要做的事情" class="headerlink" title="关于数字孪生要做的事情"></a>关于数字孪生要做的事情</h3><p>做残缺模型的修复工作<br>尝试让shape-e能够通过图像生成3d模型<br>写一份使用报告<br>写一份调试思路<br>试用其他家的模型然后给出你的评价<br>探索一下文字生成基础图形的功能能不能用python集成到blender里面去</p><h3 id="关于hexo的要做的事情"><a href="#关于hexo的要做的事情" class="headerlink" title="关于hexo的要做的事情"></a>关于hexo的要做的事情</h3><p>修改我的hexo的域名<br>做一个友情链接的页面</p><h3 id="上午实际做的事情"><a href="#上午实际做的事情" class="headerlink" title="上午实际做的事情"></a>上午实际做的事情</h3><p>全部都没有实现哈哈哈哈哈，明天继续做</p><h2 id="下午要做的事情"><a href="#下午要做的事情" class="headerlink" title="下午要做的事情"></a>下午要做的事情</h2><p>学习怎么使用comfyui<br>尝试把自己做过的事情全部留档，保存在github上面</p><h3 id="实际做了的事情"><a href="#实际做了的事情" class="headerlink" title="实际做了的事情"></a>实际做了的事情</h3><p>今天下午状态不是很好，所以一直在玩，然后做了一些前几天上班太累了下班没有做的事情，感觉很舒服<br>但是自己做过的事情都留在了github上面</p><h3 id="奇思妙想"><a href="#奇思妙想" class="headerlink" title="奇思妙想"></a>奇思妙想</h3><p>用3D打印机生成了相关<br>要是我的网页被攻击了会怎么样呢</p><h3 id="明天要做的事情"><a href="#明天要做的事情" class="headerlink" title="明天要做的事情"></a>明天要做的事情</h3><p>进一步尝试修复你的模型<br>做好了尝试修复的那一步，pycgal<br>能不能把我的个人状态通过某些方式反映在这个博客上呢，哈哈哈感觉很有意思<br>学习comfyui的相关知识</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="上午要做的事情"><a href="#上午要做的事情" class="headerlink" title="上午要做的事情"></a>上午要做的事情</h2><h3 id="关于数字孪生要做的事情"><a href="#关于数字孪生要做的事情" class="headerlink" title="关于数字孪生要做的事情"></a>关于数字孪生要做的事情</h3><p>做残缺模型的修复工作<br>尝试让shape-e能够通过图像生成3d模型<br>写一份使用报告<br>写一份调试思路<br>试用其他家的模型然后给出你的评价<br>探索一下文字生成基础图形的功能能不能用python集成到blender里面去</p><h3 id="关于hexo的要做的事情"><a href="#关于hexo的要做的事情" class="headerlink" title="关于hexo的要做的事情"></a>关于hexo的要做的事情</h3><p>修改我的hexo的域名<br>做一个友情链接的页面</p><h3 id="上午实际做的事情"><a href="#上午实际做的事情" class="headerlink" title="上午实际做的事情"></a>上午实际做的事情</h3><p>全部都没有实现哈哈哈哈哈，明天继续做</p><h2 id="下午要做的事情"><a href="#下午要做的事情" class="headerlink" title="下午要做的事情"></a>下午要做的事情</h2><p>学习怎么使用comfyui<br>尝试把自己做过的事情全部留档，保存在github上面</p><h3 id="实际做了的事情"><a href="#实际做了的事情" class="headerlink" title="实际做了的事情"></a>实际做了的事情</h3><p>今天下午状态不是很好，所以一直在玩，然后做了一些前几天上班太累了下班没有做的事情，感觉很舒服<br>但是自己做过的事情都留在了github上面</p><h3 id="奇思妙想"><a href="#奇思妙想" class="headerlink" title="奇思妙想"></a>奇思妙想</h3><p>用3D打印机生成了相关<br>要是我的网页被攻击了会怎么样呢</p><h3 id="明天要做的事情"><a href="#明天要做的事情" class="headerlink" title="明天要做的事情"></a>明天要做的事情</h3><p>进一步尝试修复你的模型<br>做好了尝试修复的那一步，pycgal<br>能不能把我的个人状态通过某些方式反映在这个博客上呢，哈哈哈感觉很有意思<br>学习comfyui的相关知识<br>购买一个自己的域名</p>]]></content>
     
     
     <categories>
