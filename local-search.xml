@@ -4,11 +4,74 @@
   
   
   <entry>
-    <title>7.24做了虾米</title>
-    <link href="/blog/2025/07/24/%E7%A7%91%E7%A0%94%E6%8A%A5%E5%91%8A/"/>
-    <url>/blog/2025/07/24/%E7%A7%91%E7%A0%94%E6%8A%A5%E5%91%8A/</url>
+    <title>尝试链接</title>
+    <link href="/blog/2025/08/01/%E5%B0%9D%E8%AF%95%E9%93%BE%E6%8E%A5/"/>
+    <url>/blog/2025/08/01/%E5%B0%9D%E8%AF%95%E9%93%BE%E6%8E%A5/</url>
     
-    <content type="html"><![CDATA[<h1 id="7-24做的事情"><a href="#7-24做的事情" class="headerlink" title="7.24做的事情"></a>7.24做的事情</h1><h2 id="上午"><a href="#上午" class="headerlink" title="上午"></a>上午</h2><p>上午的时候了解了一下人工智能相关的一些事情，理清了这些名词之间的关系，不能半桶水响叮当，这些基础的只是还是要学会的。</p><h2 id="下午"><a href="#下午" class="headerlink" title="下午"></a>下午</h2><p>实践学习了hexo的使用方法，然后现在正在用hexo写这篇文章，感觉还是挺方便的，尤其是可以直接在本地预览，修改之后就可以看到效果。<br>其实上午我还没有把韦恩图画出来呢，直接叫ai画出来吧<br>我还有好多的东西没有去研究<br>感觉好兴奋<br>哈哈哈哈哈哈哈<br>这些东西都可以复现吗<br>很多都保存在收藏夹里面的，找时间整理整理哦<br>我觉得在做事情的选择的时候应该有一个自己的体系，就是什么事情什么研究是当下需要的，什么是可以放一放的，这样就不会被眼前的事情牵着鼻子走了。</p><h3 id="下午的计划"><a href="#下午的计划" class="headerlink" title="下午的计划"></a>下午的计划</h3><ul><li>继续学习hexo的高级用法</li><li>尝试将之前的笔记迁移到hexo上</li><li>研究一下如何自定义主题</li><li>了解一下如何部署到远程服务器</li><li>继续摸鱼，放松一下心情</li></ul><h3 id="我的问题"><a href="#我的问题" class="headerlink" title="我的问题"></a>我的问题</h3><p>我觉得这个东西有一个不是很方便的地方</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="这是一个测试链接的文章"><a href="#这是一个测试链接的文章" class="headerlink" title="这是一个测试链接的文章"></a>这是一个测试链接的文章</h2><p>链接其他文章的基本格式是</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">[<span class="hljs-string">链接文本</span>](<span class="hljs-link">链接地址</span>)<br></code></pre></td></tr></table></figure><p>比如说我想链接7.31日的文章，可以这样写：</p><p><a href="/blog/2025/07/31/7.31/">7.31做了虾米</a></p><p>可以看看哦</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>7.31做了虾米</title>
+    <link href="/blog/2025/07/31/7.31/"/>
+    <url>/blog/2025/07/31/7.31/</url>
+    
+    <content type="html"><![CDATA[<h2 id="上午要做的事情"><a href="#上午要做的事情" class="headerlink" title="上午要做的事情"></a>上午要做的事情</h2><h3 id="关于数字孪生要做的事情"><a href="#关于数字孪生要做的事情" class="headerlink" title="关于数字孪生要做的事情"></a>关于数字孪生要做的事情</h3><p>做残缺模型的修复工作<br>尝试让shape-e能够通过图像生成3d模型<br>写一份使用报告<br>写一份调试思路<br>试用其他家的模型然后给出你的评价<br>探索一下文字生成基础图形的功能能不能用python集成到blender里面去</p><h3 id="关于hexo的要做的事情"><a href="#关于hexo的要做的事情" class="headerlink" title="关于hexo的要做的事情"></a>关于hexo的要做的事情</h3><p>修改我的hexo的域名<br>做一个友情链接的页面</p><h2 id="下午要做的事情"><a href="#下午要做的事情" class="headerlink" title="下午要做的事情"></a>下午要做的事情</h2><p>学习怎么使用comfyui<br>尝试把自己做过的事情全部留档，保存在github上面</p><h3 id="实际做了的事情"><a href="#实际做了的事情" class="headerlink" title="实际做了的事情"></a>实际做了的事情</h3>]]></content>
+    
+    
+    <categories>
+      
+      <category>日程规划</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>daily_p</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>7.30做了虾米</title>
+    <link href="/blog/2025/07/30/7.30/"/>
+    <url>/blog/2025/07/30/7.30/</url>
+    
+    <content type="html"><![CDATA[<h2 id="今天早上我打算做的事情"><a href="#今天早上我打算做的事情" class="headerlink" title="今天早上我打算做的事情"></a>今天早上我打算做的事情</h2><h3 id="数字孪生方面"><a href="#数字孪生方面" class="headerlink" title="数字孪生方面"></a>数字孪生方面</h3><p>跑通轻量化生成基础模块的代码</p><p>看一点吴恩达的视频<br>实测一下文字转3D的软件的效果<br>看看论文，一个新加坡国立的，清华大学的，关于文本转3D的<br>自己想办法接入一下api</p><h3 id="hexo方面"><a href="#hexo方面" class="headerlink" title="hexo方面"></a>hexo方面</h3><p>想办法怎么设置密码保护，我想写点东西在这个上面<br>每一页最下面的那个footer我也不知道叫做什么名字，看看怎么做好一点呢<br>个人介绍那一页感觉可以做的更好一点<br>有那种可以隐身的效果，尝试一下<br>导航菜单名字可以修改了</p><h3 id="后续可以做的事情"><a href="#后续可以做的事情" class="headerlink" title="后续可以做的事情"></a>后续可以做的事情</h3><p>可以更改你的字体，换一个你喜欢的好看的字体<br>优化网站的打开速度<br>修改一个域名<br>探索一下文字生成基础图形的功能能不能用python集成到blender里面去</p><h2 id="实际完成的事情"><a href="#实际完成的事情" class="headerlink" title="实际完成的事情"></a>实际完成的事情</h2><p>下载了pytorch<br>cuda正在验证是否下载成功<br>昨天的代码的确跑通了，但是一方面我不清出这个代码的作用<br>另外一方面整个代码的效果真的不是很好<br>中午去健身房走路了，也还行哈哈哈</p><h3 id="下午要做的事情"><a href="#下午要做的事情" class="headerlink" title="下午要做的事情"></a>下午要做的事情</h3><p>明白早上跑通的代码的含义，并让ai生成一个把关系网络罗列清楚<br>继续配置shape-e+cuda+争取能够应用一下<br>完整验证cuda的安装是否成功</p><h3 id="下午完成的事情"><a href="#下午完成的事情" class="headerlink" title="下午完成的事情"></a>下午完成的事情</h3><ul><li><input checked="" disabled="" type="checkbox"> 明白早上跑通的代码的含义，并让ai生成一个把关系网络罗列清楚</li><li><input checked="" disabled="" type="checkbox"> 继续配置shape-e+cuda+争取能够应用一下</li><li><input checked="" disabled="" type="checkbox"> 完整验证cuda的安装是否成功</li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>日程规划</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>daily_p</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>7.24做了虾米</title>
+    <link href="/blog/2025/07/24/7.24/"/>
+    <url>/blog/2025/07/24/7.24/</url>
+    
+    <content type="html"><![CDATA[<h1 id="7-24做的事情"><a href="#7-24做的事情" class="headerlink" title="7.24做的事情"></a>7.24做的事情</h1><h2 id="上午"><a href="#上午" class="headerlink" title="上午"></a>上午</h2><p>上午的时候了解了一下人工智能相关的一些事情，理清了这些名词之间的关系，不能半桶水响叮当，这些基础的只是还是要学会的。</p><h2 id="下午"><a href="#下午" class="headerlink" title="下午"></a>下午</h2><p>实践学习了hexo的使用方法，然后现在正在用hexo写这篇文章，感觉还是挺方便的，尤其是可以直接在本地预览，修改之后就可以看到效果。<br>其实上午我还没有把韦恩图画出来呢，直接叫ai画出来吧<br>我还有好多的东西没有去研究<br>感觉好兴奋<br>哈哈哈哈哈哈哈<br>这些东西都可以复现吗<br>很多都保存在收藏夹里面的，找时间整理整理哦<br>我觉得在做事情的选择的时候应该有一个自己的体系，就是什么事情什么研究是当下需要的，什么是可以放一放的，这样就不会被眼前的事情牵着鼻子走了。</p><h3 id="下午的计划"><a href="#下午的计划" class="headerlink" title="下午的计划"></a>下午的计划</h3><ul><li>继续学习hexo的高级用法</li><li>尝试将之前的笔记迁移到hexo上</li><li>研究一下如何自定义主题</li><li>了解一下如何部署到远程服务器</li><li>继续摸鱼，放松一下心情</li></ul><h3 id="下午完成的事情"><a href="#下午完成的事情" class="headerlink" title="下午完成的事情"></a>下午完成的事情</h3><ul><li>成功的部署了hexo到github上</li></ul><h3 id="我的问题"><a href="#我的问题" class="headerlink" title="我的问题"></a>我的问题</h3><p>我觉得这个东西有一个不是很方便的地方</p>]]></content>
     
     
     <categories>
@@ -31,17 +94,25 @@
   
   
   <entry>
-    <title>我的hexo怎么做</title>
-    <link href="/blog/2025/07/24/%E6%88%91%E7%9A%84hexo%E6%80%8E%E4%B9%88%E5%81%9A/"/>
-    <url>/blog/2025/07/24/%E6%88%91%E7%9A%84hexo%E6%80%8E%E4%B9%88%E5%81%9A/</url>
+    <title>7.25做了虾米</title>
+    <link href="/blog/2025/07/24/7.25/"/>
+    <url>/blog/2025/07/24/7.25/</url>
     
-    <content type="html"><![CDATA[<p>如果说直接在文件里面就可以</p>]]></content>
+    <content type="html"><![CDATA[<p>感觉很多事情都没有很好的记录下来，在我创建这个博客之前</p><h2 id="记录一点在之前做的事情"><a href="#记录一点在之前做的事情" class="headerlink" title="记录一点在之前做的事情"></a>记录一点在之前做的事情</h2><h3 id="一些尝试"><a href="#一些尝试" class="headerlink" title="一些尝试"></a>一些尝试</h3><p>在最开始的一周里面我一直在尝试通过手机上面的3D建模软件获取usdz的数据，因为我手中的手机上面搭载了市面上面的差不多接近两千块钱的<a href="https://zhuanlan.zhihu.com/p/441161826">ToF</a>传感器，也是看见了链接里面的这个文章，我初步部署并且尝试了视觉生图，不知道是不是因为技术非常的成熟，产生的效果意想不到的好（其实我也不知道好不好，至少是说能很清除的呈现一个面的点云图）<br>要是没有删掉的话，其实可以拍几张图片过来看看（代码没有删除可以试试上传到<a href="https://github.com/silvermars">github</a>）</p><p>一个面的点云图如果都能生成的话，那要是拍摄多个面的话一定可以有完整的点云图吧<br>再利用一些扩散的算法肯定就可以生成一个完整的模型了<br>我有了这个想法之后就去网上搜索<br>本来只是想搜索有没有相关的</p><h3 id="奇思妙想"><a href="#奇思妙想" class="headerlink" title="奇思妙想"></a>奇思妙想</h3><p>能不能有两个键盘，一个是中文输入法，一个是英文输入法</p>]]></content>
     
+    
+    <categories>
+      
+      <category>text_to_3D</category>
+      
+    </categories>
     
     
     <tags>
       
-      <tag>日记</tag>
+      <tag>日常规划</tag>
+      
+      <tag>研究日记</tag>
       
     </tags>
     
