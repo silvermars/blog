@@ -11,6 +11,56 @@
     <content type="html"><![CDATA[<h2 id="这是一个测试链接的文章"><a href="#这是一个测试链接的文章" class="headerlink" title="这是一个测试链接的文章"></a>这是一个测试链接的文章</h2><p>链接其他文章的基本格式是</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">[<span class="hljs-string">链接文本</span>](<span class="hljs-link">链接地址</span>)<br></code></pre></td></tr></table></figure><p>比如说我想链接7.31日的文章，可以这样写：</p><p><a href="/blog/2025/07/31/7.31/">7.31做了虾米</a></p><p>可以看看哦</p>]]></content>
     
     
+    <categories>
+      
+      <category>hexo学习</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Shape-E代码解析</title>
+    <link href="/blog/2025/08/01/Shape-E%E4%BB%A3%E7%A0%81%E8%A7%A3%E6%9E%90/"/>
+    <url>/blog/2025/08/01/Shape-E%E4%BB%A3%E7%A0%81%E8%A7%A3%E6%9E%90/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>研究日记</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>8.1做了虾米</title>
+    <link href="/blog/2025/08/01/8.1/"/>
+    <url>/blog/2025/08/01/8.1/</url>
+    
+    <content type="html"><![CDATA[<h3 id="上午计划做的事情"><a href="#上午计划做的事情" class="headerlink" title="上午计划做的事情"></a>上午计划做的事情</h3><p>做残缺模型的修复工作</p><h3 id="修复工作的思路"><a href="#修复工作的思路" class="headerlink" title="修复工作的思路"></a>修复工作的思路</h3><p>初步考虑使用现有的库函数，因此考虑使用opencv或者是cgal来进行初步操作</p><h3 id="目前的进展"><a href="#目前的进展" class="headerlink" title="目前的进展"></a>目前的进展</h3><p>我暂时还在调试最佳的输出效果<br>尝试了马儿<br>效果真的太差了，差的我有点崩溃<img src="/blog/images/guidance5.png"><br>经过非常多轮的手工调试，我发现了这个东西就是不能生成动物还有人类的模型，生成的都是一些非常奇怪的东西，呵呵总之效果非常的差，<br>在选择fast的这个阈值的时候<br>经过尝试我发现guidance_scale大概在10-15之间比较合适，因此我选择12，13。</p><p>同时我也猜测一个事情<br>当resolution还有steps越长的时候，机器处理的时间就越长，那么就可以把guidance_scale尽可能的调大，最后画出来的东西会更加的好看，不知道这个想法是不是对的，还正在验证现在是16：31</p><p>得到结果了，我感觉差距不是特别的大，但是guidance&#x3D;10是我觉得最舒服的一个<br>还有, guidance越大缺失会得到越准确的图形。打个比方，guidance&#x3D;8的时候生成的红色皮革书包在背带和书包的连接处会发生非常大的断裂，这很影响后续的修复。但是在guidance&#x3D;20的时候，书包几乎是完整的，但是表面上的细节会缺失的很多，让人觉得观感不是很好。<br>调整到中间值并不是一个很好的选择，因为在guidance&#x3D;16左右的时候，整个图像断裂又多，细节又少，非常的糟心。</p><p>但是这一轮的结果又有些不一样了，guidance&#x3D;14 的时候的效果非常的好，好到让我有些惊讶了~</p><p><img src="/blog/source/images/image.png"></p><p>我打算在13，14，15中间再测试一轮</p><p>在结束测评之后，我打算开始下载c++</p><p>是哈，这东西怎么集成到blender里面呢<br>真是个好思路</p><h3 id="关于模型补全"><a href="#关于模型补全" class="headerlink" title="关于模型补全"></a>关于模型补全</h3><p>open3D的模型补全应用在这种大面积的缺损的模型上是非常的不合适的<br>补全的效果并不是很好</p><h3 id="后续可以做的事情"><a href="#后续可以做的事情" class="headerlink" title="后续可以做的事情"></a>后续可以做的事情</h3><ul><li>研究一下支付宝的百宝箱和阿里巴巴的mcp服务有什么区别或者是关联，相关的公司有没有相关的业务</li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>日程规划</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>daily_p</tag>
+      
+    </tags>
     
   </entry>
   
@@ -21,8 +71,14 @@
     <link href="/blog/2025/07/31/hexo%E6%9C%89%E7%9A%84%E4%B8%80%E4%BA%9B%E5%8A%9F%E8%83%BD/"/>
     <url>/blog/2025/07/31/hexo%E6%9C%89%E7%9A%84%E4%B8%80%E4%BA%9B%E5%8A%9F%E8%83%BD/</url>
     
-    <content type="html"><![CDATA[<p>hexo可以调整上方的菜单栏中的内容</p><p>下面的footer也是可以调整的</p><p>可以尝试链接在不同的文章中间做交叉引用，这在你突然被某些文章引发了灵感的时候非常的好用</p><p>可以尝试设置一个密码，这样子就可以让别人</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="这是关于hexo灵感的"><a href="#这是关于hexo灵感的" class="headerlink" title="这是关于hexo灵感的"></a>这是关于hexo灵感的</h1><p>hexo可以调整上方的菜单栏中的内容</p><p>下面的footer也是可以调整的</p><p>可以尝试链接在不同的文章中间做交叉引用，这在你突然被某些文章引发了灵感的时候非常的好用</p><p>可以尝试设置一个密码，这样子就可以让别人</p>]]></content>
     
+    
+    <categories>
+      
+      <category>hexo学习</category>
+      
+    </categories>
     
     
     <tags>
@@ -40,7 +96,7 @@
     <link href="/blog/2025/07/31/7.31/"/>
     <url>/blog/2025/07/31/7.31/</url>
     
-    <content type="html"><![CDATA[<h2 id="上午要做的事情"><a href="#上午要做的事情" class="headerlink" title="上午要做的事情"></a>上午要做的事情</h2><h3 id="关于数字孪生要做的事情"><a href="#关于数字孪生要做的事情" class="headerlink" title="关于数字孪生要做的事情"></a>关于数字孪生要做的事情</h3><p>做残缺模型的修复工作<br>尝试让shape-e能够通过图像生成3d模型<br>写一份使用报告<br>写一份调试思路<br>试用其他家的模型然后给出你的评价<br>探索一下文字生成基础图形的功能能不能用python集成到blender里面去</p><h3 id="关于hexo的要做的事情"><a href="#关于hexo的要做的事情" class="headerlink" title="关于hexo的要做的事情"></a>关于hexo的要做的事情</h3><p>修改我的hexo的域名<br>做一个友情链接的页面</p><h3 id="上午实际做的事情"><a href="#上午实际做的事情" class="headerlink" title="上午实际做的事情"></a>上午实际做的事情</h3><p>全部都没有实现哈哈哈哈哈，明天继续做</p><h2 id="下午要做的事情"><a href="#下午要做的事情" class="headerlink" title="下午要做的事情"></a>下午要做的事情</h2><p>学习怎么使用comfyui<br>尝试把自己做过的事情全部留档，保存在github上面</p><h3 id="实际做了的事情"><a href="#实际做了的事情" class="headerlink" title="实际做了的事情"></a>实际做了的事情</h3><p>今天下午状态不是很好，所以一直在玩，然后做了一些前几天上班太累了下班没有做的事情，感觉很舒服<br>但是自己做过的事情都留在了github上面</p><h3 id="奇思妙想"><a href="#奇思妙想" class="headerlink" title="奇思妙想"></a>奇思妙想</h3><p>用3D打印机生成了相关<br>要是我的网页被攻击了会怎么样呢</p><h3 id="明天要做的事情"><a href="#明天要做的事情" class="headerlink" title="明天要做的事情"></a>明天要做的事情</h3><p>进一步尝试修复你的模型<br>做好了尝试修复的那一步，pycgal<br>能不能把我的个人状态通过某些方式反映在这个博客上呢，哈哈哈感觉很有意思<br>学习comfyui的相关知识<br>购买一个自己的域名</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="上午要做的事情"><a href="#上午要做的事情" class="headerlink" title="上午要做的事情"></a>上午要做的事情</h2><h3 id="关于数字孪生要做的事情"><a href="#关于数字孪生要做的事情" class="headerlink" title="关于数字孪生要做的事情"></a>关于数字孪生要做的事情</h3><p>做残缺模型的修复工作</p><p>尝试让shape-e能够通过图像生成3d模型<br>写一份使用报告<br>写一份调试思路<br>试用其他家的模型然后给出你的评价<br>探索一下文字生成基础图形的功能能不能用python集成到blender里面去</p><h3 id="关于hexo的要做的事情"><a href="#关于hexo的要做的事情" class="headerlink" title="关于hexo的要做的事情"></a>关于hexo的要做的事情</h3><p>修改我的hexo的域名<br>做一个友情链接的页面<br>修改一下个人介绍页面</p><h3 id="上午实际做的事情"><a href="#上午实际做的事情" class="headerlink" title="上午实际做的事情"></a>上午实际做的事情</h3><p>全部都没有实现哈哈哈哈哈，明天继续做</p><h2 id="下午要做的事情"><a href="#下午要做的事情" class="headerlink" title="下午要做的事情"></a>下午要做的事情</h2><p>学习怎么使用comfyui<br>尝试把自己做过的事情全部留档，保存在github上面</p><h3 id="实际做了的事情"><a href="#实际做了的事情" class="headerlink" title="实际做了的事情"></a>实际做了的事情</h3><p>今天下午状态不是很好，所以一直在玩，然后做了一些前几天上班太累了下班没有做的事情，感觉很舒服<br>但是自己做过的事情都留在了github上面</p><h3 id="明天要做的事情"><a href="#明天要做的事情" class="headerlink" title="明天要做的事情"></a>明天要做的事情</h3><p>进一步尝试修复你的模型<br>做好了尝试修复的那一步，pycgal<br>能不能把我的个人状态通过某些方式反映在这个博客上呢，哈哈哈感觉很有意思<br>学习comfyui的相关知识<br>购买一个自己的域名</p><h3 id="奇思妙想"><a href="#奇思妙想" class="headerlink" title="奇思妙想"></a>奇思妙想</h3><p>用3D打印机生成了相关<br>要是我的网页被攻击了会怎么样呢</p>]]></content>
     
     
     <categories>
@@ -90,7 +146,7 @@
     <link href="/blog/2025/07/24/24%E5%89%8D%E7%9A%84%E6%B1%87%E6%80%BB/"/>
     <url>/blog/2025/07/24/24%E5%89%8D%E7%9A%84%E6%B1%87%E6%80%BB/</url>
     
-    <content type="html"><![CDATA[<p>感觉很多事情都没有很好的记录下来，在我创建这个博客之前</p><h2 id="记录一点在之前做的事情"><a href="#记录一点在之前做的事情" class="headerlink" title="记录一点在之前做的事情"></a>记录一点在之前做的事情</h2><h3 id="一些尝试-视觉生图"><a href="#一些尝试-视觉生图" class="headerlink" title="一些尝试-视觉生图"></a>一些尝试-视觉生图</h3><p>在最开始的一周里面我一直在尝试通过手机上面的3D建模软件获取usdz的数据，因为我手中的手机上面搭载了市面上面的差不多接近两千块钱的<a href="https://zhuanlan.zhihu.com/p/441161826">ToF</a>传感器，也是看见了链接里面的这个文章，我初步部署并且尝试了视觉生图，不知道是不是因为技术非常的成熟，产生的效果意想不到的好（其实我也不知道好不好，至少是说能很清除的呈现一个面的点云图）<br>要是没有删掉的话，其实可以拍几张图片过来看看（代码没有删除可以试试上传到<a href="https://github.com/silvermars">github</a>）</p><p>一个面的点云图如果都能生成的话，那要是拍摄多个面的话一定可以有完整的点云图吧<br>再利用一些扩散的算法肯定就可以生成一个完整的模型了<br>我有了这个想法之后就去网上搜索<br>本来只是想搜索有没有相关的技术<br>结果了解到了reality capture，以及nerf3D重建</p><h3 id="研究nerf3D重建"><a href="#研究nerf3D重建" class="headerlink" title="研究nerf3D重建"></a>研究nerf3D重建</h3><p>第二天开始我就下载meshroom，reality capture，nerf studio等软件开始研究图片到3D的一个重建</p><p>搞了好几天，都不如直接用手机拍摄得到的模型效果好（手机配合陀螺仪等东西，有相关的位置信息）<br>面对比较大的环境复杂的物品，反而生成效果更好<br>面对背景不是很复杂的情况，效果比较差了</p><p>搞了几天效果不是很好我就没有继续了</p><h3 id="学习基础的ai知识"><a href="#学习基础的ai知识" class="headerlink" title="学习基础的ai知识"></a>学习基础的ai知识</h3><p>我大概花了一天学习基础的ai知识，感觉挺好玩，ai能实现很多东西，但是我一点都不务实，没有做到一边学习一边研究，做到现在，做了哪些事情都乱乱的。<br>研究了最基础的名词以及相关分类，但是和学长聊了之后发现ai其实还有很多方向的分类需要去研究。</p><h3 id="开发博客"><a href="#开发博客" class="headerlink" title="开发博客"></a>开发博客</h3><p>这个是我觉得最有意思的部分，哈哈哈哈就是我现在在做的事情，把自己的很多想法记下来真的很棒！！！！</p><h3 id="研究text-to-image"><a href="#研究text-to-image" class="headerlink" title="研究text-to-image"></a>研究text-to-image</h3><p>这是现在正在研究的</p><h3 id="奇思妙想"><a href="#奇思妙想" class="headerlink" title="奇思妙想"></a>奇思妙想</h3><p>能不能有两个键盘，一个是中文输入法，一个是英文输入法</p><p>能不能开发一个硬件让照片中留下，拍摄设备和物品之间的位置信息呢。</p>]]></content>
+    <content type="html"><![CDATA[<p>感觉很多事情都没有很好的记录下来，在我创建这个博客之前</p><h2 id="记录一点在之前做的事情"><a href="#记录一点在之前做的事情" class="headerlink" title="记录一点在之前做的事情"></a>记录一点在之前做的事情</h2><h3 id="一些尝试-视觉生图"><a href="#一些尝试-视觉生图" class="headerlink" title="一些尝试-视觉生图"></a>一些尝试-视觉生图</h3><p>在最开始的一周里面我一直在尝试通过手机上面的3D建模软件获取usdz的数据，因为我手中的手机上面搭载了市面上面的差不多接近两千块钱的<a href="https://zhuanlan.zhihu.com/p/441161826">ToF</a>传感器，也是看见了链接里面的这个文章，我初步部署并且尝试了视觉生图，不知道是不是因为技术非常的成熟，产生的效果意想不到的好（其实我也不知道好不好，至少是说能很清除的呈现一个面的点云图）<br>要是没有删掉的话，其实可以拍几张图片过来看看（代码没有删除可以试试上传到<a href="https://github.com/silvermars">github</a>）</p><p>一个面的点云图如果都能生成的话，那要是拍摄多个面的话一定可以有完整的点云图吧<br>再利用一些扩散的算法肯定就可以生成一个完整的模型了<br>我有了这个想法之后就去网上搜索<br>本来只是想搜索有没有相关的技术<br>结果了解到了reality capture，以及nerf3D重建</p><h3 id="apple应用开发"><a href="#apple应用开发" class="headerlink" title="apple应用开发"></a>apple应用开发</h3><p>然后我就想到了要是我自己能够创建一个app然后调用app里的数据不就很方便吗，而且还能提高自己的开发能力<br>于是我就开始研究swift，研究ios的开发<br>但是只用一两天的时间，其实是完全不够的<br>我自己也属于比较心急<br>感觉中间还会踩到很多坑<br>所以自己就没有继续往下开发了<br>但是后续如果自己有相关的需求的话，可以接着尝试一下</p><h3 id="研究nerf3D重建"><a href="#研究nerf3D重建" class="headerlink" title="研究nerf3D重建"></a>研究nerf3D重建</h3><p>第二天开始我就下载meshroom，reality capture，nerf studio等软件开始研究图片到3D的一个重建</p><p>搞了好几天，都不如直接用手机拍摄得到的模型效果好（手机配合陀螺仪等东西，有相关的位置信息）<br>面对比较大的环境复杂的物品，反而生成效果更好<br>面对背景不是很复杂的情况，效果比较差了</p><h3 id="学习基础的ai知识"><a href="#学习基础的ai知识" class="headerlink" title="学习基础的ai知识"></a>学习基础的ai知识</h3><p>我大概花了一天学习基础的ai知识，感觉挺好玩，ai能实现很多东西，但是我一点都不务实，没有做到一边学习一边研究，做到现在，做了哪些事情都乱乱的。<br>研究了最基础的名词以及相关分类，但是和学长聊了之后发现ai其实还有很多方向的分类需要去研究。</p><h3 id="开发博客"><a href="#开发博客" class="headerlink" title="开发博客"></a>开发博客</h3><p>这个是我觉得最有意思的部分，哈哈哈哈就是我现在在做的事情，把自己的很多想法记下来真的很棒！！！！</p><h3 id="研究text-to-image"><a href="#研究text-to-image" class="headerlink" title="研究text-to-image"></a>研究text-to-image</h3><p>这是现在正在研究的</p><h3 id="奇思妙想"><a href="#奇思妙想" class="headerlink" title="奇思妙想"></a>奇思妙想</h3><p>能不能有两个键盘，一个是中文输入法，一个是英文输入法</p><p>能不能开发一个硬件让照片中留下，拍摄设备和物品之间的位置信息呢。</p>]]></content>
     
     
     <categories>
@@ -122,7 +178,7 @@
     
     <categories>
       
-      <category>数字孪生</category>
+      <category>研究日记</category>
       
     </categories>
     
