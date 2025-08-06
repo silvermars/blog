@@ -27,7 +27,7 @@
 <meta property="og:description" content="感觉很多事情都没有很好的记录下来，在我创建这个博客之前 记录一点在之前做的事情一些尝试-视觉生图在最开始的一周里面我一直在尝试通过手机上面的3D建模软件获取usdz的数据，因为我手中的手机上面搭载了市面上面的差不多接近两千块钱的ToF传感器，也是看见了链接里面的这个文章，我初步部署并且尝试了视觉生图，不知道是不是因为技术非常的成熟，产生的效果意想不到的好（其实我也不知道好不好，至少是说能很清除的呈">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-07-24T07:30:00.000Z">
-<meta property="article:modified_time" content="2025-08-01T01:18:49.017Z">
+<meta property="article:modified_time" content="2025-08-06T06:32:34.028Z">
 <meta property="article:author" content="jiayu Li">
 <meta property="article:tag" content="日常规划">
 <meta property="article:tag" content="研究日记">
@@ -257,7 +257,8 @@
                 <p>感觉很多事情都没有很好的记录下来，在我创建这个博客之前</p>
 <h2 id="记录一点在之前做的事情"><a href="#记录一点在之前做的事情" class="headerlink" title="记录一点在之前做的事情"></a>记录一点在之前做的事情</h2><h3 id="一些尝试-视觉生图"><a href="#一些尝试-视觉生图" class="headerlink" title="一些尝试-视觉生图"></a>一些尝试-视觉生图</h3><p>在最开始的一周里面我一直在尝试通过手机上面的3D建模软件获取usdz的数据，因为我手中的手机上面搭载了市面上面的差不多接近两千块钱的<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/441161826">ToF</a>传感器，也是看见了链接里面的这个文章，我初步部署并且尝试了视觉生图，不知道是不是因为技术非常的成熟，产生的效果意想不到的好（其实我也不知道好不好，至少是说能很清除的呈现一个面的点云图）<br>要是没有删掉的话，其实可以拍几张图片过来看看（代码没有删除可以试试上传到<a target="_blank" rel="noopener" href="https://github.com/silvermars">github</a>）</p>
 <p>一个面的点云图如果都能生成的话，那要是拍摄多个面的话一定可以有完整的点云图吧<br>再利用一些扩散的算法肯定就可以生成一个完整的模型了<br>我有了这个想法之后就去网上搜索<br>本来只是想搜索有没有相关的技术<br>结果了解到了reality capture，以及nerf3D重建</p>
-<h3 id="apple应用开发"><a href="#apple应用开发" class="headerlink" title="apple应用开发"></a>apple应用开发</h3><p>然后我就想到了要是我自己能够创建一个app然后调用app里的数据不就很方便吗，而且还能提高自己的开发能力<br>于是我就开始研究swift，研究ios的开发<br>但是只用一两天的时间，其实是完全不够的<br>我自己也属于比较心急<br>感觉中间还会踩到很多坑<br>所以自己就没有继续往下开发了<br>但是后续如果自己有相关的需求的话，可以接着尝试一下</p>
+<h3 id="apple应用开发"><a href="#apple应用开发" class="headerlink" title="apple应用开发"></a>apple应用开发</h3><p>然后我就想到了要是我自己能够创建一个app然后调用app里的数据不就很方便吗，而且还能提高自己的开发能力<br>于是我就开始研究swift，研究ios的开发<br>用了差不多一两天的时间，然后就宣布计划流产，做出来的东西有一点四不像的，但是网上有很多开发流派，总觉的app开发应该是一个比较热门的东西，做好的app框架应该也比较多，把这些软件用好的问题应该不是很大，所以如果真的想做app的话多花一点时间应该还是可以完成的。</p>
+<p>另外一个方面<br>我比较清楚自己心急的性格，如果硬着头皮继续开发的话还不清楚后面会不会再遇见什么问题，肯定还要耽误一段时间，如果确定了点云图的生成以及修复是一个可行的方案的话，那我觉得制作一个app放进我们的开发流程是完全没有问题的，而且把电脑和手机连接起来这件事情还挺有意思的哈哈哈哈。<br>但是当务之急，我觉得还是应该继续寻找该如何实现text-to-3D的方案，所以还是先不开发这个点云图了。</p>
 <h3 id="研究nerf3D重建"><a href="#研究nerf3D重建" class="headerlink" title="研究nerf3D重建"></a>研究nerf3D重建</h3><p>第二天开始我就下载meshroom，reality capture，nerf studio等软件开始研究图片到3D的一个重建</p>
 <p>搞了好几天，都不如直接用手机拍摄得到的模型效果好（手机配合陀螺仪等东西，有相关的位置信息）<br>面对比较大的环境复杂的物品，反而生成效果更好<br>面对背景不是很复杂的情况，效果比较差了</p>
 <h3 id="学习基础的ai知识"><a href="#学习基础的ai知识" class="headerlink" title="学习基础的ai知识"></a>学习基础的ai知识</h3><p>我大概花了一天学习基础的ai知识，感觉挺好玩，ai能实现很多东西，但是我一点都不务实，没有做到一边学习一边研究，做到现在，做了哪些事情都乱乱的。<br>研究了最基础的名词以及相关分类，但是和学长聊了之后发现ai其实还有很多方向的分类需要去研究。</p>
