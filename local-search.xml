@@ -8,7 +8,7 @@
     <link href="/blog/2025/08/12/8-12/"/>
     <url>/blog/2025/08/12/8-12/</url>
     
-    <content type="html"><![CDATA[]]></content>
+    <content type="html"><![CDATA[<p>早上学习了一点知识<br>关于虚拟环境的<br>forge，mamba还有conda之间的关系<br>以后要是还想看的话可以去收藏夹重新看哦<br>感觉还是挺不错的</p><h3 id="记录一点conda的相关指令"><a href="#记录一点conda的相关指令" class="headerlink" title="记录一点conda的相关指令"></a>记录一点conda的相关指令</h3><p>conda env list我觉得conda的这个指令还挺好的，用了这个就不用自己记录那些路径的名字了，虽然其实可能也记得住，但还是方便很多。<br>conda activate envname是用来激活相关环境的</p><p>对应的conda deactivate是用来退出当前环境的</p><h3 id="今天做的事情"><a href="#今天做的事情" class="headerlink" title="今天做的事情"></a>今天做的事情</h3><p>通过在英国的虚拟机和我自己电脑之间不断的比对，下载，安装，终于成功的部署了triposr在自己的电脑上</p><p>一个坑是很多的文件是需要手动下载并找到对应位置放置的，放置后路径也是需要写对的<br>但是中间很气人的点是<br>你根本不指导有哪些东西是需要再次下载的</p><p>第二个坑是<br>gradio的版本问题<br>numpy的版本问题<br>cuda的版本问题</p><p>因为这个不用很多的算力</p><p>所以我直接用cpu就可以解决cuda的问题</p><p>但是gradio和numpy真的是没有问题可以挑剔了然后才找到的！！！这里实名感谢gpt大哥！！！</p><h3 id="还有一个问题"><a href="#还有一个问题" class="headerlink" title="还有一个问题"></a>还有一个问题</h3><p>我因为cmake没有好好的安装，贪图空间，留下了一些问题，导致原来的其中一个函数无法使用叫做什么cube<br>不知道是不是因为这个<br>出来的纹理状况很不对<br>明天让ai对比所有的文件一个个来看吧</p><h3 id="回家之后要做的事情"><a href="#回家之后要做的事情" class="headerlink" title="回家之后要做的事情"></a>回家之后要做的事情</h3><p>1，找ee一起玩<br>2，去拿我的快递<br>3， </p>]]></content>
     
     
     
@@ -72,9 +72,9 @@
     
     <tags>
       
-      <tag>daily_p</tag>
-      
       <tag>研究日志</tag>
+      
+      <tag>daily_p</tag>
       
     </tags>
     
@@ -99,9 +99,9 @@
     
     <tags>
       
-      <tag>daily_p</tag>
-      
       <tag>研究日志</tag>
+      
+      <tag>daily_p</tag>
       
       <tag>方向寻找</tag>
       
@@ -128,11 +128,11 @@
     
     <tags>
       
-      <tag>daily_p</tag>
+      <tag>摸鱼日记</tag>
       
       <tag>研究日志</tag>
       
-      <tag>摸鱼日记</tag>
+      <tag>daily_p</tag>
       
       <tag>汇总</tag>
       
@@ -205,9 +205,9 @@
     
     <tags>
       
-      <tag>daily_p</tag>
-      
       <tag>研究日志</tag>
+      
+      <tag>daily_p</tag>
       
       <tag>模型修复</tag>
       
@@ -259,9 +259,9 @@
     
     <tags>
       
-      <tag>daily_p</tag>
-      
       <tag>研究日志</tag>
+      
+      <tag>daily_p</tag>
       
       <tag>模型修复</tag>
       
@@ -290,11 +290,11 @@
     
     <tags>
       
-      <tag>daily_p</tag>
+      <tag>hexo学习</tag>
       
       <tag>研究日志</tag>
       
-      <tag>hexo学习</tag>
+      <tag>daily_p</tag>
       
       <tag>建模</tag>
       
@@ -321,11 +321,11 @@
     
     <tags>
       
-      <tag>研究日志</tag>
+      <tag>摸鱼日记</tag>
       
       <tag>hexo学习</tag>
       
-      <tag>摸鱼日记</tag>
+      <tag>研究日志</tag>
       
     </tags>
     
@@ -350,11 +350,11 @@
     
     <tags>
       
-      <tag>daily_p</tag>
+      <tag>hexo学习</tag>
       
       <tag>研究日志</tag>
       
-      <tag>hexo学习</tag>
+      <tag>daily_p</tag>
       
       <tag>汇总</tag>
       
