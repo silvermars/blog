@@ -4,11 +4,50 @@
   
   
   <entry>
+    <title>8.12</title>
+    <link href="/blog/2025/08/12/8-12/"/>
+    <url>/blog/2025/08/12/8-12/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>不上学要做的事情</title>
+    <link href="/blog/2025/08/11/%E4%B8%8D%E4%B8%8A%E5%AD%A6%E8%A6%81%E5%81%9A%E7%9A%84%E4%BA%8B%E6%83%85/"/>
+    <url>/blog/2025/08/11/%E4%B8%8D%E4%B8%8A%E5%AD%A6%E8%A6%81%E5%81%9A%E7%9A%84%E4%BA%8B%E6%83%85/</url>
+    
+    <content type="html"><![CDATA[<p>不上学的时候可以先把功课预习一下<br>把那些课程的网课先找好<br>开始学一点<br>一点一点学肯定会很好的放心吧<br>hhh</p><p>然后就是学车，现在计划的是周天8.17的时候去合场，然后8.23(周六)的时候去考试，相信自己开车技术很好的！把那些基本的东西记住就好了</p><p>九月份之前要一起出去完可能25号左右？</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>8.11</title>
+    <link href="/blog/2025/08/11/8.11/"/>
+    <url>/blog/2025/08/11/8.11/</url>
+    
+    <content type="html"><![CDATA[<p>今天下了很大的雨水</p><p>我总觉得自己只有在这种工位上的时候才会好好的做事<br>能感觉到自己并不是一个拥有很强自制力的人<br>将来会不会对于我自己来说当一个员工会让我自己更轻松一点呢</p><p>可恶，今天没有以往干劲十足了，这个到底是为什么</p><p>还有两个星期实习就结束了</p><p>实习结束了之后应该做一点什么事情呢？</p><p>一个人就是容易发呆，我不喜欢这种感觉</p><h3 id="早上要做的事情"><a href="#早上要做的事情" class="headerlink" title="早上要做的事情"></a>早上要做的事情</h3><p>配置好tripoSR</p><p>弄明白那些safetensor都是在做什么的</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>8.8!!!</title>
     <link href="/blog/2025/08/08/8.8/"/>
     <url>/blog/2025/08/08/8.8/</url>
     
-    <content type="html"><![CDATA[]]></content>
+    <content type="html"><![CDATA[<p>今天真的破防了，为什么安装环境这这这么复杂啊</p><p>我终于知道为什么要用anaconda做这些库的安装了<br>今天真破防了</p><p>因为偷懒让ai帮我看requirment需要安装的东西<br>然后就不知道ai帮我改了啥了······<br>webui成功的打开了<br>但是！！！模型不能正常使用一直报错<br>尝试了很多的方法还是不行<br>放在comfyui里面倒是没有任何问题</p><p>cuda12.4安装了<br>然后听说11.8更加兼容<br>就安装了11.8<br>真不能相信ai的啊<br>要自己的慧眼去识别</p><h3 id="后面要做的事情"><a href="#后面要做的事情" class="headerlink" title="后面要做的事情"></a>后面要做的事情</h3><p>尝试部署tripoSR在自己的本地<br>下载anaconda这个包管理器<br>删除现在用的这个miniconda</p><p>重新安装了一堆版本的东西<br>真不如有一个稳稳当当的包管理器</p>]]></content>
     
     
     
@@ -33,9 +72,9 @@
     
     <tags>
       
-      <tag>研究日志</tag>
-      
       <tag>daily_p</tag>
+      
+      <tag>研究日志</tag>
       
     </tags>
     
@@ -60,9 +99,9 @@
     
     <tags>
       
-      <tag>研究日志</tag>
-      
       <tag>daily_p</tag>
+      
+      <tag>研究日志</tag>
       
       <tag>方向寻找</tag>
       
@@ -89,11 +128,11 @@
     
     <tags>
       
-      <tag>摸鱼日记</tag>
+      <tag>daily_p</tag>
       
       <tag>研究日志</tag>
       
-      <tag>daily_p</tag>
+      <tag>摸鱼日记</tag>
       
       <tag>汇总</tag>
       
@@ -166,9 +205,9 @@
     
     <tags>
       
-      <tag>研究日志</tag>
-      
       <tag>daily_p</tag>
+      
+      <tag>研究日志</tag>
       
       <tag>模型修复</tag>
       
@@ -220,9 +259,9 @@
     
     <tags>
       
-      <tag>研究日志</tag>
-      
       <tag>daily_p</tag>
+      
+      <tag>研究日志</tag>
       
       <tag>模型修复</tag>
       
@@ -251,11 +290,11 @@
     
     <tags>
       
-      <tag>hexo学习</tag>
+      <tag>daily_p</tag>
       
       <tag>研究日志</tag>
       
-      <tag>daily_p</tag>
+      <tag>hexo学习</tag>
       
       <tag>建模</tag>
       
@@ -282,11 +321,11 @@
     
     <tags>
       
-      <tag>摸鱼日记</tag>
+      <tag>研究日志</tag>
       
       <tag>hexo学习</tag>
       
-      <tag>研究日志</tag>
+      <tag>摸鱼日记</tag>
       
     </tags>
     
@@ -311,11 +350,11 @@
     
     <tags>
       
-      <tag>hexo学习</tag>
+      <tag>daily_p</tag>
       
       <tag>研究日志</tag>
       
-      <tag>daily_p</tag>
+      <tag>hexo学习</tag>
       
       <tag>汇总</tag>
       
