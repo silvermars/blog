@@ -8,9 +8,23 @@
     <link href="/blog/2025/08/14/8.14/"/>
     <url>/blog/2025/08/14/8.14/</url>
     
-    <content type="html"><![CDATA[]]></content>
+    <content type="html"><![CDATA[<p>昨天和今天删掉了电脑中的大部分东西<br>今天重新配置我的电脑<br>重新下载里面的那些东西</p><h3 id="关于电脑内部信息的整理"><a href="#关于电脑内部信息的整理" class="headerlink" title="关于电脑内部信息的整理"></a>关于电脑内部信息的整理</h3><p>CUDA<br>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.9\bin<br>用途：这是 CUDA Toolkit 的核心工具路径，包含可执行文件（如 nvcc.exe）。<br>功能：nvcc.exe：CUDA 编译器，用于编译 .cu 文件。<br>其他工具：如 ptxas（汇编器）和 nvprof（性能分析工具）。<br>重要性：必须添加到环境变量中，以便在命令行中运行 CUDA 工具</p><p>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.9\libnvvp<br>用途：这是 CUDA Toolkit 中 Visual Profiler 的库路径。<br>功能：<br>包含 Visual Profiler 的相关文件，用于性能分析和优化 CUDA 应用程序。<br>重要性：如果需要使用 Visual Profiler，可以添加到环境变量中；否则可以忽略。</p><p>C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR<br>用途：这是 NVIDIA 驱动程序的一部分，通常与深度学习相关。<br>功能：<br>包含 NVIDIA 的动态库和服务文件，可能用于支持 GPU 驱动或深度学习推理。<br>重要性：一般不需要手动添加到环境变量，驱动程序会自动管理。</p><p>C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR<br>用途：这是 NVIDIA 驱动程序的一部分，可能与深度学习推理服务相关。<br>功能：<br>包含 NVIDIA 的服务文件，用于支持 GPU 驱动或深度学习推理。<br>重要性：一般不需要手动添加到环境变量，驱动程序会自动管理。</p><p>nvcc: NVIDIA (R) Cuda compiler driver<br>Copyright (c) 2005-2025 NVIDIA Corporation<br>Built on Tue_May_27_02:24:01_Pacific_Daylight_Time_2025<br>Cuda compilation tools, release 12.9, V12.9.86<br>Build cuda_12.9.r12.9&#x2F;compiler.36037853_0</p><p>where nvcc<br>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.9\bin\nvcc.exe</p><p>nvidia-smi<br>Thu Aug 14 10:21:43 2025<br>+—————————————————————————————–+<br>| NVIDIA-SMI 576.57                 Driver Version: 576.57         CUDA Version: 12.9     |<br>|—————————————–+————————+———————-+<br>| GPU  Name                  Driver-Model | Bus-Id          Disp.A | Volatile Uncorr. ECC |<br>| Fan  Temp   Perf          Pwr:Usage&#x2F;Cap |           Memory-Usage | GPU-Util  Compute M. |<br>|                                         |                        |               MIG M. |<br>|&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;+&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;+&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;|<br>|   0  NVIDIA GeForce RTX 4070 …  WDDM  |   00000000:01:00.0 Off |                  N&#x2F;A |<br>| N&#x2F;A   40C    P0             13W &#x2F;  140W |       0MiB &#x2F;   8188MiB |      0%      Default |<br>|                                         |                        |                  N&#x2F;A |<br>+—————————————–+————————+———————-+</p><p>+—————————————————————————————–+<br>| Processes:                                                                              |<br>|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |<br>|        ID   ID                                                               Usage      |<br>|&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;|<br>|  No running processes found                                                             |<br>+—————————————————————————————–+</p><p>cuDNN</p><p>TensorRT</p><p>这三个是下载了之后就能用的</p><p>还有就是不要下载最新版本的可能会用不了</p><p>同时下载了两个CUDA该怎么办呢？<br>CUDA里面的那个东西是叫做CUDA Toolkit吗？<br>同时下载了两个CUDA应该怎么管理呢？<br>这两个文件应该放在一块吗？</p>]]></content>
     
     
+    <categories>
+      
+      <category>text_to_3D</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>研究日志</tag>
+      
+      <tag>daily_p</tag>
+      
+    </tags>
     
   </entry>
   
@@ -24,12 +38,18 @@
     <content type="html"><![CDATA[<p>我觉得开学之后自己有可能丧失掉写这个的能力，<br>因为开学之后我就会变得非常的偷懒然后不去做这些事情<br>我突然想到了可以把我的东西全部部署在学校的那个电脑上<br>这样子<br>不仅有很好的网络了<br>而且随时随地都能编辑东西了<br>我天<br>你真是个天才吧</p><h3 id="早上要做的事情"><a href="#早上要做的事情" class="headerlink" title="早上要做的事情"></a>早上要做的事情</h3><p>尝试在虚拟机的电脑上面部署你自己的博客<br>虽然说这样子做会有一定暴露隐私的风险<br>但是部署一个东西感觉还是很好玩的<br>不对，虚拟机上面没有装git指令<br>但是也可以用类似的二进制文件来执行吧<br>就是感觉可能内存会有一点不够用<br>尝试一下吧</p><p>还有重新尝试tripoai的下载部署，这次使用最原始的那个版本<br>然后下载对应的二进制文件，我觉得是可以成功的<br>要是效果好的话在我的这个地方也可以尝试一下。</p><h3 id="哦不"><a href="#哦不" class="headerlink" title="哦不"></a>哦不</h3><p>说实话，其实我现在还沉浸在早上没有看到自己很喜欢的朝霞的忧伤之中<br>企图用麻木来麻痹自己<br>但是生活还是要向往着明天的对吧！！！！！</p><h3 id="今天做的事情"><a href="#今天做的事情" class="headerlink" title="今天做的事情"></a>今天做的事情</h3><p>今天本来是要进行二进制文件的实验的<br>但是很巧合的是，昨天研究的背景移除功能今天居然真的能被团队里面的人用上<br>那我就只好不推脱尝试一下了<br>嘿嘿</p>]]></content>
     
     
+    <categories>
+      
+      <category>text_to_3D</category>
+      
+    </categories>
+    
     
     <tags>
       
-      <tag>daily_p</tag>
-      
       <tag>研究日志</tag>
+      
+      <tag>daily_p</tag>
       
     </tags>
     
@@ -45,12 +65,18 @@
     <content type="html"><![CDATA[<p>早上学习了一点知识<br>关于虚拟环境的<br>forge，mamba还有conda之间的关系<br>以后要是还想看的话可以去收藏夹重新看哦<br>感觉还是挺不错的</p><h3 id="记录一点conda的相关指令"><a href="#记录一点conda的相关指令" class="headerlink" title="记录一点conda的相关指令"></a>记录一点conda的相关指令</h3><p>conda env list我觉得conda的这个指令还挺好的，用了这个就不用自己记录那些路径的名字了，虽然其实可能也记得住，但还是方便很多。<br>conda activate envname是用来激活相关环境的</p><p>对应的conda deactivate是用来退出当前环境的</p><h3 id="今天做的事情"><a href="#今天做的事情" class="headerlink" title="今天做的事情"></a>今天做的事情</h3><p>通过在英国的虚拟机和我自己电脑之间不断的比对，下载，安装，终于成功的部署了triposr在自己的电脑上</p><p>一个坑是很多的文件是需要手动下载并找到对应位置放置的，放置后路径也是需要写对的<br>但是中间很气人的点是<br>你根本不指导有哪些东西是需要再次下载的</p><p>第二个坑是<br>gradio的版本问题<br>numpy的版本问题<br>cuda的版本问题</p><p>因为这个不用很多的算力</p><p>所以我直接用cpu就可以解决cuda的问题</p><p>但是gradio和numpy真的是没有问题可以挑剔了然后才找到的！！！这里实名感谢gpt大哥！！！</p><h3 id="还有一个问题"><a href="#还有一个问题" class="headerlink" title="还有一个问题"></a>还有一个问题</h3><p>我因为cmake没有好好的安装，贪图空间，留下了一些问题，导致原来的其中一个函数无法使用叫做什么cube<br>不知道是不是因为这个<br>出来的纹理状况很不对<br>明天让ai对比所有的文件一个个来看吧</p><h3 id="回家之后要做的事情"><a href="#回家之后要做的事情" class="headerlink" title="回家之后要做的事情"></a>回家之后要做的事情</h3><p>1，找ee一起玩<br>2，去拿我的快递<br>3， </p>]]></content>
     
     
+    <categories>
+      
+      <category>text_to_3D</category>
+      
+    </categories>
+    
     
     <tags>
       
-      <tag>daily_p</tag>
-      
       <tag>研究日志</tag>
+      
+      <tag>daily_p</tag>
       
     </tags>
     
@@ -79,12 +105,18 @@
     <content type="html"><![CDATA[<p>今天下了很大的雨水</p><p>我总觉得自己只有在这种工位上的时候才会好好的做事<br>能感觉到自己并不是一个拥有很强自制力的人<br>将来会不会对于我自己来说当一个员工会让我自己更轻松一点呢</p><p>可恶，今天没有以往干劲十足了，这个到底是为什么</p><p>还有两个星期实习就结束了</p><p>实习结束了之后应该做一点什么事情呢？</p><p>一个人就是容易发呆，我不喜欢这种感觉</p><h3 id="早上要做的事情"><a href="#早上要做的事情" class="headerlink" title="早上要做的事情"></a>早上要做的事情</h3><p>配置好tripoSR</p><p>弄明白那些safetensor都是在做什么的</p>]]></content>
     
     
+    <categories>
+      
+      <category>text_to_3D</category>
+      
+    </categories>
+    
     
     <tags>
       
-      <tag>daily_p</tag>
-      
       <tag>研究日志</tag>
+      
+      <tag>daily_p</tag>
       
     </tags>
     
@@ -100,12 +132,18 @@
     <content type="html"><![CDATA[<p>今天真的破防了，为什么安装环境这这这么复杂啊</p><p>我终于知道为什么要用anaconda做这些库的安装了<br>今天真破防了</p><p>因为偷懒让ai帮我看requirment需要安装的东西<br>然后就不知道ai帮我改了啥了······<br>webui成功的打开了<br>但是！！！模型不能正常使用一直报错<br>尝试了很多的方法还是不行<br>放在comfyui里面倒是没有任何问题</p><p>cuda12.4安装了<br>然后听说11.8更加兼容<br>就安装了11.8<br>真不能相信ai的啊<br>要自己的慧眼去识别</p><h3 id="后面要做的事情"><a href="#后面要做的事情" class="headerlink" title="后面要做的事情"></a>后面要做的事情</h3><p>尝试部署tripoSR在自己的本地<br>下载anaconda这个包管理器<br>删除现在用的这个miniconda</p><p>重新安装了一堆版本的东西<br>真不如有一个稳稳当当的包管理器</p>]]></content>
     
     
+    <categories>
+      
+      <category>text_to_3D</category>
+      
+    </categories>
+    
     
     <tags>
       
-      <tag>daily_p</tag>
-      
       <tag>研究日志</tag>
+      
+      <tag>daily_p</tag>
       
     </tags>
     
@@ -130,9 +168,9 @@
     
     <tags>
       
-      <tag>daily_p</tag>
-      
       <tag>研究日志</tag>
+      
+      <tag>daily_p</tag>
       
     </tags>
     
@@ -157,9 +195,9 @@
     
     <tags>
       
-      <tag>daily_p</tag>
-      
       <tag>研究日志</tag>
+      
+      <tag>daily_p</tag>
       
       <tag>方向寻找</tag>
       
@@ -186,15 +224,15 @@
     
     <tags>
       
-      <tag>daily_p</tag>
+      <tag>摸鱼日记</tag>
       
       <tag>研究日志</tag>
       
-      <tag>模型修复</tag>
-      
-      <tag>摸鱼日记</tag>
+      <tag>daily_p</tag>
       
       <tag>汇总</tag>
+      
+      <tag>模型修复</tag>
       
     </tags>
     
@@ -263,9 +301,9 @@
     
     <tags>
       
-      <tag>daily_p</tag>
-      
       <tag>研究日志</tag>
+      
+      <tag>daily_p</tag>
       
       <tag>模型修复</tag>
       
@@ -317,9 +355,9 @@
     
     <tags>
       
-      <tag>daily_p</tag>
-      
       <tag>研究日志</tag>
+      
+      <tag>daily_p</tag>
       
       <tag>模型修复</tag>
       
@@ -348,11 +386,11 @@
     
     <tags>
       
-      <tag>daily_p</tag>
+      <tag>hexo学习</tag>
       
       <tag>研究日志</tag>
       
-      <tag>hexo学习</tag>
+      <tag>daily_p</tag>
       
       <tag>建模</tag>
       
@@ -379,11 +417,11 @@
     
     <tags>
       
-      <tag>研究日志</tag>
+      <tag>摸鱼日记</tag>
       
       <tag>hexo学习</tag>
       
-      <tag>摸鱼日记</tag>
+      <tag>研究日志</tag>
       
     </tags>
     
@@ -408,11 +446,11 @@
     
     <tags>
       
-      <tag>daily_p</tag>
+      <tag>hexo学习</tag>
       
       <tag>研究日志</tag>
       
-      <tag>hexo学习</tag>
+      <tag>daily_p</tag>
       
       <tag>汇总</tag>
       

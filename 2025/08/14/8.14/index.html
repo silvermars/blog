@@ -19,17 +19,18 @@
   <meta name="author" content="jiayu Li">
   <meta name="keywords" content="AI, 机器学习, 学术研究, Hexo, 科研日志">
   
-    <meta name="description" content="专注于人工智能、机器学习和学术研究的个人博客">
+    <meta name="description" content="昨天和今天删掉了电脑中的大部分东西今天重新配置我的电脑重新下载里面的那些东西 关于电脑内部信息的整理CUDAC:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.9\bin用途：这是 CUDA Toolkit 的核心工具路径，包含可执行文件（如 nvcc.exe）。功能：nvcc.exe：CUDA 编译器，用于编译 .cu 文件。其他工具：如">
 <meta property="og:type" content="article">
 <meta property="og:title" content="8.14">
 <meta property="og:url" content="https://silvermars.github.io/blog/2025/08/14/8.14/index.html">
 <meta property="og:site_name" content="jiayu Li&#39;s Blog">
-<meta property="og:description" content="专注于人工智能、机器学习和学术研究的个人博客">
+<meta property="og:description" content="昨天和今天删掉了电脑中的大部分东西今天重新配置我的电脑重新下载里面的那些东西 关于电脑内部信息的整理CUDAC:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.9\bin用途：这是 CUDA Toolkit 的核心工具路径，包含可执行文件（如 nvcc.exe）。功能：nvcc.exe：CUDA 编译器，用于编译 .cu 文件。其他工具：如">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-08-14T01:46:52.000Z">
-<meta property="article:modified_time" content="2025-08-14T01:46:52.727Z">
+<meta property="article:modified_time" content="2025-08-14T03:16:59.414Z">
 <meta property="article:author" content="jiayu Li">
-<meta property="article:tag" content="AI, 机器学习, 学术研究, Hexo, 科研日志">
+<meta property="article:tag" content="研究日志">
+<meta property="article:tag" content="daily_p">
 <meta name="twitter:card" content="summary_large_image">
   
   
@@ -253,7 +254,21 @@
             
               <div class="markdown-body">
                 
-                
+                <p>昨天和今天删掉了电脑中的大部分东西<br>今天重新配置我的电脑<br>重新下载里面的那些东西</p>
+<h3 id="关于电脑内部信息的整理"><a href="#关于电脑内部信息的整理" class="headerlink" title="关于电脑内部信息的整理"></a>关于电脑内部信息的整理</h3><p>CUDA<br>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.9\bin<br>用途：这是 CUDA Toolkit 的核心工具路径，包含可执行文件（如 nvcc.exe）。<br>功能：nvcc.exe：CUDA 编译器，用于编译 .cu 文件。<br>其他工具：如 ptxas（汇编器）和 nvprof（性能分析工具）。<br>重要性：必须添加到环境变量中，以便在命令行中运行 CUDA 工具</p>
+<p>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.9\libnvvp<br>用途：这是 CUDA Toolkit 中 Visual Profiler 的库路径。<br>功能：<br>包含 Visual Profiler 的相关文件，用于性能分析和优化 CUDA 应用程序。<br>重要性：如果需要使用 Visual Profiler，可以添加到环境变量中；否则可以忽略。</p>
+<p>C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR<br>用途：这是 NVIDIA 驱动程序的一部分，通常与深度学习相关。<br>功能：<br>包含 NVIDIA 的动态库和服务文件，可能用于支持 GPU 驱动或深度学习推理。<br>重要性：一般不需要手动添加到环境变量，驱动程序会自动管理。</p>
+<p>C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR<br>用途：这是 NVIDIA 驱动程序的一部分，可能与深度学习推理服务相关。<br>功能：<br>包含 NVIDIA 的服务文件，用于支持 GPU 驱动或深度学习推理。<br>重要性：一般不需要手动添加到环境变量，驱动程序会自动管理。</p>
+<p>nvcc: NVIDIA (R) Cuda compiler driver<br>Copyright (c) 2005-2025 NVIDIA Corporation<br>Built on Tue_May_27_02:24:01_Pacific_Daylight_Time_2025<br>Cuda compilation tools, release 12.9, V12.9.86<br>Build cuda_12.9.r12.9&#x2F;compiler.36037853_0</p>
+<p>where nvcc<br>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.9\bin\nvcc.exe</p>
+<p>nvidia-smi<br>Thu Aug 14 10:21:43 2025<br>+—————————————————————————————–+<br>| NVIDIA-SMI 576.57                 Driver Version: 576.57         CUDA Version: 12.9     |<br>|—————————————–+————————+———————-+<br>| GPU  Name                  Driver-Model | Bus-Id          Disp.A | Volatile Uncorr. ECC |<br>| Fan  Temp   Perf          Pwr:Usage&#x2F;Cap |           Memory-Usage | GPU-Util  Compute M. |<br>|                                         |                        |               MIG M. |<br>|&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;+&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;+&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;|<br>|   0  NVIDIA GeForce RTX 4070 …  WDDM  |   00000000:01:00.0 Off |                  N&#x2F;A |<br>| N&#x2F;A   40C    P0             13W &#x2F;  140W |       0MiB &#x2F;   8188MiB |      0%      Default |<br>|                                         |                        |                  N&#x2F;A |<br>+—————————————–+————————+———————-+</p>
+<p>+—————————————————————————————–+<br>| Processes:                                                                              |<br>|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |<br>|        ID   ID                                                               Usage      |<br>|&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;|<br>|  No running processes found                                                             |<br>+—————————————————————————————–+</p>
+<p>cuDNN</p>
+<p>TensorRT</p>
+<p>这三个是下载了之后就能用的</p>
+<p>还有就是不要下载最新版本的可能会用不了</p>
+<p>同时下载了两个CUDA该怎么办呢？<br>CUDA里面的那个东西是叫做CUDA Toolkit吗？<br>同时下载了两个CUDA应该怎么管理呢？<br>这两个文件应该放在一块吗？</p>
+
                 
               </div>
             
@@ -261,6 +276,36 @@
             <div>
               <div class="post-metas my-3">
   
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/blog/categories/text-to-3D/" class="category-chain-item">text_to_3D</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/blog/tags/%E7%A0%94%E7%A9%B6%E6%97%A5%E5%BF%97/" class="print-no-link">#研究日志</a>
+      
+        <a href="/blog/tags/daily-p/" class="print-no-link">#daily_p</a>
+      
+    </div>
   
 </div>
 
