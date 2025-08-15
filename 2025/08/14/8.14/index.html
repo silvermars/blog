@@ -19,18 +19,19 @@
   <meta name="author" content="jiayu Li">
   <meta name="keywords" content="AI, 机器学习, 学术研究, Hexo, 科研日志">
   
-    <meta name="description" content="昨天和今天删掉了电脑中的大部分东西今天重新配置我的电脑重新下载里面的那些东西 关于电脑内部信息的整理CUDAC:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.9\bin用途：这是 CUDA Toolkit 的核心工具路径，包含可执行文件（如 nvcc.exe）。功能：nvcc.exe：CUDA 编译器，用于编译 .cu 文件。其他工具：如">
+    <meta name="description" content="昨天和今天删掉了电脑中的大部分东西。今天重新配置我的电脑，重新下载里面的那些东西。 关于 CUDA 和 cuDNN 的相关介绍1. CUDA 和 cuDNN 的作用CUDA（Compute Unified Device Architecture） 作用： CUDA 是 NVIDIA 提供的通用并行计算平台和编程模型。 它允许开发者使用 GPU 进行通用计算（不仅限于图形渲染）。 提供了底层的 GP">
 <meta property="og:type" content="article">
 <meta property="og:title" content="8.14">
 <meta property="og:url" content="https://silvermars.github.io/blog/2025/08/14/8.14/index.html">
 <meta property="og:site_name" content="jiayu Li&#39;s Blog">
-<meta property="og:description" content="昨天和今天删掉了电脑中的大部分东西今天重新配置我的电脑重新下载里面的那些东西 关于电脑内部信息的整理CUDAC:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.9\bin用途：这是 CUDA Toolkit 的核心工具路径，包含可执行文件（如 nvcc.exe）。功能：nvcc.exe：CUDA 编译器，用于编译 .cu 文件。其他工具：如">
+<meta property="og:description" content="昨天和今天删掉了电脑中的大部分东西。今天重新配置我的电脑，重新下载里面的那些东西。 关于 CUDA 和 cuDNN 的相关介绍1. CUDA 和 cuDNN 的作用CUDA（Compute Unified Device Architecture） 作用： CUDA 是 NVIDIA 提供的通用并行计算平台和编程模型。 它允许开发者使用 GPU 进行通用计算（不仅限于图形渲染）。 提供了底层的 GP">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-08-14T01:46:52.000Z">
-<meta property="article:modified_time" content="2025-08-14T03:16:59.414Z">
+<meta property="article:modified_time" content="2025-08-15T01:21:59.300Z">
 <meta property="article:author" content="jiayu Li">
 <meta property="article:tag" content="研究日志">
 <meta property="article:tag" content="daily_p">
+<meta property="article:tag" content="Nvida">
 <meta name="twitter:card" content="summary_large_image">
   
   
@@ -254,20 +255,357 @@
             
               <div class="markdown-body">
                 
-                <p>昨天和今天删掉了电脑中的大部分东西<br>今天重新配置我的电脑<br>重新下载里面的那些东西</p>
-<h3 id="关于电脑内部信息的整理"><a href="#关于电脑内部信息的整理" class="headerlink" title="关于电脑内部信息的整理"></a>关于电脑内部信息的整理</h3><p>CUDA<br>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.9\bin<br>用途：这是 CUDA Toolkit 的核心工具路径，包含可执行文件（如 nvcc.exe）。<br>功能：nvcc.exe：CUDA 编译器，用于编译 .cu 文件。<br>其他工具：如 ptxas（汇编器）和 nvprof（性能分析工具）。<br>重要性：必须添加到环境变量中，以便在命令行中运行 CUDA 工具</p>
-<p>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.9\libnvvp<br>用途：这是 CUDA Toolkit 中 Visual Profiler 的库路径。<br>功能：<br>包含 Visual Profiler 的相关文件，用于性能分析和优化 CUDA 应用程序。<br>重要性：如果需要使用 Visual Profiler，可以添加到环境变量中；否则可以忽略。</p>
-<p>C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR<br>用途：这是 NVIDIA 驱动程序的一部分，通常与深度学习相关。<br>功能：<br>包含 NVIDIA 的动态库和服务文件，可能用于支持 GPU 驱动或深度学习推理。<br>重要性：一般不需要手动添加到环境变量，驱动程序会自动管理。</p>
-<p>C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR<br>用途：这是 NVIDIA 驱动程序的一部分，可能与深度学习推理服务相关。<br>功能：<br>包含 NVIDIA 的服务文件，用于支持 GPU 驱动或深度学习推理。<br>重要性：一般不需要手动添加到环境变量，驱动程序会自动管理。</p>
-<p>nvcc: NVIDIA (R) Cuda compiler driver<br>Copyright (c) 2005-2025 NVIDIA Corporation<br>Built on Tue_May_27_02:24:01_Pacific_Daylight_Time_2025<br>Cuda compilation tools, release 12.9, V12.9.86<br>Build cuda_12.9.r12.9&#x2F;compiler.36037853_0</p>
-<p>where nvcc<br>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.9\bin\nvcc.exe</p>
-<p>nvidia-smi<br>Thu Aug 14 10:21:43 2025<br>+—————————————————————————————–+<br>| NVIDIA-SMI 576.57                 Driver Version: 576.57         CUDA Version: 12.9     |<br>|—————————————–+————————+———————-+<br>| GPU  Name                  Driver-Model | Bus-Id          Disp.A | Volatile Uncorr. ECC |<br>| Fan  Temp   Perf          Pwr:Usage&#x2F;Cap |           Memory-Usage | GPU-Util  Compute M. |<br>|                                         |                        |               MIG M. |<br>|&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;+&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;+&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;|<br>|   0  NVIDIA GeForce RTX 4070 …  WDDM  |   00000000:01:00.0 Off |                  N&#x2F;A |<br>| N&#x2F;A   40C    P0             13W &#x2F;  140W |       0MiB &#x2F;   8188MiB |      0%      Default |<br>|                                         |                        |                  N&#x2F;A |<br>+—————————————–+————————+———————-+</p>
-<p>+—————————————————————————————–+<br>| Processes:                                                                              |<br>|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |<br>|        ID   ID                                                               Usage      |<br>|&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;|<br>|  No running processes found                                                             |<br>+—————————————————————————————–+</p>
-<p>cuDNN</p>
-<p>TensorRT</p>
-<p>这三个是下载了之后就能用的</p>
-<p>还有就是不要下载最新版本的可能会用不了</p>
-<p>同时下载了两个CUDA该怎么办呢？<br>CUDA里面的那个东西是叫做CUDA Toolkit吗？<br>同时下载了两个CUDA应该怎么管理呢？<br>这两个文件应该放在一块吗？</p>
+                <p>昨天和今天删掉了电脑中的大部分东西。<br>今天重新配置我的电脑，重新下载里面的那些东西。</p>
+<h2 id="关于-CUDA-和-cuDNN-的相关介绍"><a href="#关于-CUDA-和-cuDNN-的相关介绍" class="headerlink" title="关于 CUDA 和 cuDNN 的相关介绍"></a>关于 CUDA 和 cuDNN 的相关介绍</h2><h3 id="1-CUDA-和-cuDNN-的作用"><a href="#1-CUDA-和-cuDNN-的作用" class="headerlink" title="1. CUDA 和 cuDNN 的作用"></a>1. CUDA 和 cuDNN 的作用</h3><h4 id="CUDA（Compute-Unified-Device-Architecture）"><a href="#CUDA（Compute-Unified-Device-Architecture）" class="headerlink" title="CUDA（Compute Unified Device Architecture）"></a>CUDA（Compute Unified Device Architecture）</h4><ul>
+<li><strong>作用</strong>：<ul>
+<li>CUDA 是 NVIDIA 提供的通用并行计算平台和编程模型。</li>
+<li>它允许开发者使用 GPU 进行通用计算（不仅限于图形渲染）。</li>
+<li>提供了底层的 GPU 加速功能，包括矩阵运算、向量运算等。</li>
+</ul>
+</li>
+<li><strong>加速场景</strong>：<ul>
+<li>通用计算任务（如矩阵乘法、线性代数）。</li>
+<li>深度学习框架的基础计算（如张量操作）。</li>
+<li>视频处理、图像处理等高性能计算任务。</li>
+</ul>
+</li>
+</ul>
+<h4 id="cuDNN（CUDA-Deep-Neural-Network-Library）"><a href="#cuDNN（CUDA-Deep-Neural-Network-Library）" class="headerlink" title="cuDNN（CUDA Deep Neural Network Library）"></a>cuDNN（CUDA Deep Neural Network Library）</h4><ul>
+<li><strong>作用</strong>：<ul>
+<li>cuDNN 是基于 CUDA 的深度学习专用加速库。</li>
+<li>它提供了高度优化的实现，用于深度学习中的常见操作（如卷积、池化、归一化等）。</li>
+<li>cuDNN 是深度学习框架（如 TensorFlow、PyTorch、ONNX Runtime 等）中不可或缺的组件。</li>
+</ul>
+</li>
+<li><strong>加速场景</strong>：<ul>
+<li>卷积神经网络（CNN）的前向传播和反向传播。</li>
+<li>RNN、LSTM 等网络的优化。</li>
+<li>深度学习模型的推理和训练。</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-CUDA-和-cuDNN-的关系"><a href="#2-CUDA-和-cuDNN-的关系" class="headerlink" title="2. CUDA 和 cuDNN 的关系"></a>2. CUDA 和 cuDNN 的关系</h3><ul>
+<li><strong>依赖关系</strong>：<ul>
+<li>cuDNN 是基于 CUDA 构建的，它依赖于 CUDA 提供的底层计算能力。</li>
+<li>安装 cuDNN 时，必须确保系统中已经安装了兼容版本的 CUDA。</li>
+</ul>
+</li>
+<li><strong>协同工作</strong>：<ul>
+<li>CUDA 提供通用的 GPU 加速能力。</li>
+<li>cuDNN 在 CUDA 的基础上进一步优化了深度学习相关的操作。</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-安装时是否会冲突？"><a href="#3-安装时是否会冲突？" class="headerlink" title="3. 安装时是否会冲突？"></a>3. 安装时是否会冲突？</h3><ul>
+<li><strong>不会冲突</strong>：<ul>
+<li>CUDA 和 cuDNN 是独立的库，它们可以共存并协同工作。</li>
+<li>只需要确保安装的 cuDNN 版本与 CUDA 版本兼容即可。</li>
+</ul>
+</li>
+<li><strong>版本兼容性</strong>：<ul>
+<li>NVIDIA 提供了 CUDA 和 cuDNN 的兼容性表，可以在 NVIDIA cuDNN 下载页面查看。</li>
+<li>例如：<ul>
+<li>CUDA 11.8 对应 cuDNN 8.9。</li>
+<li>CUDA 11.7 对应 cuDNN 8.7。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="4-安装路径"><a href="#4-安装路径" class="headerlink" title="4. 安装路径"></a>4. 安装路径</h3><h4 id="CUDA："><a href="#CUDA：" class="headerlink" title="CUDA："></a>CUDA：</h4><ul>
+<li><strong>默认安装路径</strong>：<ul>
+<li>Windows: <code>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\vX.X</code></li>
+<li>Linux: <code>/usr/local/cuda-X.X</code></li>
+</ul>
+</li>
+<li><strong>包含的内容</strong>：<ul>
+<li><code>bin</code>：CUDA 可执行文件（如 <code>nvcc</code>）。</li>
+<li><code>lib</code>：CUDA 动态链接库。</li>
+<li><code>include</code>：CUDA 头文件。</li>
+</ul>
+</li>
+</ul>
+<h4 id="cuDNN："><a href="#cuDNN：" class="headerlink" title="cuDNN："></a>cuDNN：</h4><ul>
+<li><strong>安装步骤</strong>：<ul>
+<li>安装时需要将解压后的文件手动复制到 CUDA 的安装目录中。</li>
+<li><strong>Windows</strong>：<ul>
+<li><code>bin</code> 文件夹中的动态链接库复制到 <code>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\vX.X\bin</code>。</li>
+<li><code>lib</code> 文件夹中的库文件复制到 <code>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\vX.X\lib\x64</code>。</li>
+<li><code>include</code> 文件夹中的头文件复制到 <code>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\vX.X\include</code>。</li>
+</ul>
+</li>
+<li><strong>Linux</strong>：<ul>
+<li>将 <code>lib</code> 和 <code>include</code> 文件夹复制到 <code>/usr/local/cuda-X.X</code>。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="5-CUDA-和-cuDNN-的加速作用对比"><a href="#5-CUDA-和-cuDNN-的加速作用对比" class="headerlink" title="5. CUDA 和 cuDNN 的加速作用对比"></a>5. CUDA 和 cuDNN 的加速作用对比</h3><table>
+<thead>
+<tr>
+<th>功能</th>
+<th>CUDA</th>
+<th>cuDNN</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>作用范围</strong></td>
+<td>通用 GPU 加速</td>
+<td>深度学习专用加速</td>
+</tr>
+<tr>
+<td><strong>优化内容</strong></td>
+<td>矩阵运算、向量运算、并行计算</td>
+<td>卷积、池化、归一化、激活函数等深度学习操作</td>
+</tr>
+<tr>
+<td><strong>依赖关系</strong></td>
+<td>独立存在</td>
+<td>依赖 CUDA</td>
+</tr>
+<tr>
+<td><strong>适用场景</strong></td>
+<td>视频处理、图像处理、科学计算</td>
+<td>深度学习模型的训练和推理</td>
+</tr>
+</tbody></table>
+<h2 id="拓展知识"><a href="#拓展知识" class="headerlink" title="拓展知识"></a>拓展知识</h2><h3 id="1-类似于-cuDNN-的库"><a href="#1-类似于-cuDNN-的库" class="headerlink" title="1. 类似于 cuDNN 的库"></a>1. 类似于 cuDNN 的库</h3><p>这些库直接依赖于 CUDA，并为特定领域提供优化的功能：</p>
+<h4 id="1-1-NCCL-NVIDIA-Collective-Communications-Library"><a href="#1-1-NCCL-NVIDIA-Collective-Communications-Library" class="headerlink" title="1.1 NCCL (NVIDIA Collective Communications Library)"></a>1.1 NCCL (NVIDIA Collective Communications Library)</h4><ul>
+<li><strong>作用</strong>：<ul>
+<li>用于多 GPU 和多节点之间的高效通信。</li>
+<li>提供了优化的操作（如广播、规约、点对点通信等）。</li>
+</ul>
+</li>
+<li><strong>依赖</strong>：<ul>
+<li>仅依赖 CUDA。</li>
+</ul>
+</li>
+<li><strong>应用场景</strong>：<ul>
+<li>分布式深度学习训练（如 TensorFlow 和 PyTorch 的分布式训练）。</li>
+</ul>
+</li>
+</ul>
+<h4 id="1-2-cuBLAS-CUDA-Basic-Linear-Algebra-Subroutines"><a href="#1-2-cuBLAS-CUDA-Basic-Linear-Algebra-Subroutines" class="headerlink" title="1.2 cuBLAS (CUDA Basic Linear Algebra Subroutines)"></a>1.2 cuBLAS (CUDA Basic Linear Algebra Subroutines)</h4><ul>
+<li><strong>作用</strong>：<ul>
+<li>提供高性能的线性代数运算（如矩阵乘法、向量运算）。</li>
+</ul>
+</li>
+<li><strong>依赖</strong>：<ul>
+<li>仅依赖 CUDA。</li>
+</ul>
+</li>
+<li><strong>应用场景</strong>：<ul>
+<li>深度学习框架的底层张量运算。</li>
+<li>科学计算和数值分析。</li>
+</ul>
+</li>
+</ul>
+<h4 id="1-3-cuFFT-CUDA-Fast-Fourier-Transform"><a href="#1-3-cuFFT-CUDA-Fast-Fourier-Transform" class="headerlink" title="1.3 cuFFT (CUDA Fast Fourier Transform)"></a>1.3 cuFFT (CUDA Fast Fourier Transform)</h4><ul>
+<li><strong>作用</strong>：<ul>
+<li>提供快速傅里叶变换（FFT）的高效实现。</li>
+</ul>
+</li>
+<li><strong>依赖</strong>：<ul>
+<li>仅依赖 CUDA。</li>
+</ul>
+</li>
+<li><strong>应用场景</strong>：<ul>
+<li>信号处理、图像处理、科学计算。</li>
+</ul>
+</li>
+</ul>
+<h4 id="1-4-cuSPARSE"><a href="#1-4-cuSPARSE" class="headerlink" title="1.4 cuSPARSE"></a>1.4 cuSPARSE</h4><ul>
+<li><strong>作用</strong>：<ul>
+<li>提供稀疏矩阵运算的高效实现。</li>
+</ul>
+</li>
+<li><strong>依赖</strong>：<ul>
+<li>仅依赖 CUDA。</li>
+</ul>
+</li>
+<li><strong>应用场景</strong>：<ul>
+<li>稀疏矩阵计算（如推荐系统、图计算）。</li>
+</ul>
+</li>
+</ul>
+<h4 id="1-5-cuRAND"><a href="#1-5-cuRAND" class="headerlink" title="1.5 cuRAND"></a>1.5 cuRAND</h4><ul>
+<li><strong>作用</strong>：<ul>
+<li>提供高性能的随机数生成器。</li>
+</ul>
+</li>
+<li><strong>依赖</strong>：<ul>
+<li>仅依赖 CUDA。</li>
+</ul>
+</li>
+<li><strong>应用场景</strong>：<ul>
+<li>蒙特卡罗模拟、深度学习中的随机初始化。</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-同时依赖-CUDA-和-cuDNN-的库"><a href="#2-同时依赖-CUDA-和-cuDNN-的库" class="headerlink" title="2. 同时依赖 CUDA 和 cuDNN 的库"></a>2. 同时依赖 CUDA 和 cuDNN 的库</h3><p>这些库在 CUDA 的基础上，进一步依赖 cuDNN 提供的深度学习优化功能：</p>
+<h4 id="2-1-TensorRT"><a href="#2-1-TensorRT" class="headerlink" title="2.1 TensorRT"></a>2.1 TensorRT</h4><ul>
+<li><strong>作用</strong>：<ul>
+<li>高性能深度学习推理优化库。</li>
+<li>提供模型量化、层融合、内存优化等功能。</li>
+</ul>
+</li>
+<li><strong>依赖</strong>：<ul>
+<li>同时依赖 CUDA 和 cuDNN。</li>
+</ul>
+</li>
+<li><strong>应用场景</strong>：<ul>
+<li>实时推理（如自动驾驶、视频处理）。</li>
+</ul>
+</li>
+</ul>
+<h4 id="2-2-DeepStream"><a href="#2-2-DeepStream" class="headerlink" title="2.2 DeepStream"></a>2.2 DeepStream</h4><ul>
+<li><strong>作用</strong>：<ul>
+<li>NVIDIA 提供的流媒体分析 SDK，用于视频分析和 AI 推理。</li>
+</ul>
+</li>
+<li><strong>依赖</strong>：<ul>
+<li>同时依赖 CUDA、cuDNN 和 TensorRT。</li>
+</ul>
+</li>
+<li><strong>应用场景</strong>：<ul>
+<li>视频流处理（如监控、自动驾驶）。</li>
+</ul>
+</li>
+</ul>
+<h4 id="2-3-NVIDIA-Triton-Inference-Server"><a href="#2-3-NVIDIA-Triton-Inference-Server" class="headerlink" title="2.3 NVIDIA Triton Inference Server"></a>2.3 NVIDIA Triton Inference Server</h4><ul>
+<li><strong>作用</strong>：<ul>
+<li>一个高性能的推理服务器，支持多种深度学习框架（如 TensorFlow、PyTorch、ONNX）。</li>
+</ul>
+</li>
+<li><strong>依赖</strong>：<ul>
+<li>同时依赖 CUDA、cuDNN 和 TensorRT。</li>
+</ul>
+</li>
+<li><strong>应用场景</strong>：<ul>
+<li>部署深度学习模型的推理服务。</li>
+</ul>
+</li>
+</ul>
+<h4 id="2-4-cuML-RAPIDS-Machine-Learning-Library"><a href="#2-4-cuML-RAPIDS-Machine-Learning-Library" class="headerlink" title="2.4 cuML (RAPIDS Machine Learning Library)"></a>2.4 cuML (RAPIDS Machine Learning Library)</h4><ul>
+<li><strong>作用</strong>：<ul>
+<li>NVIDIA 提供的 GPU 加速机器学习库。</li>
+<li>提供常见的机器学习算法（如线性回归、KMeans、PCA）。</li>
+</ul>
+</li>
+<li><strong>依赖</strong>：<ul>
+<li>同时依赖 CUDA 和 cuDNN。</li>
+</ul>
+</li>
+<li><strong>应用场景</strong>：<ul>
+<li>GPU 加速的机器学习任务。</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-深度学习框架"><a href="#3-深度学习框架" class="headerlink" title="3. 深度学习框架"></a>3. 深度学习框架</h3><p>许多深度学习框架也依赖于 CUDA 和 cuDNN 提供的底层加速功能：</p>
+<h4 id="3-1-TensorFlow"><a href="#3-1-TensorFlow" class="headerlink" title="3.1 TensorFlow"></a>3.1 TensorFlow</h4><ul>
+<li><strong>作用</strong>：<ul>
+<li>Google 开发的深度学习框架。</li>
+</ul>
+</li>
+<li><strong>依赖</strong>：<ul>
+<li>同时依赖 CUDA 和 cuDNN。</li>
+</ul>
+</li>
+<li><strong>应用场景</strong>：<ul>
+<li>深度学习模型的训练和推理。</li>
+</ul>
+</li>
+</ul>
+<h4 id="3-2-PyTorch"><a href="#3-2-PyTorch" class="headerlink" title="3.2 PyTorch"></a>3.2 PyTorch</h4><ul>
+<li><strong>作用</strong>：<ul>
+<li>Facebook 开发的深度学习框架。</li>
+</ul>
+</li>
+<li><strong>依赖</strong>：<ul>
+<li>同时依赖 CUDA 和 cuDNN。</li>
+</ul>
+</li>
+<li><strong>应用场景</strong>：<ul>
+<li>深度学习研究和生产部署。</li>
+</ul>
+</li>
+</ul>
+<h4 id="3-3-MXNet"><a href="#3-3-MXNet" class="headerlink" title="3.3 MXNet"></a>3.3 MXNet</h4><ul>
+<li><strong>作用</strong>：<ul>
+<li>Apache 基金会开发的深度学习框架。</li>
+</ul>
+</li>
+<li><strong>依赖</strong>：<ul>
+<li>同时依赖 CUDA 和 cuDNN。</li>
+</ul>
+</li>
+<li><strong>应用场景</strong>：<ul>
+<li>深度学习模型的训练和推理。</li>
+</ul>
+</li>
+</ul>
+<h4 id="3-4-ONNX-Runtime"><a href="#3-4-ONNX-Runtime" class="headerlink" title="3.4 ONNX Runtime"></a>3.4 ONNX Runtime</h4><ul>
+<li><strong>作用</strong>：<ul>
+<li>一个通用的 ONNX 模型推理框架。</li>
+</ul>
+</li>
+<li><strong>依赖</strong>：<ul>
+<li>支持多种执行提供程序，包括 CUDA 和 TensorRT。</li>
+</ul>
+</li>
+<li><strong>应用场景</strong>：<ul>
+<li>部署 ONNX 格式的深度学习模型。</li>
+</ul>
+</li>
+</ul>
+<h2 id="关于电脑内部环境信息的整理"><a href="#关于电脑内部环境信息的整理" class="headerlink" title="关于电脑内部环境信息的整理"></a>关于电脑内部环境信息的整理</h2><h3 id="CUDA"><a href="#CUDA" class="headerlink" title="CUDA"></a>CUDA</h3><h4 id="C-Program-Files-NVIDIA-GPU-Computing-Toolkit-CUDA-v12-9-bin"><a href="#C-Program-Files-NVIDIA-GPU-Computing-Toolkit-CUDA-v12-9-bin" class="headerlink" title="C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.9\bin"></a><code>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.9\bin</code></h4><ul>
+<li><strong>用途</strong>：这是 CUDA Toolkit 的核心工具路径，包含可执行文件（如 <code>nvcc.exe</code>）。</li>
+<li><strong>功能</strong>：<ul>
+<li><code>nvcc.exe</code>：CUDA 编译器，用于编译 <code>.cu</code> 文件。</li>
+<li>其他工具：如 <code>ptxas</code>（汇编器）和 <code>nvprof</code>（性能分析工具）。</li>
+</ul>
+</li>
+<li><strong>重要性</strong>：必须添加到环境变量中，以便在命令行中运行 CUDA 工具。</li>
+</ul>
+<h4 id="C-Program-Files-NVIDIA-GPU-Computing-Toolkit-CUDA-v12-9-libnvvp"><a href="#C-Program-Files-NVIDIA-GPU-Computing-Toolkit-CUDA-v12-9-libnvvp" class="headerlink" title="C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.9\libnvvp"></a><code>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.9\libnvvp</code></h4><ul>
+<li><strong>用途</strong>：这是 CUDA Toolkit 中 Visual Profiler 的库路径。</li>
+<li><strong>功能</strong>：<ul>
+<li>包含 Visual Profiler 的相关文件，用于性能分析和优化 CUDA 应用程序。</li>
+</ul>
+</li>
+<li><strong>重要性</strong>：如果需要使用 Visual Profiler，可以添加到环境变量中；否则可以忽略。</li>
+</ul>
+<h4 id="C-Program-Files-NVIDIA-Corporation-NVIDIA-NvDLISR"><a href="#C-Program-Files-NVIDIA-Corporation-NVIDIA-NvDLISR" class="headerlink" title="C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR"></a><code>C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR</code></h4><ul>
+<li><strong>用途</strong>：这是 NVIDIA 驱动程序的一部分，通常与深度学习相关。</li>
+<li><strong>功能</strong>：<ul>
+<li>包含 NVIDIA 的动态库和服务文件，可能用于支持 GPU 驱动或深度学习推理。</li>
+</ul>
+</li>
+<li><strong>重要性</strong>：一般不需要手动添加到环境变量，驱动程序会自动管理。</li>
+</ul>
+<h4 id="C-Program-Files-NVIDIA-Corporation-NVIDIA-App-NvDLISR"><a href="#C-Program-Files-NVIDIA-Corporation-NVIDIA-App-NvDLISR" class="headerlink" title="C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR"></a><code>C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR</code></h4><ul>
+<li><strong>用途</strong>：这是 NVIDIA 驱动程序的一部分，可能与深度学习推理服务相关。</li>
+<li><strong>功能</strong>：<ul>
+<li>包含 NVIDIA 的服务文件，用于支持 GPU 驱动或深度学习推理。</li>
+</ul>
+</li>
+<li><strong>重要性</strong>：一般不需要手动添加到环境变量，驱动程序会自动管理。</li>
+</ul>
+<h3 id="其他信息"><a href="#其他信息" class="headerlink" title="其他信息"></a>其他信息</h3><h4 id="nvcc"><a href="#nvcc" class="headerlink" title="nvcc"></a><code>nvcc</code></h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">nvcc: NVIDIA (R) Cuda compiler driver<br>Copyright (c) 2005-2025 NVIDIA Corporation<br>Built on Tue_May_27_02:24:01_Pacific_Daylight_Time_2025<br>Cuda compilation tools, release 12.9, V12.9.86<br>Build cuda_12.9.r12.9/compiler.36037853_0<br></code></pre></td></tr></table></figure>
+
+<h4 id="where-nvcc"><a href="#where-nvcc" class="headerlink" title="where nvcc"></a><code>where nvcc</code></h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.9\bin\nvcc.exe<br></code></pre></td></tr></table></figure>
+
+<h4 id="nvidia-smi"><a href="#nvidia-smi" class="headerlink" title="nvidia-smi"></a><code>nvidia-smi</code></h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">Thu Aug 14 10:21:43 2025<br>+-----------------------------------------------------------------------------------------+<br>| NVIDIA-SMI 576.57 Driver Version: 576.57 CUDA Version: 12.9 |<br>|-----------------------------------------+------------------------+----------------------+<br>| GPU Name Driver-Model | Bus-Id Disp.A | Volatile Uncorr. ECC |<br>| Fan Temp Perf Pwr:Usage/Cap | Memory-Usage | GPU-Util Compute M. |<br>| | | MIG M. |<br>|=========================================+========================+======================|<br>| 0 NVIDIA GeForce RTX 4070 ... WDDM | 00000000:01:00.0 Off | N/A |<br>| N/A 40C P0 13W / 140W | 0MiB / 8188MiB | 0% Default |<br>| | | N/A |<br>+-----------------------------------------+------------------------+----------------------+<br><br>+-----------------------------------------------------------------------------------------+<br>| Processes: |<br>| GPU GI CI PID Type Process name GPU Memory |<br>| ID ID Usage |<br>|=========================================================================================|<br>| No running processes found |<br>+-----------------------------------------------------------------------------------------+<br></code></pre></td></tr></table></figure>
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
+<li><strong>cuDNN</strong> 和 <strong>TensorRT</strong> 是下载后可以直接使用的。</li>
+<li><strong>管理多个 CUDA</strong>：<ul>
+<li>确保每个版本的 CUDA Toolkit 独立存在。</li>
+<li>使用环境变量或工具动态切换版本。</li>
+</ul>
+</li>
+</ul>
 
                 
               </div>
@@ -304,6 +642,8 @@
         <a href="/blog/tags/%E7%A0%94%E7%A9%B6%E6%97%A5%E5%BF%97/" class="print-no-link">#研究日志</a>
       
         <a href="/blog/tags/daily-p/" class="print-no-link">#daily_p</a>
+      
+        <a href="/blog/tags/Nvida/" class="print-no-link">#Nvida</a>
       
     </div>
   
@@ -359,6 +699,12 @@
                 <div class="post-prevnext my-3">
                   <article class="post-prev col-6">
                     
+                    
+                      <a href="/blog/2025/08/15/8.15/" title="8.15">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">8.15</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
                     
                   </article>
                   <article class="post-next col-6">
