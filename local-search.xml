@@ -8,7 +8,7 @@
     <link href="/blog/2025/08/18/8.18/"/>
     <url>/blog/2025/08/18/8.18/</url>
     
-    <content type="html"><![CDATA[<h3 id="今天要做的事情"><a href="#今天要做的事情" class="headerlink" title="今天要做的事情"></a>今天要做的事情</h3><p>继续学习comfyui<br>尝试在工作流程中搭建stable diffusion文生图再接入TripoSR自动进行图片生成模型</p><p>优化调整TripoSR的参数<br>重新尝试部署这个东西<br>一步步找到cmake的相关问题，是因为nmake没有下载呢，还是因为软件被损坏了呢<br>一定要用原来的代码跑通一次</p><h3 id="下班的时候要做的事情"><a href="#下班的时候要做的事情" class="headerlink" title="下班的时候要做的事情"></a>下班的时候要做的事情</h3><ol><li>陪伴ee</li><li>整理好自己的时间线，并做好规划</li><li>看番</li><li>整理手机中的照片</li><li>学英语</li></ol>]]></content>
+    <content type="html"><![CDATA[<h3 id="今天要做的事情"><a href="#今天要做的事情" class="headerlink" title="今天要做的事情"></a>今天要做的事情</h3><p>继续学习comfyui<br>尝试在工作流程中搭建stable diffusion文生图再接入TripoSR自动进行图片生成模型</p><p>优化调整TripoSR的参数<br>重新尝试部署这个东西<br>一步步找到cmake的相关问题，是因为nmake没有下载呢，还是因为软件被损坏了呢<br>一定要用原来的代码跑通一次</p><h3 id="下班的时候要做的事情"><a href="#下班的时候要做的事情" class="headerlink" title="下班的时候要做的事情"></a>下班的时候要做的事情</h3><ol><li>陪伴ee</li><li>整理好自己的时间线，并做好规划</li><li>看番</li><li>整理手机中的照片</li><li>学英语</li></ol><h3 id="今天遇到的一些问题"><a href="#今天遇到的一些问题" class="headerlink" title="今天遇到的一些问题"></a>今天遇到的一些问题</h3><p>每个月用完了70个G之后的流量就是一个G一元钱了，而且这个流量包非常的不智能<br>流量包和流量包之间存在了很大的间隔时间，导致我的下载总是被取消<br>而且用电脑下载的带宽始终没有手机上面的带宽高<br>种种原因加起来<br>我可能都亏损了十多块了<br>可恶！！！</p><h3 id="comfyui的学习"><a href="#comfyui的学习" class="headerlink" title="comfyui的学习"></a>comfyui的学习</h3><h3 id="文件夹说明"><a href="#文件夹说明" class="headerlink" title="文件夹说明"></a>文件夹说明</h3><h4 id="animateddiff-models"><a href="#animateddiff-models" class="headerlink" title="animateddiff_models"></a>animateddiff_models</h4><ul><li>存储用于生成动态图像（动画）的模型文件。</li><li>适用于 Animated Diffusion 工作流。</li></ul><h4 id="animateddiff-motion-lora"><a href="#animateddiff-motion-lora" class="headerlink" title="animateddiff_motion_lora"></a>animateddiff_motion_lora</h4><ul><li>存储与动画相关的 LoRA（低秩适配）模型，用于增强动态效果或特定风格。</li></ul><h4 id="animateddiff-video-formats"><a href="#animateddiff-video-formats" class="headerlink" title="animateddiff_video_formats"></a>animateddiff_video_formats</h4><ul><li>包含与视频格式相关的文件或工具，用于处理生成的动画或视频。</li></ul><h4 id="blip"><a href="#blip" class="headerlink" title="blip"></a>blip</h4><ul><li>存储 BLIP（Bootstrapped Language-Image Pretraining）模型，用于图像描述生成或图像与文本的关系理解。</li></ul><h4 id="checkpoints"><a href="#checkpoints" class="headerlink" title="checkpoints"></a>checkpoints</h4><ul><li>存储主要的检查点文件（如 <code>.ckpt</code> 或 <code>.safetensors</code>），包括 Stable Diffusion 的核心模型。</li></ul><h4 id="clip"><a href="#clip" class="headerlink" title="clip"></a>clip</h4><ul><li>存储 CLIP 模型文件，用于文本和图像的编码。</li><li>CLIP 是图文生成和理解的关键组件。</li></ul><h4 id="clip-vision"><a href="#clip-vision" class="headerlink" title="clip_vision"></a>clip_vision</h4><ul><li>存储 CLIP 的视觉部分模型，用于图像编码。</li></ul><h4 id="CogVideo"><a href="#CogVideo" class="headerlink" title="CogVideo"></a>CogVideo</h4><ul><li>存储 CogVideo 模型，用于视频生成任务。</li></ul><h4 id="configs"><a href="#configs" class="headerlink" title="configs"></a>configs</h4><ul><li>包含配置文件（如 <code>.yaml</code>），用于定义模型参数、路径和工作流设置。</li></ul><h4 id="controlnet"><a href="#controlnet" class="headerlink" title="controlnet"></a>controlnet</h4><ul><li>存储 ControlNet 模型，用于在生成过程中控制图像的结构或特定特征。</li></ul><h4 id="diffusers"><a href="#diffusers" class="headerlink" title="diffusers"></a>diffusers</h4><ul><li>包含 Diffusers 库相关的文件或模型，用于扩散模型的实现。</li></ul><h4 id="diffusion-models"><a href="#diffusion-models" class="headerlink" title="diffusion_models"></a>diffusion_models</h4><ul><li>存储扩散模型的权重文件，通常是核心的图像生成模型。</li></ul><h4 id="embeddings"><a href="#embeddings" class="headerlink" title="embeddings"></a>embeddings</h4><ul><li>存储嵌入文件（如文本或图像的特征向量），用于增强生成效果或特定风格。</li></ul><h4 id="gligen"><a href="#gligen" class="headerlink" title="gligen"></a>gligen</h4><ul><li>存储 GLIGEN 模型，用于生成图像时的条件控制。</li></ul><h4 id="hypernetworks"><a href="#hypernetworks" class="headerlink" title="hypernetworks"></a>hypernetworks</h4><ul><li>存储超网络模型，用于增强生成效果或特定风格。</li></ul><h4 id="insightface"><a href="#insightface" class="headerlink" title="insightface"></a>insightface</h4><ul><li>存储 InsightFace 模型，用于人脸识别或生成任务。</li></ul><h4 id="Joy-caption"><a href="#Joy-caption" class="headerlink" title="Joy_caption"></a>Joy_caption</h4><ul><li>存储 JoyCaption 模型，用于生成图像的描述或标题。</li></ul><h4 id="layerstyle"><a href="#layerstyle" class="headerlink" title="layerstyle"></a>layerstyle</h4><ul><li>包含与图像层样式相关的模型或工具，用于生成特定风格的图像。</li></ul><h4 id="liveportrait"><a href="#liveportrait" class="headerlink" title="liveportrait"></a>liveportrait</h4><ul><li>存储 LivePortrait 模型，用于生成动态人像或动画效果。</li></ul><h4 id="LLM"><a href="#LLM" class="headerlink" title="LLM"></a>LLM</h4><ul><li>存储大型语言模型（Large Language Model）的权重文件或相关工具。</li></ul><h4 id="loras"><a href="#loras" class="headerlink" title="loras"></a>loras</h4><ul><li>存储 LoRA 模型，用于微调生成模型以实现特定风格或效果。</li></ul><h4 id="photomaker"><a href="#photomaker" class="headerlink" title="photomaker"></a>photomaker</h4><ul><li>包含与照片生成相关的模型或工具。</li></ul><h4 id="style-models"><a href="#style-models" class="headerlink" title="style_models"></a>style_models</h4><ul><li>存储风格模型，用于生成特定艺术风格的图像。</li></ul><h4 id="text-encoders"><a href="#text-encoders" class="headerlink" title="text_encoders"></a>text_encoders</h4><ul><li>存储文本编码器模型（如 CLIP 或 T5），用于将文本提示转换为潜在向量。</li></ul><h4 id="unet"><a href="#unet" class="headerlink" title="unet"></a>unet</h4><ul><li>存储 UNet 模型文件，这是扩散模型的核心组件，用于图像生成。</li></ul><h4 id="upscale-models"><a href="#upscale-models" class="headerlink" title="upscale_models"></a>upscale_models</h4><ul><li>存储图像放大（超分辨率）模型，用于提高生成图像的分辨率。</li></ul><h4 id="vae"><a href="#vae" class="headerlink" title="vae"></a>vae</h4><ul><li>存储 VAE（变分自编码器）模型，用于潜在空间的编码和解码。</li></ul><h4 id="vae-approx"><a href="#vae-approx" class="headerlink" title="vae_approx"></a>vae_approx</h4><ul><li>存储近似 VAE 模型，用于快速编码或解码。</li></ul><h4 id="xlabs"><a href="#xlabs" class="headerlink" title="xlabs"></a>xlabs</h4><ul><li>存储实验性模型或工具，可能用于测试新功能或未正式发布的</li></ul><h3 id="今天很悲伤的事情是"><a href="#今天很悲伤的事情是" class="headerlink" title="今天很悲伤的事情是"></a>今天很悲伤的事情是</h3><p>应该先安装vs再安装cuda<br>但是我很不巧的安装了cuda再安装的vs<br>明天就删掉了重新安装吧<br>伤心</p>]]></content>
     
     
     
@@ -33,9 +33,9 @@
     
     <tags>
       
-      <tag>研究日志</tag>
-      
       <tag>daily_p</tag>
+      
+      <tag>研究日志</tag>
       
     </tags>
     
@@ -60,9 +60,9 @@
     
     <tags>
       
-      <tag>研究日志</tag>
-      
       <tag>daily_p</tag>
+      
+      <tag>研究日志</tag>
       
       <tag>Nvida</tag>
       
@@ -89,9 +89,9 @@
     
     <tags>
       
-      <tag>研究日志</tag>
-      
       <tag>daily_p</tag>
+      
+      <tag>研究日志</tag>
       
     </tags>
     
@@ -116,9 +116,9 @@
     
     <tags>
       
-      <tag>研究日志</tag>
-      
       <tag>daily_p</tag>
+      
+      <tag>研究日志</tag>
       
       <tag>虚拟环境</tag>
       
@@ -158,9 +158,9 @@
     
     <tags>
       
-      <tag>研究日志</tag>
-      
       <tag>daily_p</tag>
+      
+      <tag>研究日志</tag>
       
     </tags>
     
@@ -185,9 +185,9 @@
     
     <tags>
       
-      <tag>研究日志</tag>
-      
       <tag>daily_p</tag>
+      
+      <tag>研究日志</tag>
       
     </tags>
     
@@ -212,9 +212,9 @@
     
     <tags>
       
-      <tag>研究日志</tag>
-      
       <tag>daily_p</tag>
+      
+      <tag>研究日志</tag>
       
     </tags>
     
@@ -239,9 +239,9 @@
     
     <tags>
       
-      <tag>研究日志</tag>
-      
       <tag>daily_p</tag>
+      
+      <tag>研究日志</tag>
       
       <tag>方向寻找</tag>
       
@@ -268,13 +268,13 @@
     
     <tags>
       
-      <tag>摸鱼日记</tag>
+      <tag>daily_p</tag>
       
       <tag>研究日志</tag>
       
-      <tag>daily_p</tag>
-      
       <tag>汇总</tag>
+      
+      <tag>摸鱼日记</tag>
       
       <tag>模型修复</tag>
       
@@ -345,9 +345,9 @@
     
     <tags>
       
-      <tag>研究日志</tag>
-      
       <tag>daily_p</tag>
+      
+      <tag>研究日志</tag>
       
       <tag>模型修复</tag>
       
@@ -399,9 +399,9 @@
     
     <tags>
       
-      <tag>研究日志</tag>
-      
       <tag>daily_p</tag>
+      
+      <tag>研究日志</tag>
       
       <tag>模型修复</tag>
       
@@ -430,42 +430,13 @@
     
     <tags>
       
-      <tag>hexo学习</tag>
-      
-      <tag>研究日志</tag>
-      
       <tag>daily_p</tag>
       
-      <tag>建模</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>7.24做了虾米</title>
-    <link href="/blog/2025/07/24/7.24/"/>
-    <url>/blog/2025/07/24/7.24/</url>
-    
-    <content type="html"><![CDATA[<h1 id="7-24做的事情"><a href="#7-24做的事情" class="headerlink" title="7.24做的事情"></a>7.24做的事情</h1><h2 id="上午"><a href="#上午" class="headerlink" title="上午"></a>上午</h2><p>上午的时候了解了一下人工智能相关的一些事情，理清了这些名词之间的关系。</p><h2 id="下午"><a href="#下午" class="headerlink" title="下午"></a>下午</h2><h2 id="实践学习了hexo的使用方法，然后现在正在用hexo写这篇文章，感觉还是挺方便的，尤其是可以直接在本地预览，修改之后就可以看到效果。其实上午我还没有把机器学习，深度学习和CNN之间关系的韦恩图画出来呢，没准可以让AI直接画出来"><a href="#实践学习了hexo的使用方法，然后现在正在用hexo写这篇文章，感觉还是挺方便的，尤其是可以直接在本地预览，修改之后就可以看到效果。其实上午我还没有把机器学习，深度学习和CNN之间关系的韦恩图画出来呢，没准可以让AI直接画出来" class="headerlink" title="实践学习了hexo的使用方法，然后现在正在用hexo写这篇文章，感觉还是挺方便的，尤其是可以直接在本地预览，修改之后就可以看到效果。其实上午我还没有把机器学习，深度学习和CNN之间关系的韦恩图画出来呢，没准可以让AI直接画出来"></a>实践学习了hexo的使用方法，然后现在正在用hexo写这篇文章，感觉还是挺方便的，尤其是可以直接在本地预览，修改之后就可以看到效果。<br>其实上午我还没有把机器学习，深度学习和CNN之间关系的韦恩图画出来呢，没准可以让AI直接画出来</h2><h3 id="自言自语"><a href="#自言自语" class="headerlink" title="自言自语"></a>自言自语</h3><p>我还有好多的东西没有去研究<br>感觉好兴奋<br>哈哈哈哈哈哈哈<br>这些东西都可以复现吗<br>很多都保存在收藏夹里面的，找时间整理整理哦<br>我觉得在做事情的选择的时候应该有一个自己的体系，就是什么事情什么研究是当下需要的，什么是可以放一放的，这样就不会被眼前的事情牵着鼻子走了。</p><h3 id="下午的计划"><a href="#下午的计划" class="headerlink" title="下午的计划"></a>下午的计划</h3><ul><li>继续学习hexo的高级用法</li><li>尝试将之前的笔记迁移到hexo上</li><li>研究一下如何自定义主题</li><li>了解一下如何部署到远程服务器</li><li>继续摸鱼，放松一下心情</li></ul><h3 id="下午完成的事情"><a href="#下午完成的事情" class="headerlink" title="下午完成的事情"></a>下午完成的事情</h3><ul><li>成功的部署了hexo到github上</li></ul><h3 id="我的问题"><a href="#我的问题" class="headerlink" title="我的问题"></a>我的问题</h3><p>我觉得这个东西有一个不是很方便的地方<br>只能在我的电脑上面整，要是我的电脑网不好不是完犊子了吗可恶</p><p>我使用的是branch那是不是意味着我在main里面的那些文件是可以删除的呢<br>嘿嘿</p>]]></content>
-    
-    
-    <categories>
-      
-      <category>课余兴趣</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>摸鱼日记</tag>
+      <tag>研究日志</tag>
       
       <tag>hexo学习</tag>
       
-      <tag>研究日志</tag>
+      <tag>建模</tag>
       
     </tags>
     
@@ -490,13 +461,42 @@
     
     <tags>
       
-      <tag>hexo学习</tag>
+      <tag>daily_p</tag>
       
       <tag>研究日志</tag>
       
-      <tag>daily_p</tag>
+      <tag>hexo学习</tag>
       
       <tag>汇总</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>7.24做了虾米</title>
+    <link href="/blog/2025/07/24/7.24/"/>
+    <url>/blog/2025/07/24/7.24/</url>
+    
+    <content type="html"><![CDATA[<h1 id="7-24做的事情"><a href="#7-24做的事情" class="headerlink" title="7.24做的事情"></a>7.24做的事情</h1><h2 id="上午"><a href="#上午" class="headerlink" title="上午"></a>上午</h2><p>上午的时候了解了一下人工智能相关的一些事情，理清了这些名词之间的关系。</p><h2 id="下午"><a href="#下午" class="headerlink" title="下午"></a>下午</h2><h2 id="实践学习了hexo的使用方法，然后现在正在用hexo写这篇文章，感觉还是挺方便的，尤其是可以直接在本地预览，修改之后就可以看到效果。其实上午我还没有把机器学习，深度学习和CNN之间关系的韦恩图画出来呢，没准可以让AI直接画出来"><a href="#实践学习了hexo的使用方法，然后现在正在用hexo写这篇文章，感觉还是挺方便的，尤其是可以直接在本地预览，修改之后就可以看到效果。其实上午我还没有把机器学习，深度学习和CNN之间关系的韦恩图画出来呢，没准可以让AI直接画出来" class="headerlink" title="实践学习了hexo的使用方法，然后现在正在用hexo写这篇文章，感觉还是挺方便的，尤其是可以直接在本地预览，修改之后就可以看到效果。其实上午我还没有把机器学习，深度学习和CNN之间关系的韦恩图画出来呢，没准可以让AI直接画出来"></a>实践学习了hexo的使用方法，然后现在正在用hexo写这篇文章，感觉还是挺方便的，尤其是可以直接在本地预览，修改之后就可以看到效果。<br>其实上午我还没有把机器学习，深度学习和CNN之间关系的韦恩图画出来呢，没准可以让AI直接画出来</h2><h3 id="自言自语"><a href="#自言自语" class="headerlink" title="自言自语"></a>自言自语</h3><p>我还有好多的东西没有去研究<br>感觉好兴奋<br>哈哈哈哈哈哈哈<br>这些东西都可以复现吗<br>很多都保存在收藏夹里面的，找时间整理整理哦<br>我觉得在做事情的选择的时候应该有一个自己的体系，就是什么事情什么研究是当下需要的，什么是可以放一放的，这样就不会被眼前的事情牵着鼻子走了。</p><h3 id="下午的计划"><a href="#下午的计划" class="headerlink" title="下午的计划"></a>下午的计划</h3><ul><li>继续学习hexo的高级用法</li><li>尝试将之前的笔记迁移到hexo上</li><li>研究一下如何自定义主题</li><li>了解一下如何部署到远程服务器</li><li>继续摸鱼，放松一下心情</li></ul><h3 id="下午完成的事情"><a href="#下午完成的事情" class="headerlink" title="下午完成的事情"></a>下午完成的事情</h3><ul><li>成功的部署了hexo到github上</li></ul><h3 id="我的问题"><a href="#我的问题" class="headerlink" title="我的问题"></a>我的问题</h3><p>我觉得这个东西有一个不是很方便的地方<br>只能在我的电脑上面整，要是我的电脑网不好不是完犊子了吗可恶</p><p>我使用的是branch那是不是意味着我在main里面的那些文件是可以删除的呢<br>嘿嘿</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>课余兴趣</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>研究日志</tag>
+      
+      <tag>hexo学习</tag>
+      
+      <tag>摸鱼日记</tag>
       
     </tags>
     
