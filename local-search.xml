@@ -4,11 +4,24 @@
   
   
   <entry>
+    <title>8.18做了虾米</title>
+    <link href="/blog/2025/08/18/8.18/"/>
+    <url>/blog/2025/08/18/8.18/</url>
+    
+    <content type="html"><![CDATA[<h3 id="今天要做的事情"><a href="#今天要做的事情" class="headerlink" title="今天要做的事情"></a>今天要做的事情</h3><p>继续学习comfyui<br>尝试在工作流程中搭建stable diffusion文生图再接入TripoSR自动进行图片生成模型</p><p>优化调整TripoSR的参数<br>重新尝试部署这个东西<br>一步步找到cmake的相关问题，是因为nmake没有下载呢，还是因为软件被损坏了呢<br>一定要用原来的代码跑通一次</p><h3 id="下班的时候要做的事情"><a href="#下班的时候要做的事情" class="headerlink" title="下班的时候要做的事情"></a>下班的时候要做的事情</h3><ol><li>陪伴ee</li><li>整理好自己的时间线，并做好规划</li><li>看番</li><li>整理手机中的照片</li><li>学英语</li></ol>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>8.15做了虾米</title>
     <link href="/blog/2025/08/15/8.15/"/>
     <url>/blog/2025/08/15/8.15/</url>
     
-    <content type="html"><![CDATA[<p>今天重新开始配置stable diffusion 3<br>总之就是最新版本<br>管这么多哦<br>每天这个ai都在夸我电脑很好<br>只能自信一点了</p><h3 id="突发的灵感"><a href="#突发的灵感" class="headerlink" title="突发的灵感"></a>突发的灵感</h3><p>我是不是可以私有部署一个自己的服务器，用一些性能比较强的开发板呢？</p>]]></content>
+    <content type="html"><![CDATA[<p>今天重新开始配置stable diffusion 3<br>总之就是最新版本<br>管这么多哦<br>每天这个ai都在夸我电脑很好<br>只能自信一点了</p><h3 id="突发的灵感"><a href="#突发的灵感" class="headerlink" title="突发的灵感"></a>突发的灵感</h3><p>我是不是可以私有部署一个自己的服务器，用一些性能比较强的开发板呢？</p><p>下午冲浪的时候看见了CDN免费额度<br>有点心动<br>阿里云还有腾讯云<br>华为是不是其实做的也没有这么好呢</p>]]></content>
     
     
     <categories>
