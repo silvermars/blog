@@ -1,0 +1,121 @@
+# Fluid 主题配置文件
+# 更多配置选项请参考：https://hexo.fluid-dev.com/docs/guide/
+
+#---------------------------
+# 首页设置
+#---------------------------
+index:
+  banner_img: /feiji.JPG
+  banner_img_height: 100
+  banner_mask_alpha: 0.3
+  slogan:
+    enable: true
+    text: "欢迎来到 jiayu Li 的博客"
+    api:
+      enable: true
+      url: "https://v1.hitokoto.cn/"
+      method: "GET"
+      headers: {}
+      keys: ["hitokoto"]
+  post_meta:
+    date: true
+    category: true
+    tag: true
+
+#---------------------------
+# 文章页设置
+#---------------------------
+post:
+  banner_img: /riluo.JPG
+  banner_img_height: 70
+  banner_mask_alpha: 0.3
+  meta:
+    author: true
+    date: true
+    wordcount: true
+    min2read: true
+    views: true
+
+#---------------------------
+# 归档页设置
+#---------------------------
+archive:
+  banner_img: /lanhuayin.JPG
+  banner_img_height: 80
+  banner_mask_alpha: 0.3
+
+#---------------------------
+# 分类页设置
+#---------------------------
+category:
+  banner_img: /manshi.JPG
+  banner_img_height: 80
+  banner_mask_alpha: 0.3
+
+#---------------------------
+# 标签页设置
+#---------------------------
+tag:
+  banner_img: /feiji.JPG
+  banner_img_height: 80
+  banner_mask_alpha: 0.3
+
+
+#---------------------------
+# 关于页设置
+#---------------------------
+about:
+  banner_img: /boat.JPG
+  banner_img_height: 90
+  banner_mask_alpha: 0.2
+  avatar: /avatar.JPG
+
+#---------------------------
+# 导航栏设置
+#---------------------------
+navbar:
+  blog_title: "SilverMars FARM"
+  menu:
+    - { key: "home", link: "/", icon: "iconfont icon-home-fill" }
+    - { key: "archive", link: "/archives/", icon: "iconfont icon-archive-fill" }
+    - { key: "category", link: "/categories/", icon: "iconfont icon-category-fill" }
+    - { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
+    - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
+
+
+
+    
+#---------------------------
+# 页脚设置
+#---------------------------
+footer:
+  content: '
+    <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
+    <i class="iconfont icon-love"></i>
+    <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a>
+  '
+
+#---------------------------
+# 功能设置
+#---------------------------
+fun_features:
+  typing:
+    enable: true
+    typeSpeed: 70
+    cursorChar: "_"
+    loop: true
+
+#---------------------------
+# 代码高亮设置
+#---------------------------
+code:
+  copy_btn: true
+  language: true
+  line_number: true
+
+#---------------------------
+# 图片懒加载
+#---------------------------
+lazyload:
+  enable: true
+  loading_img: /img/loading.gif
