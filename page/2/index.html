@@ -1,0 +1,993 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/blog/img/fluid.png">
+  <link rel="icon" href="/blog/img/fluid.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="jiayu Li">
+  <meta name="keywords" content="AI, 机器学习, 学术研究, Hexo, 科研日志">
+  
+    <meta name="description" content="专注于人工智能、机器学习和学术研究的个人博客">
+<meta property="og:type" content="website">
+<meta property="og:title" content="jiayu Li&#39;s Blog">
+<meta property="og:url" content="https://silvermars.github.io/blog/page/2/index.html">
+<meta property="og:site_name" content="jiayu Li&#39;s Blog">
+<meta property="og:description" content="专注于人工智能、机器学习和学术研究的个人博客">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="jiayu Li">
+<meta property="article:tag" content="AI, 机器学习, 学术研究, Hexo, 科研日志">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>jiayu Li&#39;s Blog</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/blog/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/blog/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/blog/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"silvermars.github.io","root":"/blog/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":true,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":true,"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/blog/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/blog/js/utils.js" ></script>
+  <script  src="/blog/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 100vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/blog/">
+      <strong>SilverMars FARM</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/blog/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/blog/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/blog/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/blog/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/blog/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/blog/feiji.JPG') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="欢迎来到 jiayu Li 的博客"></span>
+          
+        </div>
+
+        
+      </div>
+
+      
+        <div class="scroll-down-bar">
+          <i class="iconfont icon-arrowdown"></i>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div id="board"
+          style="margin-top: 0">
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/blog/2025/08/15/8.15/" target="_self">
+          8.15做了虾米
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/blog/2025/08/15/8.15/" target="_self">
+        <div>
+          今天重新开始配置stable diffusion 3总之就是最新版本管这么多哦每天这个ai都在夸我电脑很好只能自信一点了 突发的灵感我是不是可以私有部署一个自己的服务器，用一些性能比较强的开发板呢？ 下午冲浪的时候看见了CDN免费额度有点心动阿里云还有腾讯云华为是不是其实做的也没有这么好呢
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-08-15 09:50" pubdate>
+              2025-08-15
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/blog/categories/text-to-3D/" class="category-chain-item">text_to_3D</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/blog/tags/%E7%A0%94%E7%A9%B6%E6%97%A5%E5%BF%97/">#研究日志</a>
+            
+              <a href="/blog/tags/daily-p/">#daily_p</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/blog/2025/08/14/8.14/" target="_self">
+          8.14做了虾米
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/blog/2025/08/14/8.14/" target="_self">
+        <div>
+          昨天和今天删掉了电脑中的大部分东西。今天重新配置我的电脑，重新下载里面的那些东西。 关于 CUDA 和 cuDNN 的相关介绍1. CUDA 和 cuDNN 的作用CUDA（Compute Unified Device Architecture） 作用： CUDA 是 NVIDIA 提供的通用并行计算平台和编程模型。 它允许开发者使用 GPU 进行通用计算（不仅限于图形渲染）。 提供了底层的 GP
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-08-14 09:46" pubdate>
+              2025-08-14
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/blog/categories/text-to-3D/" class="category-chain-item">text_to_3D</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/blog/tags/%E7%A0%94%E7%A9%B6%E6%97%A5%E5%BF%97/">#研究日志</a>
+            
+              <a href="/blog/tags/daily-p/">#daily_p</a>
+            
+              <a href="/blog/tags/Nvida/">#Nvida</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/blog/2025/08/13/8.13/" target="_self">
+          8.13做了虾米
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/blog/2025/08/13/8.13/" target="_self">
+        <div>
+          我觉得开学之后自己有可能丧失掉写博客的时间和能力专业课很忙，电脑很重，人很懒尽量坚持更新吧 早上要做的事情 尝试在虚拟机的电脑上面部署你自己的博客虽然说这样子做会有一定暴露隐私的风险但是部署一个东西感觉还是很好玩的不对，虚拟机上面没有装git指令但是也可以用类似的二进制文件来执行吧就是感觉可能内存会有一点不够用尝试一下  重新尝试tripoSR的部署，使用torchmcubes进行实践想知道问题是
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-08-13 09:03" pubdate>
+              2025-08-13
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/blog/categories/text-to-3D/" class="category-chain-item">text_to_3D</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/blog/tags/%E7%A0%94%E7%A9%B6%E6%97%A5%E5%BF%97/">#研究日志</a>
+            
+              <a href="/blog/tags/daily-p/">#daily_p</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/blog/2025/08/12/8.12/" target="_self">
+          8.12做了虾米
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/blog/2025/08/12/8.12/" target="_self">
+        <div>
+          早上学习了一点知识关于虚拟环境的forge，mamba还有conda之间的关系以后要是还想看的话可以去收藏夹重新看哦感觉还是挺不错的 记录一点conda的相关指令conda env list我觉得conda的这个指令还挺好的，用了这个就不用自己记录那些路径的名字了，虽然其实可能也记得住，但还是方便很多。conda activate envname是用来激活相关环境的 对应的conda deacti
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-08-12 09:08" pubdate>
+              2025-08-12
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/blog/categories/text-to-3D/" class="category-chain-item">text_to_3D</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/blog/tags/%E7%A0%94%E7%A9%B6%E6%97%A5%E5%BF%97/">#研究日志</a>
+            
+              <a href="/blog/tags/daily-p/">#daily_p</a>
+            
+              <a href="/blog/tags/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">#虚拟环境</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/blog/2025/08/11/%E4%B8%8D%E4%B8%8A%E5%AD%A6%E8%A6%81%E5%81%9A%E7%9A%84%E4%BA%8B%E6%83%85/" target="_self">
+          不上学要做的事情
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/blog/2025/08/11/%E4%B8%8D%E4%B8%8A%E5%AD%A6%E8%A6%81%E5%81%9A%E7%9A%84%E4%BA%8B%E6%83%85/" target="_self">
+        <div>
+          学英语很好笑，现在都还没有报名去考试，真的要开始学了啊！！ 学车暂时计划是周天8.17的时候去合场，然后8.23(周六)的时候去考试，把那些基本的东西记住就好了，正常开肯定能过的。拿了驾照可能也不会经常开哦哈哈哈
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-08-11 09:16" pubdate>
+              2025-08-11
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/blog/2025/08/11/8.11/" target="_self">
+          8.11做了虾米
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/blog/2025/08/11/8.11/" target="_self">
+        <div>
+          今天下了非常大的暴雨 下次想把视频发b站然后附上链接，不然会有一种迷迷糊糊的感觉，附上链接就一定要有地方要存放我的视频，那要租服务器了啊，木有钱做这个事情，但是之后的时候可以考虑考虑（事后回忆版本）  我总觉得自己在工位上就会有一种紧迫感，这种紧迫感会推动自己找点事情做，不至于在家里躺上一整天这会不会代表，我更适合上班呢~~~ 但是这种雨天真是可恶啊，没有以往的十足干劲了 还有两个星期实习就结束了
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-08-11 08:58" pubdate>
+              2025-08-11
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/blog/categories/text-to-3D/" class="category-chain-item">text_to_3D</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/blog/tags/%E7%A0%94%E7%A9%B6%E6%97%A5%E5%BF%97/">#研究日志</a>
+            
+              <a href="/blog/tags/daily-p/">#daily_p</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/blog/2025/08/08/8.8/" target="_self">
+          8.8!!!
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/blog/2025/08/08/8.8/" target="_self">
+        <div>
+          今天真的破防了，为什么安装环境这这这么复杂啊 我终于知道为什么要用anaconda做这些库的安装了今天真破防了 因为偷懒让ai帮我看requirment需要安装的东西然后就不知道ai帮我改了啥了······webui成功的打开了但是！！！模型不能正常使用一直报错尝试了很多的方法还是不行放在comfyui里面倒是没有任何问题 cuda12.4安装了然后听说11.8更加兼容就安装了11.8真不能相信a
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-08-08 18:18" pubdate>
+              2025-08-08
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/blog/categories/text-to-3D/" class="category-chain-item">text_to_3D</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/blog/tags/%E7%A0%94%E7%A9%B6%E6%97%A5%E5%BF%97/">#研究日志</a>
+            
+              <a href="/blog/tags/daily-p/">#daily_p</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/blog/2025/08/07/8.7/" target="_self">
+          8.7做了虾米
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/blog/2025/08/07/8.7/" target="_self">
+        <div>
+          上午要做的事情 测试一下shap-e能不能生成稍微好一点的模型 查找tripoSR的环境依赖以及stable diffusion的环境依赖和自己的环境依赖来比对 配置关于stable diffusion的环境  下午要做的事情上午的事情一点没有做现在来试试呢 现在是下午五点三十七 今天下午偶然间看见了有的同学的成绩算错了，那肯定就是英方的成绩出来了，我经过一番计算，感觉大事不妙，可能我的成绩比想象
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-08-07 08:57" pubdate>
+              2025-08-07
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/blog/categories/text-to-3D/" class="category-chain-item">text_to_3D</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/blog/tags/%E7%A0%94%E7%A9%B6%E6%97%A5%E5%BF%97/">#研究日志</a>
+            
+              <a href="/blog/tags/daily-p/">#daily_p</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/blog/2025/08/06/8.6/" target="_self">
+          8.6做了虾米
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/blog/2025/08/06/8.6/" target="_self">
+        <div>
+          上午要做的事情不断地尝试学习meshlab的使用方法，但是感觉一点变化都没有和我用open3D的效果差别并不大，就是根本没有任何变化 目前的进度总结问一下gemini你知道文本生成3D应该怎么入门吗？我现在在这条路的学习上面有很大的问题。因为是在公司实习，因此我需要做的事情更多的是偏向于实际应用的开发的。而并不是自己创建一个新的东西。我的导师希望我能在40天左右的时间里面做一个ai和3D建模相结合
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-08-06 08:45" pubdate>
+              2025-08-06
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/blog/categories/text-to-3D/" class="category-chain-item">text_to_3D</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/blog/tags/%E7%A0%94%E7%A9%B6%E6%97%A5%E5%BF%97/">#研究日志</a>
+            
+              <a href="/blog/tags/daily-p/">#daily_p</a>
+            
+              <a href="/blog/tags/%E6%96%B9%E5%90%91%E5%AF%BB%E6%89%BE/">#方向寻找</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/blog/2025/08/05/8.5/" target="_self">
+          8.5做了虾米
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/blog/2025/08/05/8.5/" target="_self">
+        <div>
+          上午要做的事情进一步进行模型修复的工作尝试做一个ui界面，让这个程序能够通过图形化的方式进行操作学习吴恩达的机器学习，做一点笔记进行单词PK，总之是做一点单词上面的学习powerBI学习一下是做什么的 目前的进展下午求助了gpt老师，gpt老师告诉我可以实时pymeshlab这个软件，我心想meshlab不是之前电脑上面下载的吗，但是不管这么多，我立马去尝试一下，到时候实在不行的话我就去整那个很厉
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-08-05 08:51" pubdate>
+              2025-08-05
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/blog/categories/%E6%97%A5%E7%A8%8B%E8%A7%84%E5%88%92/" class="category-chain-item">日程规划</a>
+  
+  
+    <span>></span>
+    
+  <a href="/blog/categories/%E6%97%A5%E7%A8%8B%E8%A7%84%E5%88%92/text-to-3D/" class="category-chain-item">text_to_3D</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/blog/tags/daily-p/">#daily_p</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+
+
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <a class="extend prev" rel="prev" href="/blog/"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/blog/">1</a><span class="page-number current">2</span><a class="page-number" href="/blog/page/3/#board">3</a><a class="extend next" rel="next" href="/blog/page/3/#board"><i class="iconfont icon-arrowright"></i></a>
+    </span>
+  </nav>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/blog/js/events.js" ></script>
+<script  src="/blog/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        jQuery.ajax({
+          type: 'GET',
+          url: 'https://v1.hitokoto.cn/',
+          headers: {},
+          dataType: 'json',
+          success: function(result) {
+            var apiText;
+            if (result) {
+              var keys = 'hitokoto'.split(',');
+              if (result instanceof Array) {
+                result = result[0];
+              }
+              for (const k of keys) {
+                var value = result[k];
+                if (typeof value === 'string') {
+                  apiText = value;
+                  break;
+                } else if (value instanceof Object) {
+                  result = value;
+                }
+              }
+            }
+            apiText ? typing(apiText) : typing(text);
+          },
+          error: function(xhr, status, error) {
+            if (error) {
+              console.error('Failed to request https://v1.hitokoto.cn/:', error);
+            }
+            typing(text);
+          }
+        })
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/blog/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  <script  src="/blog/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/blog/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>

@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>通信原理 网课</title>
+    <link href="/blog/2025/10/23/%E9%80%9A%E4%BF%A1%E5%8E%9F%E7%90%86/"/>
+    <url>/blog/2025/10/23/%E9%80%9A%E4%BF%A1%E5%8E%9F%E7%90%86/</url>
+    
+    <content type="html"><![CDATA[<p>基础知识：<br>Rs（symbol rate）符号速率：每秒传输的符号数，单位为波特（Baud）。每个符号可以携带多个比特的信息。<br>符号是什么呢？符号是信息的基本单位，它可以是一个比特、一个字符或一个更复杂的结构，具体取决于所使用的调制方式和编码方案。<br>比如，使用二进制调制时，每个符号携带1个比特的信息；使用四进制调制时，每个符号携带2个比特的信息。</p><p>调制的基本概念：<br>调制是将信息信号转换为适合于传输的形式的过程。它通过改变载波信号的某些特性（如幅度、频率或相位）来实现。常见的调制方式包括幅度调制（AM）、频率调制（FM）和相位调制（PM）等。</p><p>调制的目的是为了提高信号在传输过程中的抗干扰能力和传输效率。频率越高，传输速度通常也越快，但同时也更容易受到噪声和干扰的影响。因此根据不同的场景选择合适的调制方式是非常重要的。在需要抗干扰的场景下，可能会选择较低频率的调制方式；而在需要高传输速率的场景下，则可能选择较高频率的调制方式。</p><p>Rb（bit rate）比特率：每秒传输的比特数，单位为比特每秒（bps）。</p><p>N种符号值也就是我们常说的N元</p><p>二元符号有一个特殊的名字，叫做比特(bit)，也就是0和1<br>二元序列也叫做bit序列</p><p>morse码（一个点一个横杠两种变化，几种变化就是几元）我们假设每秒能按下一个按键的话，那它就是一个3bit&#x2F;s的传输速率，不强调它是二元的</p><p>在打字的时候使用的ascll码 N&#x3D;256元（8bit）速度就是5sym&#x2F;s * 8bit&#x2F;sym &#x3D; 40bit&#x2F;s（40bps）5个符号每秒，每个符号8bit</p><p>比特数一般比元数更方便讨论，所以一般我们说的都是他们的bit数<br>K&#x3D;log2（N）</p><p>一兆（1MB）等于1024KB，等于1024×1024B，等于1024×1024×8bit</p><p>一般一个字节是8bit</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>9.1</title>
+    <link href="/blog/2025/09/10/9.10/"/>
+    <url>/blog/2025/09/10/9.10/</url>
+    
+    <content type="html"><![CDATA[<p>今天什么事情都没有做<br>虽然说明天就要继续上课了，但是好像一点都不紧张哈</p><h3 id="锐评明日方舟"><a href="#锐评明日方舟" class="headerlink" title="锐评明日方舟"></a>锐评明日方舟</h3><p>没有更新的这段时间一直在玩这个游戏<br>八月七号左右的时间开始玩的，到现在一个月左右的时间了<br>整体感觉还是不错的<br>每一次通关的感觉都很爽<br>现在的国服真的很友好<br>之前的国际服服真的太难了<br>不会多赠送一个六星<br>运气不好的情况下很容易卡关<br>然后就要花很多的时间去慢慢的解锁解决这些事情<br>或者说是要花一定的时间去适应这些不同的体系<br>每一次慢慢的磨通关的感觉还是很好的！！！</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>9.9</title>
+    <link href="/blog/2025/09/09/9.9/"/>
+    <url>/blog/2025/09/09/9.9/</url>
+    
+    <content type="html"><![CDATA[<p>今天是星期二，也就是上学的第二天<br>明天是星期三就是上学的第三天<br>然后我很喜欢说废话哈哈哈</p><h3 id="前一段时间都做了什么"><a href="#前一段时间都做了什么" class="headerlink" title="前一段时间都做了什么"></a>前一段时间都做了什么</h3><p>在这个暑假，我学习了相关的知识</p><h3 id="今天学了的东西"><a href="#今天学了的东西" class="headerlink" title="今天学了的东西"></a>今天学了的东西</h3><p>今天上课学习了通信原理<br>还学习了digital signal processing<br>然后后面的事情就是我一直在玩明日方舟了<br>最近真的很痴迷这个游戏</p><p>从明天开始，就不能这么痴迷的玩明日方舟了，再玩的话学习就会落下了！！！</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>8.25</title>
+    <link href="/blog/2025/08/25/8.25/"/>
+    <url>/blog/2025/08/25/8.25/</url>
+    
+    <content type="html"><![CDATA[<p>今天是上班的最后一天<br>嘿嘿<br>但是 很遗憾的事情是马上就要开学了<br>可恶<br>出去玩出去玩<br>俺好想出去玩呢！！！！<br>一定要出去玩呀<br>就是不知道去虾米地方<br>今天结束了去看看哈哈哈哈</p><p>大草原说起来还没有去过呢<br>但是是不是大草原换一个季节去会更好呢</p><p>嘻嘻嘻</p><p>北海吗，感觉一年四季应该都很合适吧</p><p>大连哇</p><p>想出门了</p><h3 id="后续可以优化的方向"><a href="#后续可以优化的方向" class="headerlink" title="后续可以优化的方向"></a>后续可以优化的方向</h3><p>在如何提高精细程度的事情上面可以再多下一点功夫<br>运用LLM生成了模型之后再拼接起来</p><p>通过加权算法生成一些更加精细的模型</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>8.22</title>
+    <link href="/blog/2025/08/22/8.22/"/>
+    <url>/blog/2025/08/22/8.22/</url>
+    
+    <content type="html"><![CDATA[<p>今天好好的了解调试我的代码然后给我的组长还有leader汇报一下</p><h3 id="小插曲"><a href="#小插曲" class="headerlink" title="小插曲"></a>小插曲</h3><p>今天来总结一下这段时间的工作流</p><p>在进行图形处理的时候很多的包文件还有相关的库文件都是没有办法直接在国内的网络条件下下载的<br>因此很不好的事情是这些依赖项的缺失导致了项目进展缓慢，甚至无法进行下去。<br>我想出来了一个很棒的解决方法<br>利用学校的虚拟机在平台下载好文件上传到云盘中<br>利用云盘再对文件进行下载</p><h3 id="汇报的稿子"><a href="#汇报的稿子" class="headerlink" title="汇报的稿子"></a>汇报的稿子</h3><p>整个项目我一共研究了两个模型<br>一个模型是openai的shap-e条件生成模型<br>另外一个是triposr的二维图像生成三维图像模型</p><p>这两个模型之间的有许多的不同点</p><p>我先介绍一下第一个模型：<br>第一个模型将大量的模型利用transformer编码器编码成潜在的向量（对信息进行标注自动增加权重，向量形式），然后利用一个多层感知机（一个用来分类的东西（中心在于线性可分））通过调整权重，让3D物体和文字相匹配，生成一个专属于它的隐函数。最后把这些隐含的表达通过一个marching cubes的算法生成一个网格模型</p><p>因此对于这个模型，可以通过增加训练集的方式来提升对于特定场景的优化，但是时间不是特别的充裕，所以我换了一个方向，选择了其他的模型。</p><p>第二个模型：<br>这个模型首先利用输入图像作为特征条件，然后通过长期训练的多视角预测模型生成一个物体的多视角图像，</p><p>有了多视角图像，就到了平常最熟悉的nerf神经表面重建，通过多视角图像进行三维重建，nerf（三位空间中的坐标对应 颜色，密度）<br>最后把这些隐含的表达通过一个marching cubes的算法生成一个网格模型</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>8.21</title>
+    <link href="/blog/2025/08/22/8.21/"/>
+    <url>/blog/2025/08/22/8.21/</url>
+    
+    <content type="html"><![CDATA[<p>今日<br>玩明日方舟<br>无心学习<br>继续调试代码<br>把优化细节的meshlab功能调试出来了</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>meshlab</title>
+    <link href="/blog/2025/08/20/meshlab/"/>
+    <url>/blog/2025/08/20/meshlab/</url>
+    
+    <content type="html"><![CDATA[<h3 id="网址链接"><a href="#网址链接" class="headerlink" title="网址链接"></a>网址链接</h3><ul><li>Meshlab 修补建议（英文）：<ul><li><a href="https://www.utilities-online.info/blogs/how-to-cleanup-and-refine-meshes-in-meshlab">https://www.utilities-online.info/blogs/how-to-cleanup-and-refine-meshes-in-meshlab</a></li></ul></li><li>Meshlab 入门指南（中文&#x2F;文档整理）：<ul><li><a href="https://wenku.csdn.net/column/5fikxfpejm">https://wenku.csdn.net/column/5fikxfpejm</a></li></ul></li><li>meshlab 官方网站：<ul><li><a href="https://www.meshlab.net/">https://www.meshlab.net/</a></li></ul></li></ul><h3 id="功能概览"><a href="#功能概览" class="headerlink" title="功能概览"></a>功能概览</h3><p><img src="/blog/image_meshlab/menu.png"></p><p>下面是对应的菜单项及过滤器的中文说明</p><h3 id="Show-current-filter-script"><a href="#Show-current-filter-script" class="headerlink" title="- Show current filter script"></a>- <code>Show current filter script</code></h3><pre><code class="hljs">- 显示当前过滤器脚本</code></pre><p><img src="/blog/image_meshlab/script.png"></p><h4 id="对话框功能详解"><a href="#对话框功能详解" class="headerlink" title="对话框功能详解"></a>对话框功能详解</h4><ul><li>列表区（中间大方框）<br>显示当前脚本中的过滤器（按顺序排列）。每一行是一条“过滤器调用（带当前参数）”。可以看到同一个过滤器多次出现在脚本中（表示会多次运行，参数可不同）。</li><li>Move Up &#x2F; Move Down<br>将选中的过滤器项在脚本中上移或下移，改变执行顺序。顺序至关重要：前面的过滤器会影响后面过滤器的输入。</li><li>Remove<br>删除选中的脚本项（从流水线中移除该步骤）。</li><li>Edit Parameters<br>编辑选中过滤器的参数，会弹出该过滤器的参数对话框，让你调整阈值、选项等，编辑后脚本项会保存这些参数。</li><li>Save Script<br>把当前过滤器序列导出为脚本文件（便于复用或在其他项目&#x2F;机器上重放）。（通常以 MeshLab 的脚本格式保存为 XML&#x2F;脚本文件，可以在下次用 Open Script 载入。）</li><li>Open Script<br>加载已保存的过滤器脚本并显示在列表中。</li><li>Clear Script<br>清空当前列表，重置脚本编辑区。</li><li>Apply Script<br>按列表顺序执行脚本中的所有过滤器（对当前活动图层&#x2F;选择的网格应用）。执行时会使用列表中保存的参数；部分过滤器在运行时若未完整参数可能仍弹出对话。</li><li>Close<br>关闭脚本编辑对话框（不自动保存脚本，除非你点了 Save Script）。</li></ul><h4 id="一般流程"><a href="#一般流程" class="headerlink" title="一般流程"></a>一般流程</h4><ol><li>在主界面用 Duplicate Layer 复制当前网格，保留备份。</li><li>打开脚本编辑器，按你想要的处理流程把一系列过滤器加入列表（或先用 GUI 单次操作，然后在脚本窗口用 Save Script 导出）。</li><li>选中每个过滤器，点 Edit Parameters 细调参数（特别是会删除或改变拓扑的过滤器）。</li><li>使用 Move Up&#x2F;Down 调整顺序，确保依赖关系正确（例如先修复非流形，再删除孤立小片段，再做简化）。</li><li>先在副本上点 Apply Script 运行一次，观察结果；若满意就 Save Script 备用。</li><li>若需对多个模型批量执行，可把脚本保存，再用 MeshlabServer &#x2F; PyMeshLab 或 MeshLab 的脚本载入批处理。</li></ol><h3 id="Selection"><a href="#Selection" class="headerlink" title="- Selection"></a>- <code>Selection</code></h3><pre><code class="hljs">- 选择（Selection）</code></pre><p><img src="/blog/image_meshlab/selection.png"></p><p>Conditional Face Selection<br>条件性面选择（按条件选择面）<br>Conditional Vertex Selection<br>条件性顶点选择（按条件选择顶点）<br>Delete ALL Faces<br>删除所有面<br>Delete Selected Faces Del<br>删除所选面 Del<br>Delete Selected Faces and Vertices Shift+Del<br>删除所选面与顶点 Shift+Del<br>Delete Selected Vertices Ctrl+Del<br>删除所选顶点 Ctrl+Del<br>Dilate Selection Ctrl+Shift++<br>膨胀选择（扩张选区） Ctrl+Shift++<br>Erode Selection Ctrl+Shift+-<br>腐蚀选择（收缩选区） Ctrl+Shift+-<br>Invert Selection Ctrl+Shift+I<br>反选 Ctrl+Shift+I<br>Select ‘problematic’ faces<br>选择“有问题”的面（自动标记的异常面）<br>Select All Ctrl+Shift+A<br>全选 Ctrl+Shift+A<br>Select Border<br>选择边界（边界环）<br>Select Connected Faces<br>选择连通面（与所选面连通的一组面）<br>Select Convex Hull Visible Points<br>选择凸包上可见点（可见的凸包点）<br>Select Faces by Color<br>按颜色选择面<br>Select Faces by view angle<br>按视角选择面（根据面法线与视线夹角）<br>Select Faces from Vertices<br>从顶点选择面（由选中的顶点反选相关面）<br>Select Faces with edges longer than…<br>选择边长超过…的面<br>Select None Ctrl+Shift+D<br>清除选择（不选任何） Ctrl+Shift+D<br>Select Outliers<br>选择异常点&#x2F;离群面（噪声&#x2F;离散片段）<br>Select Self Intersecting Faces<br>选择自相交面<br>Select Vertex Texture Seams<br>选择顶点处的纹理缝（UV 接缝处顶点）<br>Select Vertices from Faces<br>从面选择顶点（由选中的面反选其顶点）<br>Select by Face Quality<br>按面质量选择（根据质量指标筛选面）<br>Select by Vertex Quality<br>按顶点质量选择（根据质量指标筛选顶点）<br>Select non Manifold Edges<br>选择非流形边<br>Select non Manifold Vertices<br>选择非流形顶点<br>Select small disconnected component<br>选择小的断开连通分量（小独立片段）</p><h3 id="Cleaning-and-Repairing"><a href="#Cleaning-and-Repairing" class="headerlink" title="- Cleaning and Repairing"></a>- <code>Cleaning and Repairing</code></h3><pre><code class="hljs">- 清理与修复</code></pre><p><img src="/blog/image_meshlab/Cleaning.png"><br>Merge Close Vertices<br>合并接近的顶点：把空间上非常接近的顶点按容差合并为一个，清理重叠&#x2F;冗余顶点。<br>Merge Wedge Texture Coord<br>合并楔形纹理坐标：将同一顶点在不同面的分离 UV 合并，减少纹理接缝。<br>Remove Duplicate Faces<br>删除重复面：移除位置&#x2F;顶点集合完全相同的重复面。<br>Remove Duplicate Vertices<br>删除重复顶点：去除位置相同或几乎相同的顶点并修正面索引。<br>Remove Isolated Folded Faces by Edge Flip<br>通过翻转边移除孤立折叠面：用边翻转尝试修复或去除小的折叠&#x2F;扭曲面片。</p><h4 id="Remove-Isolated-pieces-wrt-Diameter"><a href="#Remove-Isolated-pieces-wrt-Diameter" class="headerlink" title="Remove Isolated pieces (wrt Diameter)"></a>Remove Isolated pieces (wrt Diameter)</h4><p><img src="/blog/image_meshlab/RIPD.png"><br>按直径移除孤立片段：根据组件几何尺寸（直径）阈值删除很小的独立连通块。</p><ul><li>Enter max diameter of isolated pieces (abs and %)</li><li>左侧（world unit &#x2F; 绝对距离）：以模型坐标单位直接输入“最大允许直径”。凡直径小于等于此值的连通组件会被删除。</li><li>右侧（perc）：以模型尺寸的相对百分比输入（相对于模型的参考长度，通常是包围盒对角线）。示例：如果包围盒对角线 &#x3D; 1.04277，则 perc &#x3D; 10 → 对应绝对阈值 ≈ 0.104277（截图即为此关系）。公式：阈值_abs &#x3D; bbox_diag * (perc &#x2F; 100)。</li><li>Remove unreferenced vertices（复选框）<br>含义：删除被移除组件后，是否同时清除不再被任何面引用的顶点（通常勾选以清理残留悬空顶点）。</li><li>PyMeshLab Filter &#x2F; meshing_remove_connected_component_by_diameter<br>对应脚本名；可点击 “Copy PyMeshLab call to clipboard” 导出可复现命令，便于批处理。</li><li>Default &#x2F; Help &#x2F; Close &#x2F; Apply<br>Default：恢复默认参数；Help：查看帮助；Apply：执行；Close：关闭对话框。</li></ul><h5 id="Remove-Isolated-pieces-wrt-Face-Num"><a href="#Remove-Isolated-pieces-wrt-Face-Num" class="headerlink" title="Remove Isolated pieces (wrt Face Num.)"></a>Remove Isolated pieces (wrt Face Num.)</h5><p><img src="/blog/image_meshlab/RIPF.png"><br>按面数移除孤立片段：根据面数量阈值删除小的独立连通块。</p><ul><li><p>Enter minimum conn. comp size（最小连通组件面数）<br>这是“最小连通组件面数”的阈值（以三角面&#x2F;多边形面计）。所有面数小于该值的独立连通组件（即与主体不连通的小岛）将被删除。换句话说：把这个数值当作“保留组件的最小面数”，低于它的连通块会被清掉。<br>示例：若设为 <code>25</code>，则任何只有 <code>24</code> 面或更少的独立小块都会被删除；<code>25</code> 面及以上的连通块会被保留。</p></li><li><p>Remove unreferenced vertices（复选框）<br>含义：在删除那些小连通块之后，是否同时删除不再被任何面引用的顶点（悬空顶点）。  </p></li><li><p>PyMeshLab Filter<br>名称：meshing_remove_connected_component_by_face_number<br>说明：这是对应的脚本调用名称。点击 “Copy PyMeshLab call to clipboard” 可以复制可复现的脚本命令，便于批处理或记录参数。</p></li><li><p>一般取值<br>非常保守（只删单个三角 &#x2F; 极小片段）：1–5<br>常规清理（删噪声小岛）：20–200（视模型复杂度和总面数而定）<br> 激进清理（仅保留主体 &#x2F; 删除大多数小组件）：将阈值设为比第二大连通块面数更大的值，或直接使用“保留最大连通块”策略</p></li><li><p>快速估算<br>先运行一次统计（Compute Connected Components）或查看图层信息，得到各连通块的面数分布；然后根据分布选择阈值（例如：去掉小于中位数或低频的小块）。</p></li></ul><p>Remove T-Vertices<br>删除 T 型顶点：消除边与边中点相连形成的 T 交点，改善拓扑一致性。<br>Remove Unreferenced Vertices<br>删除未被引用的顶点：移除不被任何面引用的孤立顶点。<br>Remove Vertices wrt Quality<br>按质量移除顶点：依据面&#x2F;三角形质量（如退化、细长）移除导致低质量的顶点或元素。<br>Remove Zero Area Faces<br>删除零面积面：移除面积为零或近似零的退化面。<br>Repair non Manifold Edges<br>修复非流形边：处理被 3 个或以上面共享的边等拓扑问题。<br>Repair non Manifold Vertices by splitting<br>通过拆分修复非流形顶点：将冲突的顶点拆分为多个以消除拓扑异常。<br>Select Self Intersecting Faces<br>选择自相交面：定位与选中与自身或其他面发生相交的面片。<br>Snap Mismatched Borders Alt+   对齐不匹配的边界（快捷键 Alt+）：把相邻补丁&#x2F;网格间不对齐的边界顶点吸附对齐以修复接缝。</p><h3 id="Create-New-Mesh-Layer"><a href="#Create-New-Mesh-Layer" class="headerlink" title="- Create New Mesh Layer"></a>- <code>Create New Mesh Layer</code></h3><pre><code class="hljs">- 新建网格图层</code></pre><p><img src="/blog/image_meshlab/new_mesh.png"></p><p>Annulus<br>圆环 — 生成环状平面&#x2F;圆环网格。<br>Box&#x2F;Cube<br>盒子 &#x2F; 立方体 — 生成长方体或立方体基元。<br>Cone<br>圆锥 — 生成圆锥体。<br>Dodecahedron<br>十二面体 — 正十二面体基元。<br>Dodecahedron (symmetric)<br>对称十二面体 — 对称化处理的十二面体。<br>Fit a plane to selection<br>对选区拟合平面 — 用平面拟合当前选中的点&#x2F;面。<br>Fractal Terrain<br>分形地形 — 生成分形噪声驱动的地形网格。<br>Grid Generator<br>网格&#x2F;格子生成器 — 生成规则网格（格子）平面。<br>Icosahedron<br>二十面体 — 正二十面体基元。<br>Implicit Surface<br>隐式曲面 — 基于隐函数生成的曲面（如 SDF）。<br>Noisy Isosurface<br>带噪声的等值面 — 在噪声场上提取的等值面，用于测试&#x2F;效果演示。<br>Octahedron<br>八面体 — 正八面体基元。<br>Points on a Sphere<br>球面点集 — 在球面上均匀&#x2F;指定分布生成点集。<br>Sphere<br>球体 — 生成球面或实心球网格。<br>Sphere Cap<br>球冠（球帽）— 球体的一部分（切去后的帽状部分）。<br>Structure Synth Mesh Creation<br>StructureSynth 网格创建 — 使用 StructureSynth 风格规则生成结构化网格（基于规则语法的结构合成）。<br>Tetrahedron<br>四面体 — 正四面体基元。<br>Torus<br>环面 &#x2F; 圆环面 — 生成圆环形托罗斯网格（甜甜圈形状）。</p><h3 id="Remeshing-Simplification-and-Reconstruction"><a href="#Remeshing-Simplification-and-Reconstruction" class="headerlink" title="- Remeshing, Simplification and Reconstruction"></a>- <code>Remeshing, Simplification and Reconstruction</code></h3><pre><code class="hljs">- 重网格化、简化与重建</code></pre><p><img src="/blog/image_meshlab/rebuild.png"></p><p>Alpha Complex&#x2F;Shape<br>Alpha 复形&#x2F;Alpha 形状 — 基于点集构建 alpha 复杂&#x2F;形状（拓扑&#x2F;几何近似）。<br>Alpha Wrap<br>Alpha 包装 — 用 alpha 算法生成封装表面。<br>Build a Polyline from Selected Edges<br>从所选边构建折线 — 将选中边转为折线&#x2F;多段线。</p><h5 id="Close-Holes"><a href="#Close-Holes" class="headerlink" title="Close Holes"></a>Close Holes</h5><p>填补孔洞 — 自动封闭网格中的孔洞。<br><img src="/blog/image_meshlab/closehole.png"></p><ul><li>Max size to be closed<br>能被自动关闭的最大孔洞“边界长度”阈值（以边的数量&#x2F;边环长度计）。例如 30 表示边界由 ≤30 条边组成的孔洞会被填补，超过的孔洞不会自动关闭。</li><li>Close holes with selected faces（复选）<br>仅对当前选中的面所在的连通区域中的孔洞执行关闭操作（用于局部修补）。</li><li>Select the newly created faces（复选）<br>填补后自动选中新生成的面，便于立刻检查或对新面进行后处理（如平滑、重新计算法线）。建议勾选用于验证结果。</li><li>Prevent creation of selfIntersecting faces（复选）<br>尝试避免产生自相交三角面（若可能，会采取更保守的生成策略）。一般保持勾选以减少拓扑错误。</li><li>Refine Filled Hole（复选）<br>对填补得到的面进行优化&#x2F;细化，使新生成面更均匀或边长更接近周围网格。若不勾选，生成的面可能比较粗糙。</li><li>Hole Refinement Edge Len (abs and %)（绝对&#x2F;百分比）<br>细化时目标边长，左为绝对世界单位，右为相对于模型尺度（通常是包围盒对角线）的百分比。用来控制新网格的密度&#x2F;细分等级。</li><li>PyMeshLab Filter 名称：meshing_close_holes（可以复制脚本以复现</li></ul><p>Convex Hull<br>凸包 — 生成点云或网格的凸包。<br>Create Solid Wireframe<br>生成实体线框 — 由边生成可视化的实体线框结构。<br>Cubic stylization<br>立方风格化 — 将网格风格化为更“方&#x2F;立方”外观。<br>Curvature flipping optimization<br>曲率翻转优化 — 与曲率&#x2F;法线方向相关的拓扑&#x2F;几何优化。<br>Cut mesh along crease edges<br>沿折痕边切割网格 — 在锐边&#x2F;折痕处切割以分离片段或创建缝。<br>Generate Scalar Harmonic Field<br>生成标量谐波场 — 计算网格上的标量谐波场（用于参数化&#x2F;分割等）。<br>Global Align Meshes<br>全局对齐网格 — 对多模型进行全局配准对齐。<br>ICP Between Meshes<br>网格间 ICP（迭代最近点）对齐 — 用 ICP 算法配准两个网格&#x2F;点云。<br>Iso Parametrization Build Atlased Mesh<br>等参化：构建带图集的网格 — 生成带纹理图集的参数化网格。<br>Iso Parametrization Remeshing<br>等参化重网格化 — 基于参数化实施重网格化。<br>Iso Parametrization transfer between meshes<br>等参化：在网格间传递参数化 — 将参数化&#x2F;纹理从一个网格转移到另一个。<br>Iso Parametrization: Main<br>等参化：主控面板 — 等参化主功能入口。<br>Make mesh developable<br>使网格可展（可展开为平面） — 将网格处理为可展曲面（便于制造&#x2F;折纸等）。<br>Marching Cubes (APSS)<br>马尔奇立方体（APSS）— 基于 APSS 的体素等值面重建。<br>Marching Cubes (RIMLS)<br>马尔奇立方体（RIMLS）— 基于 RIMLS 的等值面重建。<br>Mesh Boolean: Difference<br>网格布尔：差集 — 网格差集运算。<br>Mesh Boolean: Intersection<br>网格布尔：交集 — 网格交集运算。<br>Mesh Boolean: Symmetric Difference (XOR)<br>网格布尔：对称差（XOR） — 网格异或运算。<br>Mesh Boolean: Union<br>网格布尔：并集 — 网格并集运算。<br>Planar flipping optimization<br>平面翻转优化 — 与面朝向&#x2F;平面翻转相关的优化处理。<br>Points Cloud Movement<br>点云移动 — 对点云进行平移&#x2F;变换或运动模拟。<br>Refine User-Defined<br>精化（用户定义） — 对用户定义区域或参数进行细化处理。<br>Remeshing: Isotropic Explicit Remeshing<br>重网格化：各向同性显式重网格化 — 生成更均匀三角网格。<br>Select Crease Edges<br>选择折痕边 — 自动选择网格中的尖锐&#x2F;折痕边。<br>Simplification: Clustering Decimation<br>简化：聚类降面 — 基于聚类的网格简化方法。<br>Simplification: Edge Collapse for Marching Cube meshes<br>简化：用于 Marching Cube 网格的边塌缩 — 为体素网格设计的塌缩简化。<br>Simplification: Quadric Edge Collapse Decimation<br>简化：二次型边塌缩降面 — 常用的四舍简化算法（保形损失小）。<br>Simplification: Quadric Edge Collapse Decimation (with texture)<br>简化（含纹理）：二次型边塌缩 — 同时考虑纹理坐标的简化。<br>Subdivision Surfaces: Butterfly Subdivision<br>曲面细分：Butterfly 算法 — 一种插值细分算法（保留原顶点位置）。<br>Subdivision Surfaces: Catmull-Clark<br>曲面细分：Catmull–Clark — 常用细分曲面算法（用于四边形网格）。<br>Subdivision Surfaces: Doo Sabin<br>曲面细分：Doo–Sabin — 四边形细分算法的一种。<br>Subdivision Surfaces: LS3 Loop<br>曲面细分：LS3 Loop — Loop 类细分的变体。<br>Subdivision Surfaces: Loop<br>曲面细分：Loop — 常用三角网格细分算法。<br>Subdivision Surfaces: Midpoint<br>曲面细分：中点细分 — 基于中点的简单细分方法。<br>Surface Reconstruction: Ball Pivoting<br>表面重建：球体铰接（Ball Pivoting） — 从点云重建网格的一种方法。<br>Surface Reconstruction: Screened Poisson<br>表面重建：Screened Poisson — Poisson 重建的改进方法，常用于扫描点云重建。<br>Surface Reconstruction: VCG<br>表面重建：VCG（库）方法 — 使用 VCGlib 提供的重建算法。<br>Tri to Quad by 4-8 Subdivision<br>三角转四边：4→8 细分法 — 通过细分将三角网格转为四边形为主。<br>Tri to Quad by smart triangle pairing<br>三角转四边：智能三角配对 — 通过配对三角形生成四边面。<br>Turn into Quad-Dominant mesh<br>转换为四边主导网格 — 将网格转换为以四边为主的拓扑。<br>Turn into a Pure-Triangular mesh<br>转换为纯三角网格 — 转成全部三角形的网格结构。<br>Uniform Mesh Resampling<br>均匀网格重采样 — 重新采样以得到更均匀分布的顶点&#x2F;三角。<br>Vertex Attribute Seam<br>顶点属性接缝 — 处理或标记顶点属性（如 UV&#x2F;颜色）产生的接缝。<br>Voronoi Filtering<br>Voronoi 过滤 — 基于 Voronoi &#x2F;权重场的滤波或重构操作。</p><h3 id="Polygonal-and-Quad-Mesh"><a href="#Polygonal-and-Quad-Mesh" class="headerlink" title="- Polygonal and Quad Mesh"></a>- <code>Polygonal and Quad Mesh</code></h3><pre><code class="hljs">- 多边形与四边形网格</code></pre><h3 id="Color-Creation-and-Processing"><a href="#Color-Creation-and-Processing" class="headerlink" title="- Color Creation and Processing"></a>- <code>Color Creation and Processing</code></h3><pre><code class="hljs">- 颜色生成与处理![](\image_meshlab\smooth.png)</code></pre><h3 id="Smoothing-Fairing-and-Deformation"><a href="#Smoothing-Fairing-and-Deformation" class="headerlink" title="- Smoothing, Fairing and Deformation"></a>- <code>Smoothing, Fairing and Deformation</code></h3><pre><code class="hljs">- 平滑、整形与变形</code></pre><p>Craters Generation<br>隕石坑生成 — 生成类似坑洞&#x2F;凹陷的表面细节（用于地形效果）。<br>Depth Smooth<br>深度平滑 — 对深度场&#x2F;距离场进行平滑处理，去除噪声。<br>Directional Geometry Preservation<br>方向性几何保留 — 平滑时保留主要方向&#x2F;锐边特征的约束方法。<br>Export to Sketchfab<br>导出到 Sketchfab — 将模型打包并上传&#x2F;导出为 Sketchfab 可发布格式。<br>Fractal Displacement<br>分形位移 — 用分形噪声对顶点施加位移，生成自然粗糙表面。<br>HC Laplacian Smooth<br>HC 拉普拉斯平滑 — Humphrey–Chew（HC）改进的拉普拉斯平滑，能更好保留细节。</p><p>Laplacian Smooth<br>拉普拉斯平滑 — 基本的邻域平均平滑（会产生收缩&#x2F;模糊）。</p><p>Laplacian Smooth (surface preserving)<br>拉普拉斯平滑（表面保留） — 带表面&#x2F;体积保留约束的拉普拉斯平滑，减少收缩。</p><p>MLS projection (APSS)<br>MLS 投影（APSS）— 基于 APSS 的移动最小二乘投影，用于点云&#x2F;网格重构和平滑。<br>MLS projection (RIMLS)<br>MLS 投影（RIMLS）— 基于 RIMLS 的投影方法，另一种 MLS 重构变体。<br>Per Vertex Geometric Function<br>每顶点几何函数 — 在顶点层面计算&#x2F;应用几何函数（用于变形或分析）。<br>Random Vertex Displacement<br>随机顶点位移 — 对顶点施加随机扰动（模拟噪声或制造粗糙感）。<br>ScaleDependent Laplacian Smooth<br>缩放相关拉普拉斯平滑 — 根据局部尺度自适应的拉普拉斯平滑。<br>Smooth Face Normals<br>平滑面法线 — 平滑面法线向量以改善光照&#x2F;渲染或用于后续滤波。<br>Smooth Vertex Quality<br>平滑顶点质量 — 平滑&#x2F;滤波顶点质量属性（quality attribute）。</p><h5 id="Taubin-Smooth"><a href="#Taubin-Smooth" class="headerlink" title="Taubin Smooth"></a>Taubin Smooth</h5><ul><li>Taubin 平滑 — 无收缩的拉普拉斯平滑方法，通过交替滤波减小体积损失。</li><li>Lambda（λ）<br>含义：第一步低通滤波的缩放系数（正值）。增大 λ 会增强第一次滤波的平滑强度。<br>常见范围&#x2F;建议：0.2 ～ 1.0；常用默认约 0.5。截图中 1 表示比较强的第一次滤波。</li><li>mu（μ）<br>含义：第二步低通滤波的缩放系数（通常为负值），用于抵消第一次滤波造成的收缩并形成近似无收缩效果。<br>常见范围&#x2F;建议：常用约 −0.52 ～ −0.6，截图中 −0.53 是经典的经验值。</li><li>Smoothing steps（迭代次数）<br>含义：执行多少次 λ&#x2F;μ 的一轮组合（每一步包含一次 λ 滤波和一次 μ 滤波）。<br>建议：小规模噪声 5–10；中等 10–30；过多会过度平滑并丢失细节。</li><li>Affect only selected faces（仅作用于选中面）<br>含义：只对当前选中的面应用平滑，未选区域保持不变。用于局部修复。</li><li>Preview（预览复选框）<br>含义：勾选后在应用之前显示实时预览（减慢响应），便于调参。</li></ul><p>TwoStep Smooth<br>两步平滑 — 分两步&#x2F;两阶段执行的平滑流程（通常先粗后细）。<br>UnSharp Mask Color<br>颜色反锐化掩膜（Unsharp Mask）— 在颜色通道上增强局部对比以锐化视觉细节。<br>UnSharp Mask Geometry<br>几何反锐化掩膜 — 在几何层面增强局部细节（类似锐化几何特征）。<br>UnSharp Mask Normals<br>法线反锐化掩膜 — 通过处理法线来增强视觉上的细节&#x2F;对比。<br>UnSharp Mask Quality<br>质量反锐化掩膜 — 基于质量属性的锐化&#x2F;增强过滤器。<br>Vertex Linear Morphing<br>顶点线性形变 — 按线性方式对顶点位置进行形态混合或插值变形</p><h3 id="Quality-Measure-and-Computations"><a href="#Quality-Measure-and-Computations" class="headerlink" title="- Quality Measure and Computations"></a>- <code>Quality Measure and Computations</code></h3><pre><code class="hljs">- 质量测量与计算</code></pre><p><img src="/blog/%5Cimage_meshlab%5Cquanlity.png"></p><p>Clamp Vertex Quality<br>夹紧顶点质量 — 将顶点质量值限制在给定范围内（裁剪异常值）。<br>Colorize by approximated geodesic distance from the selected points<br>按从选定点近似测地距离着色 — 根据顶点到所选点的近似测地距离生成颜色映射。<br>Colorize by border distance<br>按边界距离着色 — 根据顶点到网格边界的距离着色（用于可视化边界影响）。<br>Colorize by geodesic distance from a given point<br>按指定点的测地距离着色 — 以某一给定点为源，按测地距离着色。<br>Colorize by geodesic distance from the selected points<br>按所选点的测地距离着色 — 以所选点集为源按测地距离着色。<br>Compute Ambient occlusion<br>计算环境遮蔽 — 计算 AO 值以评估遮挡&#x2F;光照暗部（用于可视化）。<br>Compute Area&#x2F;Perimeter of selection<br>计算选区面积&#x2F;周长 — 统计当前选中区域的面积与周长。<br>Compute Geometric Measures<br>计算几何度量 — 计算多种几何指标（面积、边长、曲率等）。<br>Compute Obscurance<br>计算遮蔽程度（Obscurance） — 计算表面可见性&#x2F;遮挡度量（与 AO 类似）。<br>Compute Planar Section<br>计算平面截面 — 在指定平面上提取截线&#x2F;截面。<br>Compute Shape-Diameter Function<br>计算形状直径函数（SDF） — 用于分割与粗细度分析的形状度量。<br>Compute Topological Measures<br>计算拓扑度量 — 统计拓扑信息（连通分量、孔洞、Euler 特征等）。<br>Compute Topological Measures for Quad Meshes<br>为四边网格计算拓扑度量 — 针对四边形网格的拓扑统计。<br>Create Selection Perimeter Polyline<br>从选区创建周界折线 — 将选区边界导出为多段线&#x2F;折线。<br>Geometric Cylindrical Unwrapping<br>几何圆柱展开 — 将圆柱状表面展开为平面参数化（用于纹理展开）。<br>Overlapping Meshes<br>重叠网格检测 — 检测并标记网格间或网格自重叠区域。<br>Per Face Quality Function<br>面质量函数 — 计算并保存每个面的质量度量函数。<br>Per Face Quality Histogram<br>面质量直方图 — 面质量分布可视化统计。<br>Per Face Quality Stat<br>面质量统计 — 输出面质量的统计量（均值、方差等）。<br>Per Face Quality according to Triangle shape and aspect ratio<br>按三角形形状与纵横比的面质量 — 根据三角形形状&#x2F;长宽比评估面质量。<br>Per Vertex Quality Function<br>顶点质量函数 — 计算并保存每个顶点的质量度量。<br>Per Vertex Quality Histogram<br>顶点质量直方图 — 顶点质量分布可视化统计。<br>Per Vertex Quality Stat<br>顶点质量统计 — 输出顶点质量的统计量（均值、方差等）。<br>Quality Mapper applier<br>应用质量映射器 — 使用质量映射规则将质量值映射并写入属性。<br>Quality from raster coverage (Face)<br>从栅格覆盖得到面质量 — 根据栅格&#x2F;影像覆盖计算面级质量。<br>Quality from raster coverage (Vertex)<br>从栅格覆盖得到顶点质量 — 根据栅格&#x2F;影像覆盖计算顶点级质量。<br>Reorient face normals by geometry<br>按几何重定向面法线 — 根据几何一致性修正面法线朝向（统一外法线&#x2F;内法线）。<br>Saturate Vertex Quality<br>饱和值顶点质量 — 将顶点质量按阈值饱和（截断极值）。<br>Select by Face Quality<br>按面质量选择 — 根据面质量阈值选择面。<br>Select by Vertex Quality<br>按顶点质量选择 — 根据顶点质量阈值选择顶点。<br>Transfer Quality: Face to Vertex<br>传递质量：从面到顶点 — 将面级质量插值&#x2F;传递到顶点属性。<br>Transfer Quality: Vertex to Face<br>传递质量：从顶点到面 — 将顶点级质量聚合&#x2F;传递到面属性。<br>Vertex Quality from Camera<br>来自相机的顶点质量 — 根据相机可见性&#x2F;视角从相机数据计算顶点质量（例如可视性评分）。</p><h3 id="Normals-Curvatures-and-Orientation"><a href="#Normals-Curvatures-and-Orientation" class="headerlink" title="- Normals, Curvatures and Orientation"></a>- <code>Normals, Curvatures and Orientation</code></h3><pre><code class="hljs">- 法线、曲率与朝向</code></pre><h3 id="Mesh-Layer"><a href="#Mesh-Layer" class="headerlink" title="- Mesh Layer"></a>- <code>Mesh Layer</code></h3><pre><code class="hljs">- 网格图层</code></pre><h3 id="Raster-Layer"><a href="#Raster-Layer" class="headerlink" title="- Raster Layer"></a>- <code>Raster Layer</code></h3><pre><code class="hljs">- 光栅/栅格图层</code></pre><h3 id="Range-Map"><a href="#Range-Map" class="headerlink" title="- Range Map"></a>- <code>Range Map</code></h3><pre><code class="hljs">- 距离图 / 深度图（根据上下文可选译法）</code></pre><h3 id="Point-Set"><a href="#Point-Set" class="headerlink" title="- Point Set"></a>- <code>Point Set</code></h3><pre><code class="hljs">- 点集</code></pre><h3 id="Sampling"><a href="#Sampling" class="headerlink" title="- Sampling"></a>- <code>Sampling</code></h3><pre><code class="hljs">- 采样</code></pre><h3 id="Texture"><a href="#Texture" class="headerlink" title="- Texture"></a>- <code>Texture</code></h3><pre><code class="hljs">- 纹理</code></pre><h3 id="Camera"><a href="#Camera" class="headerlink" title="- Camera"></a>- <code>Camera</code></h3><pre><code class="hljs">- 相机</code></pre><h3 id="Other"><a href="#Other" class="headerlink" title="- Other"></a>- <code>Other</code></h3><pre><code class="hljs">- 其他</code></pre>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>8.20做了虾米</title>
+    <link href="/blog/2025/08/20/8.20/"/>
+    <url>/blog/2025/08/20/8.20/</url>
+    
+    <content type="html"><![CDATA[<h3 id="科目三的时间规划"><a href="#科目三的时间规划" class="headerlink" title="科目三的时间规划"></a>科目三的时间规划</h3><p>首先每天随机的刷题，很快就能把一千多道题刷完了<br>早上的时候150道<br>下午150道<br>晚上150道</p><p>然后是找到合适的自动挡的合场视频进行观看</p><p>精选1-3个好的文字帖子进行学习（不同地区对于上车的要求并不相同，因此根据本地人说的来做）<br>上车核验身份，调整座椅，举手，下车检查，上车系上安全带，左转灯，挂d挡，手刹，出发</p><p>一号线路</p><p>二号线路</p><p>五号线路</p><h3 id="今天做的事情"><a href="#今天做的事情" class="headerlink" title="今天做的事情"></a>今天做的事情</h3><p><a href="https://wenku.csdn.net/column/5fikxfpejm">https://wenku.csdn.net/column/5fikxfpejm</a> 这个是mashlab的入门指南<br><a href="https://www.triposrai.com/posts/triposr-optimization-best-practices">https://www.triposrai.com/posts/triposr-optimization-best-practices</a>  这个是triposr优化的指南<br><a href="https://www.utilities-online.info/blogs/how-to-cleanup-and-refine-meshes-in-meshlab">https://www.utilities-online.info/blogs/how-to-cleanup-and-refine-meshes-in-meshlab</a> meshlab的修补建议</p><p>今天写了一篇meshlab的使用文档，应该可以基本的满足我的要求了<br>然后现在打算用pymeshlab尝试一下<br>要是可以自动化出一个东西那真的是太好了</p><h3 id="突发奇想"><a href="#突发奇想" class="headerlink" title="突发奇想"></a>突发奇想</h3><p>真的而很难理解为什么这么多人喜欢上班<br>我觉得上班真的是一件很耗费精力的事情<br>现在的感觉就是快死掉了<br>呵呵<br>也有可能是因为早上太早起来了<br>我晚上一定要在十二点之前睡觉<br>不然的话简直困到爆炸</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>8.19做了虾米</title>
+    <link href="/blog/2025/08/19/8.19/"/>
+    <url>/blog/2025/08/19/8.19/</url>
+    
+    <content type="html"><![CDATA[<h3 id="悲伤的开始"><a href="#悲伤的开始" class="headerlink" title="悲伤的开始"></a>悲伤的开始</h3><p>今天早上的时候虽然我七点钟起来了，但是真的好困啊<br>根本忍不住的困倦<br>脑袋都要撞到床上了<br>然后我就真的又睡着了<br>一直睡到了七点半<br>七点半洗澡洗漱<br>到了七点五十我才出门<br>今天八点五十多到公司<br>差点迟到了</p><h3 id="今天要做的事情"><a href="#今天要做的事情" class="headerlink" title="今天要做的事情"></a>今天要做的事情</h3><p>每天就是再配置环境的路上<br>之前好像我没有下载visual studio  integration 所以一直没有办法用cmake<br>我真的应该带上一个u盘，然后这些软件都放在我的u盘里<br>这样子每一次下载了就不用删掉了重新下载了<br>真的不知道要下载这么多次<br>真的快疯了</p><p>总之今天一定要让这个东西能正常的运行，用上原生的TripoSR<br>这个稍微体量小一点吧<br>后面就是要想办法把api接口整出来</p><h3 id="进度"><a href="#进度" class="headerlink" title="进度"></a>进度</h3><p>整体的连接工作都做好了<br>下一步我希望可以按下一个脚本然后自动的进入当前的环境<br>打开工作区，进入虚拟环境，开始运行服务器，打开comfyui<br>后续能不能comfyui也是一个接口呢<br>然后我在浏览器里面运行这个东西<br>把文字输入做成端口，利用deepseek自动生成提示词<br>然后输入comfyui，如果要调整相关生成信息，还是要进入comfyui才行<br>同时显示运行进度。<br>后续看看需要贴图就用，不用的话就算了。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>text_to_3D</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>研究日志</tag>
+      
+      <tag>daily_p</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>8.18做了虾米</title>
+    <link href="/blog/2025/08/18/8.18/"/>
+    <url>/blog/2025/08/18/8.18/</url>
+    
+    <content type="html"><![CDATA[<h3 id="今天要做的事情"><a href="#今天要做的事情" class="headerlink" title="今天要做的事情"></a>今天要做的事情</h3><p>继续学习comfyui<br>尝试在工作流程中搭建stable diffusion文生图再接入TripoSR自动进行图片生成模型</p><p>优化调整TripoSR的参数<br>重新尝试部署这个东西<br>一步步找到cmake的相关问题，是因为nmake没有下载呢，还是因为软件被损坏了呢<br>一定要用原来的代码跑通一次</p><h3 id="下班的时候要做的事情"><a href="#下班的时候要做的事情" class="headerlink" title="下班的时候要做的事情"></a>下班的时候要做的事情</h3><ol><li>陪伴ee</li><li>整理好自己的时间线，并做好规划</li><li>看番</li><li>整理手机中的照片</li><li>学英语</li></ol><h3 id="今天遇到的一些问题"><a href="#今天遇到的一些问题" class="headerlink" title="今天遇到的一些问题"></a>今天遇到的一些问题</h3><p>每个月用完了70个G之后的流量就是一个G一元钱了，而且这个流量包非常的不智能<br>流量包和流量包之间存在了很大的间隔时间，导致我的下载总是被取消<br>而且用电脑下载的带宽始终没有手机上面的带宽高<br>种种原因加起来<br>我可能都亏损了十多块了<br>可恶！！！</p><h3 id="comfyui的学习"><a href="#comfyui的学习" class="headerlink" title="comfyui的学习"></a>comfyui的学习</h3><h3 id="文件夹说明"><a href="#文件夹说明" class="headerlink" title="文件夹说明"></a>文件夹说明</h3><h4 id="animateddiff-models"><a href="#animateddiff-models" class="headerlink" title="animateddiff_models"></a>animateddiff_models</h4><ul><li>存储用于生成动态图像（动画）的模型文件。</li><li>适用于 Animated Diffusion 工作流。</li></ul><h4 id="animateddiff-motion-lora"><a href="#animateddiff-motion-lora" class="headerlink" title="animateddiff_motion_lora"></a>animateddiff_motion_lora</h4><ul><li>存储与动画相关的 LoRA（低秩适配）模型，用于增强动态效果或特定风格。</li></ul><h4 id="animateddiff-video-formats"><a href="#animateddiff-video-formats" class="headerlink" title="animateddiff_video_formats"></a>animateddiff_video_formats</h4><ul><li>包含与视频格式相关的文件或工具，用于处理生成的动画或视频。</li></ul><h4 id="blip"><a href="#blip" class="headerlink" title="blip"></a>blip</h4><ul><li>存储 BLIP（Bootstrapped Language-Image Pretraining）模型，用于图像描述生成或图像与文本的关系理解。</li></ul><h4 id="checkpoints"><a href="#checkpoints" class="headerlink" title="checkpoints"></a>checkpoints</h4><ul><li>存储主要的检查点文件（如 <code>.ckpt</code> 或 <code>.safetensors</code>），包括 Stable Diffusion 的核心模型。</li></ul><h4 id="clip"><a href="#clip" class="headerlink" title="clip"></a>clip</h4><ul><li>存储 CLIP 模型文件，用于文本和图像的编码。</li><li>CLIP 是图文生成和理解的关键组件。</li></ul><h4 id="clip-vision"><a href="#clip-vision" class="headerlink" title="clip_vision"></a>clip_vision</h4><ul><li>存储 CLIP 的视觉部分模型，用于图像编码。</li></ul><h4 id="CogVideo"><a href="#CogVideo" class="headerlink" title="CogVideo"></a>CogVideo</h4><ul><li>存储 CogVideo 模型，用于视频生成任务。</li></ul><h4 id="configs"><a href="#configs" class="headerlink" title="configs"></a>configs</h4><ul><li>包含配置文件（如 <code>.yaml</code>），用于定义模型参数、路径和工作流设置。</li></ul><h4 id="controlnet"><a href="#controlnet" class="headerlink" title="controlnet"></a>controlnet</h4><ul><li>存储 ControlNet 模型，用于在生成过程中控制图像的结构或特定特征。</li></ul><h4 id="diffusers"><a href="#diffusers" class="headerlink" title="diffusers"></a>diffusers</h4><ul><li>包含 Diffusers 库相关的文件或模型，用于扩散模型的实现。</li></ul><h4 id="diffusion-models"><a href="#diffusion-models" class="headerlink" title="diffusion_models"></a>diffusion_models</h4><ul><li>存储扩散模型的权重文件，通常是核心的图像生成模型。</li></ul><h4 id="embeddings"><a href="#embeddings" class="headerlink" title="embeddings"></a>embeddings</h4><ul><li>存储嵌入文件（如文本或图像的特征向量），用于增强生成效果或特定风格。</li></ul><h4 id="gligen"><a href="#gligen" class="headerlink" title="gligen"></a>gligen</h4><ul><li>存储 GLIGEN 模型，用于生成图像时的条件控制。</li></ul><h4 id="hypernetworks"><a href="#hypernetworks" class="headerlink" title="hypernetworks"></a>hypernetworks</h4><ul><li>存储超网络模型，用于增强生成效果或特定风格。</li></ul><h4 id="insightface"><a href="#insightface" class="headerlink" title="insightface"></a>insightface</h4><ul><li>存储 InsightFace 模型，用于人脸识别或生成任务。</li></ul><h4 id="Joy-caption"><a href="#Joy-caption" class="headerlink" title="Joy_caption"></a>Joy_caption</h4><ul><li>存储 JoyCaption 模型，用于生成图像的描述或标题。</li></ul><h4 id="layerstyle"><a href="#layerstyle" class="headerlink" title="layerstyle"></a>layerstyle</h4><ul><li>包含与图像层样式相关的模型或工具，用于生成特定风格的图像。</li></ul><h4 id="liveportrait"><a href="#liveportrait" class="headerlink" title="liveportrait"></a>liveportrait</h4><ul><li>存储 LivePortrait 模型，用于生成动态人像或动画效果。</li></ul><h4 id="LLM"><a href="#LLM" class="headerlink" title="LLM"></a>LLM</h4><ul><li>存储大型语言模型（Large Language Model）的权重文件或相关工具。</li></ul><h4 id="loras"><a href="#loras" class="headerlink" title="loras"></a>loras</h4><ul><li>存储 LoRA 模型，用于微调生成模型以实现特定风格或效果。</li></ul><h4 id="photomaker"><a href="#photomaker" class="headerlink" title="photomaker"></a>photomaker</h4><ul><li>包含与照片生成相关的模型或工具。</li></ul><h4 id="style-models"><a href="#style-models" class="headerlink" title="style_models"></a>style_models</h4><ul><li>存储风格模型，用于生成特定艺术风格的图像。</li></ul><h4 id="text-encoders"><a href="#text-encoders" class="headerlink" title="text_encoders"></a>text_encoders</h4><ul><li>存储文本编码器模型（如 CLIP 或 T5），用于将文本提示转换为潜在向量。</li></ul><h4 id="unet"><a href="#unet" class="headerlink" title="unet"></a>unet</h4><ul><li>存储 UNet 模型文件，这是扩散模型的核心组件，用于图像生成。</li></ul><h4 id="upscale-models"><a href="#upscale-models" class="headerlink" title="upscale_models"></a>upscale_models</h4><ul><li>存储图像放大（超分辨率）模型，用于提高生成图像的分辨率。</li></ul><h4 id="vae"><a href="#vae" class="headerlink" title="vae"></a>vae</h4><ul><li>存储 VAE（变分自编码器）模型，用于潜在空间的编码和解码。</li></ul><h4 id="vae-approx"><a href="#vae-approx" class="headerlink" title="vae_approx"></a>vae_approx</h4><ul><li>存储近似 VAE 模型，用于快速编码或解码。</li></ul><h4 id="xlabs"><a href="#xlabs" class="headerlink" title="xlabs"></a>xlabs</h4><ul><li>存储实验性模型或工具，可能用于测试新功能或未正式发布的</li></ul><h3 id="今天很悲伤的事情是"><a href="#今天很悲伤的事情是" class="headerlink" title="今天很悲伤的事情是"></a>今天很悲伤的事情是</h3><p>应该先安装vs再安装cuda<br>但是我很不巧的安装了cuda再安装的vs<br>明天就删掉了重新安装吧<br>伤心</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>text_to_3D</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>研究日志</tag>
+      
+      <tag>daily_p</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>8.15做了虾米</title>
+    <link href="/blog/2025/08/15/8.15/"/>
+    <url>/blog/2025/08/15/8.15/</url>
+    
+    <content type="html"><![CDATA[<p>今天重新开始配置stable diffusion 3<br>总之就是最新版本<br>管这么多哦<br>每天这个ai都在夸我电脑很好<br>只能自信一点了</p><h3 id="突发的灵感"><a href="#突发的灵感" class="headerlink" title="突发的灵感"></a>突发的灵感</h3><p>我是不是可以私有部署一个自己的服务器，用一些性能比较强的开发板呢？</p><p>下午冲浪的时候看见了CDN免费额度<br>有点心动<br>阿里云还有腾讯云<br>华为是不是其实做的也没有这么好呢</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>text_to_3D</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>研究日志</tag>
+      
+      <tag>daily_p</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>8.14做了虾米</title>
+    <link href="/blog/2025/08/14/8.14/"/>
+    <url>/blog/2025/08/14/8.14/</url>
+    
+    <content type="html"><![CDATA[<p>昨天和今天删掉了电脑中的大部分东西。<br>今天重新配置我的电脑，重新下载里面的那些东西。</p><h2 id="关于-CUDA-和-cuDNN-的相关介绍"><a href="#关于-CUDA-和-cuDNN-的相关介绍" class="headerlink" title="关于 CUDA 和 cuDNN 的相关介绍"></a>关于 CUDA 和 cuDNN 的相关介绍</h2><h3 id="1-CUDA-和-cuDNN-的作用"><a href="#1-CUDA-和-cuDNN-的作用" class="headerlink" title="1. CUDA 和 cuDNN 的作用"></a>1. CUDA 和 cuDNN 的作用</h3><h4 id="CUDA（Compute-Unified-Device-Architecture）"><a href="#CUDA（Compute-Unified-Device-Architecture）" class="headerlink" title="CUDA（Compute Unified Device Architecture）"></a>CUDA（Compute Unified Device Architecture）</h4><ul><li><strong>作用</strong>：<ul><li>CUDA 是 NVIDIA 提供的通用并行计算平台和编程模型。</li><li>它允许开发者使用 GPU 进行通用计算（不仅限于图形渲染）。</li><li>提供了底层的 GPU 加速功能，包括矩阵运算、向量运算等。</li></ul></li><li><strong>加速场景</strong>：<ul><li>通用计算任务（如矩阵乘法、线性代数）。</li><li>深度学习框架的基础计算（如张量操作）。</li><li>视频处理、图像处理等高性能计算任务。</li></ul></li></ul><h4 id="cuDNN（CUDA-Deep-Neural-Network-Library）"><a href="#cuDNN（CUDA-Deep-Neural-Network-Library）" class="headerlink" title="cuDNN（CUDA Deep Neural Network Library）"></a>cuDNN（CUDA Deep Neural Network Library）</h4><ul><li><strong>作用</strong>：<ul><li>cuDNN 是基于 CUDA 的深度学习专用加速库。</li><li>它提供了高度优化的实现，用于深度学习中的常见操作（如卷积、池化、归一化等）。</li><li>cuDNN 是深度学习框架（如 TensorFlow、PyTorch、ONNX Runtime 等）中不可或缺的组件。</li></ul></li><li><strong>加速场景</strong>：<ul><li>卷积神经网络（CNN）的前向传播和反向传播。</li><li>RNN、LSTM 等网络的优化。</li><li>深度学习模型的推理和训练。</li></ul></li></ul><h3 id="2-CUDA-和-cuDNN-的关系"><a href="#2-CUDA-和-cuDNN-的关系" class="headerlink" title="2. CUDA 和 cuDNN 的关系"></a>2. CUDA 和 cuDNN 的关系</h3><ul><li><strong>依赖关系</strong>：<ul><li>cuDNN 是基于 CUDA 构建的，它依赖于 CUDA 提供的底层计算能力。</li><li>安装 cuDNN 时，必须确保系统中已经安装了兼容版本的 CUDA。</li></ul></li><li><strong>协同工作</strong>：<ul><li>CUDA 提供通用的 GPU 加速能力。</li><li>cuDNN 在 CUDA 的基础上进一步优化了深度学习相关的操作。</li></ul></li></ul><h3 id="3-安装时是否会冲突？"><a href="#3-安装时是否会冲突？" class="headerlink" title="3. 安装时是否会冲突？"></a>3. 安装时是否会冲突？</h3><ul><li><strong>不会冲突</strong>：<ul><li>CUDA 和 cuDNN 是独立的库，它们可以共存并协同工作。</li><li>只需要确保安装的 cuDNN 版本与 CUDA 版本兼容即可。</li></ul></li><li><strong>版本兼容性</strong>：<ul><li>NVIDIA 提供了 CUDA 和 cuDNN 的兼容性表，可以在 NVIDIA cuDNN 下载页面查看。</li><li>例如：<ul><li>CUDA 11.8 对应 cuDNN 8.9。</li><li>CUDA 11.7 对应 cuDNN 8.7。</li></ul></li></ul></li></ul><h3 id="4-安装路径"><a href="#4-安装路径" class="headerlink" title="4. 安装路径"></a>4. 安装路径</h3><h4 id="CUDA："><a href="#CUDA：" class="headerlink" title="CUDA："></a>CUDA：</h4><ul><li><strong>默认安装路径</strong>：<ul><li>Windows: <code>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\vX.X</code></li><li>Linux: <code>/usr/local/cuda-X.X</code></li></ul></li><li><strong>包含的内容</strong>：<ul><li><code>bin</code>：CUDA 可执行文件（如 <code>nvcc</code>）。</li><li><code>lib</code>：CUDA 动态链接库。</li><li><code>include</code>：CUDA 头文件。</li></ul></li></ul><h4 id="cuDNN："><a href="#cuDNN：" class="headerlink" title="cuDNN："></a>cuDNN：</h4><ul><li><strong>安装步骤</strong>：<ul><li>安装时需要将解压后的文件手动复制到 CUDA 的安装目录中。</li><li><strong>Windows</strong>：<ul><li><code>bin</code> 文件夹中的动态链接库复制到 <code>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\vX.X\bin</code>。</li><li><code>lib</code> 文件夹中的库文件复制到 <code>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\vX.X\lib\x64</code>。</li><li><code>include</code> 文件夹中的头文件复制到 <code>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\vX.X\include</code>。</li></ul></li><li><strong>Linux</strong>：<ul><li>将 <code>lib</code> 和 <code>include</code> 文件夹复制到 <code>/usr/local/cuda-X.X</code>。</li></ul></li></ul></li></ul><h3 id="5-CUDA-和-cuDNN-的加速作用对比"><a href="#5-CUDA-和-cuDNN-的加速作用对比" class="headerlink" title="5. CUDA 和 cuDNN 的加速作用对比"></a>5. CUDA 和 cuDNN 的加速作用对比</h3><table><thead><tr><th>功能</th><th>CUDA</th><th>cuDNN</th></tr></thead><tbody><tr><td><strong>作用范围</strong></td><td>通用 GPU 加速</td><td>深度学习专用加速</td></tr><tr><td><strong>优化内容</strong></td><td>矩阵运算、向量运算、并行计算</td><td>卷积、池化、归一化、激活函数等深度学习操作</td></tr><tr><td><strong>依赖关系</strong></td><td>独立存在</td><td>依赖 CUDA</td></tr><tr><td><strong>适用场景</strong></td><td>视频处理、图像处理、科学计算</td><td>深度学习模型的训练和推理</td></tr></tbody></table><h2 id="拓展知识"><a href="#拓展知识" class="headerlink" title="拓展知识"></a>拓展知识</h2><h3 id="1-类似于-cuDNN-的库"><a href="#1-类似于-cuDNN-的库" class="headerlink" title="1. 类似于 cuDNN 的库"></a>1. 类似于 cuDNN 的库</h3><p>这些库直接依赖于 CUDA，并为特定领域提供优化的功能：</p><h4 id="1-1-NCCL-NVIDIA-Collective-Communications-Library"><a href="#1-1-NCCL-NVIDIA-Collective-Communications-Library" class="headerlink" title="1.1 NCCL (NVIDIA Collective Communications Library)"></a>1.1 NCCL (NVIDIA Collective Communications Library)</h4><ul><li><strong>作用</strong>：<ul><li>用于多 GPU 和多节点之间的高效通信。</li><li>提供了优化的操作（如广播、规约、点对点通信等）。</li></ul></li><li><strong>依赖</strong>：<ul><li>仅依赖 CUDA。</li></ul></li><li><strong>应用场景</strong>：<ul><li>分布式深度学习训练（如 TensorFlow 和 PyTorch 的分布式训练）。</li></ul></li></ul><h4 id="1-2-cuBLAS-CUDA-Basic-Linear-Algebra-Subroutines"><a href="#1-2-cuBLAS-CUDA-Basic-Linear-Algebra-Subroutines" class="headerlink" title="1.2 cuBLAS (CUDA Basic Linear Algebra Subroutines)"></a>1.2 cuBLAS (CUDA Basic Linear Algebra Subroutines)</h4><ul><li><strong>作用</strong>：<ul><li>提供高性能的线性代数运算（如矩阵乘法、向量运算）。</li></ul></li><li><strong>依赖</strong>：<ul><li>仅依赖 CUDA。</li></ul></li><li><strong>应用场景</strong>：<ul><li>深度学习框架的底层张量运算。</li><li>科学计算和数值分析。</li></ul></li></ul><h4 id="1-3-cuFFT-CUDA-Fast-Fourier-Transform"><a href="#1-3-cuFFT-CUDA-Fast-Fourier-Transform" class="headerlink" title="1.3 cuFFT (CUDA Fast Fourier Transform)"></a>1.3 cuFFT (CUDA Fast Fourier Transform)</h4><ul><li><strong>作用</strong>：<ul><li>提供快速傅里叶变换（FFT）的高效实现。</li></ul></li><li><strong>依赖</strong>：<ul><li>仅依赖 CUDA。</li></ul></li><li><strong>应用场景</strong>：<ul><li>信号处理、图像处理、科学计算。</li></ul></li></ul><h4 id="1-4-cuSPARSE"><a href="#1-4-cuSPARSE" class="headerlink" title="1.4 cuSPARSE"></a>1.4 cuSPARSE</h4><ul><li><strong>作用</strong>：<ul><li>提供稀疏矩阵运算的高效实现。</li></ul></li><li><strong>依赖</strong>：<ul><li>仅依赖 CUDA。</li></ul></li><li><strong>应用场景</strong>：<ul><li>稀疏矩阵计算（如推荐系统、图计算）。</li></ul></li></ul><h4 id="1-5-cuRAND"><a href="#1-5-cuRAND" class="headerlink" title="1.5 cuRAND"></a>1.5 cuRAND</h4><ul><li><strong>作用</strong>：<ul><li>提供高性能的随机数生成器。</li></ul></li><li><strong>依赖</strong>：<ul><li>仅依赖 CUDA。</li></ul></li><li><strong>应用场景</strong>：<ul><li>蒙特卡罗模拟、深度学习中的随机初始化。</li></ul></li></ul><h3 id="2-同时依赖-CUDA-和-cuDNN-的库"><a href="#2-同时依赖-CUDA-和-cuDNN-的库" class="headerlink" title="2. 同时依赖 CUDA 和 cuDNN 的库"></a>2. 同时依赖 CUDA 和 cuDNN 的库</h3><p>这些库在 CUDA 的基础上，进一步依赖 cuDNN 提供的深度学习优化功能：</p><h4 id="2-1-TensorRT"><a href="#2-1-TensorRT" class="headerlink" title="2.1 TensorRT"></a>2.1 TensorRT</h4><ul><li><strong>作用</strong>：<ul><li>高性能深度学习推理优化库。</li><li>提供模型量化、层融合、内存优化等功能。</li></ul></li><li><strong>依赖</strong>：<ul><li>同时依赖 CUDA 和 cuDNN。</li></ul></li><li><strong>应用场景</strong>：<ul><li>实时推理（如自动驾驶、视频处理）。</li></ul></li></ul><h4 id="2-2-DeepStream"><a href="#2-2-DeepStream" class="headerlink" title="2.2 DeepStream"></a>2.2 DeepStream</h4><ul><li><strong>作用</strong>：<ul><li>NVIDIA 提供的流媒体分析 SDK，用于视频分析和 AI 推理。</li></ul></li><li><strong>依赖</strong>：<ul><li>同时依赖 CUDA、cuDNN 和 TensorRT。</li></ul></li><li><strong>应用场景</strong>：<ul><li>视频流处理（如监控、自动驾驶）。</li></ul></li></ul><h4 id="2-3-NVIDIA-Triton-Inference-Server"><a href="#2-3-NVIDIA-Triton-Inference-Server" class="headerlink" title="2.3 NVIDIA Triton Inference Server"></a>2.3 NVIDIA Triton Inference Server</h4><ul><li><strong>作用</strong>：<ul><li>一个高性能的推理服务器，支持多种深度学习框架（如 TensorFlow、PyTorch、ONNX）。</li></ul></li><li><strong>依赖</strong>：<ul><li>同时依赖 CUDA、cuDNN 和 TensorRT。</li></ul></li><li><strong>应用场景</strong>：<ul><li>部署深度学习模型的推理服务。</li></ul></li></ul><h4 id="2-4-cuML-RAPIDS-Machine-Learning-Library"><a href="#2-4-cuML-RAPIDS-Machine-Learning-Library" class="headerlink" title="2.4 cuML (RAPIDS Machine Learning Library)"></a>2.4 cuML (RAPIDS Machine Learning Library)</h4><ul><li><strong>作用</strong>：<ul><li>NVIDIA 提供的 GPU 加速机器学习库。</li><li>提供常见的机器学习算法（如线性回归、KMeans、PCA）。</li></ul></li><li><strong>依赖</strong>：<ul><li>同时依赖 CUDA 和 cuDNN。</li></ul></li><li><strong>应用场景</strong>：<ul><li>GPU 加速的机器学习任务。</li></ul></li></ul><h3 id="3-深度学习框架"><a href="#3-深度学习框架" class="headerlink" title="3. 深度学习框架"></a>3. 深度学习框架</h3><p>许多深度学习框架也依赖于 CUDA 和 cuDNN 提供的底层加速功能：</p><h4 id="3-1-TensorFlow"><a href="#3-1-TensorFlow" class="headerlink" title="3.1 TensorFlow"></a>3.1 TensorFlow</h4><ul><li><strong>作用</strong>：<ul><li>Google 开发的深度学习框架。</li></ul></li><li><strong>依赖</strong>：<ul><li>同时依赖 CUDA 和 cuDNN。</li></ul></li><li><strong>应用场景</strong>：<ul><li>深度学习模型的训练和推理。</li></ul></li></ul><h4 id="3-2-PyTorch"><a href="#3-2-PyTorch" class="headerlink" title="3.2 PyTorch"></a>3.2 PyTorch</h4><ul><li><strong>作用</strong>：<ul><li>Facebook 开发的深度学习框架。</li></ul></li><li><strong>依赖</strong>：<ul><li>同时依赖 CUDA 和 cuDNN。</li></ul></li><li><strong>应用场景</strong>：<ul><li>深度学习研究和生产部署。</li></ul></li></ul><h4 id="3-3-MXNet"><a href="#3-3-MXNet" class="headerlink" title="3.3 MXNet"></a>3.3 MXNet</h4><ul><li><strong>作用</strong>：<ul><li>Apache 基金会开发的深度学习框架。</li></ul></li><li><strong>依赖</strong>：<ul><li>同时依赖 CUDA 和 cuDNN。</li></ul></li><li><strong>应用场景</strong>：<ul><li>深度学习模型的训练和推理。</li></ul></li></ul><h4 id="3-4-ONNX-Runtime"><a href="#3-4-ONNX-Runtime" class="headerlink" title="3.4 ONNX Runtime"></a>3.4 ONNX Runtime</h4><ul><li><strong>作用</strong>：<ul><li>一个通用的 ONNX 模型推理框架。</li></ul></li><li><strong>依赖</strong>：<ul><li>支持多种执行提供程序，包括 CUDA 和 TensorRT。</li></ul></li><li><strong>应用场景</strong>：<ul><li>部署 ONNX 格式的深度学习模型。</li></ul></li></ul><h2 id="关于电脑内部环境信息的整理"><a href="#关于电脑内部环境信息的整理" class="headerlink" title="关于电脑内部环境信息的整理"></a>关于电脑内部环境信息的整理</h2><h3 id="CUDA"><a href="#CUDA" class="headerlink" title="CUDA"></a>CUDA</h3><h4 id="C-Program-Files-NVIDIA-GPU-Computing-Toolkit-CUDA-v12-9-bin"><a href="#C-Program-Files-NVIDIA-GPU-Computing-Toolkit-CUDA-v12-9-bin" class="headerlink" title="C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.9\bin"></a><code>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.9\bin</code></h4><ul><li><strong>用途</strong>：这是 CUDA Toolkit 的核心工具路径，包含可执行文件（如 <code>nvcc.exe</code>）。</li><li><strong>功能</strong>：<ul><li><code>nvcc.exe</code>：CUDA 编译器，用于编译 <code>.cu</code> 文件。</li><li>其他工具：如 <code>ptxas</code>（汇编器）和 <code>nvprof</code>（性能分析工具）。</li></ul></li><li><strong>重要性</strong>：必须添加到环境变量中，以便在命令行中运行 CUDA 工具。</li></ul><h4 id="C-Program-Files-NVIDIA-GPU-Computing-Toolkit-CUDA-v12-9-libnvvp"><a href="#C-Program-Files-NVIDIA-GPU-Computing-Toolkit-CUDA-v12-9-libnvvp" class="headerlink" title="C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.9\libnvvp"></a><code>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.9\libnvvp</code></h4><ul><li><strong>用途</strong>：这是 CUDA Toolkit 中 Visual Profiler 的库路径。</li><li><strong>功能</strong>：<ul><li>包含 Visual Profiler 的相关文件，用于性能分析和优化 CUDA 应用程序。</li></ul></li><li><strong>重要性</strong>：如果需要使用 Visual Profiler，可以添加到环境变量中；否则可以忽略。</li></ul><h4 id="C-Program-Files-NVIDIA-Corporation-NVIDIA-NvDLISR"><a href="#C-Program-Files-NVIDIA-Corporation-NVIDIA-NvDLISR" class="headerlink" title="C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR"></a><code>C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR</code></h4><ul><li><strong>用途</strong>：这是 NVIDIA 驱动程序的一部分，通常与深度学习相关。</li><li><strong>功能</strong>：<ul><li>包含 NVIDIA 的动态库和服务文件，可能用于支持 GPU 驱动或深度学习推理。</li></ul></li><li><strong>重要性</strong>：一般不需要手动添加到环境变量，驱动程序会自动管理。</li></ul><h4 id="C-Program-Files-NVIDIA-Corporation-NVIDIA-App-NvDLISR"><a href="#C-Program-Files-NVIDIA-Corporation-NVIDIA-App-NvDLISR" class="headerlink" title="C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR"></a><code>C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR</code></h4><ul><li><strong>用途</strong>：这是 NVIDIA 驱动程序的一部分，可能与深度学习推理服务相关。</li><li><strong>功能</strong>：<ul><li>包含 NVIDIA 的服务文件，用于支持 GPU 驱动或深度学习推理。</li></ul></li><li><strong>重要性</strong>：一般不需要手动添加到环境变量，驱动程序会自动管理。</li></ul><h3 id="其他信息"><a href="#其他信息" class="headerlink" title="其他信息"></a>其他信息</h3><h4 id="nvcc"><a href="#nvcc" class="headerlink" title="nvcc"></a><code>nvcc</code></h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">nvcc: NVIDIA (R) Cuda compiler driver<br>Copyright (c) 2005-2025 NVIDIA Corporation<br>Built on Tue_May_27_02:24:01_Pacific_Daylight_Time_2025<br>Cuda compilation tools, release 12.9, V12.9.86<br>Build cuda_12.9.r12.9/compiler.36037853_0<br></code></pre></td></tr></table></figure><h4 id="where-nvcc"><a href="#where-nvcc" class="headerlink" title="where nvcc"></a><code>where nvcc</code></h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.9\bin\nvcc.exe<br></code></pre></td></tr></table></figure><h4 id="nvidia-smi"><a href="#nvidia-smi" class="headerlink" title="nvidia-smi"></a><code>nvidia-smi</code></h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">Thu Aug 14 10:21:43 2025<br>+-----------------------------------------------------------------------------------------+<br>| NVIDIA-SMI 576.57 Driver Version: 576.57 CUDA Version: 12.9 |<br>|-----------------------------------------+------------------------+----------------------+<br>| GPU Name Driver-Model | Bus-Id Disp.A | Volatile Uncorr. ECC |<br>| Fan Temp Perf Pwr:Usage/Cap | Memory-Usage | GPU-Util Compute M. |<br>| | | MIG M. |<br>|=========================================+========================+======================|<br>| 0 NVIDIA GeForce RTX 4070 ... WDDM | 00000000:01:00.0 Off | N/A |<br>| N/A 40C P0 13W / 140W | 0MiB / 8188MiB | 0% Default |<br>| | | N/A |<br>+-----------------------------------------+------------------------+----------------------+<br><br>+-----------------------------------------------------------------------------------------+<br>| Processes: |<br>| GPU GI CI PID Type Process name GPU Memory |<br>| ID ID Usage |<br>|=========================================================================================|<br>| No running processes found |<br>+-----------------------------------------------------------------------------------------+<br></code></pre></td></tr></table></figure><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul><li><strong>cuDNN</strong> 和 <strong>TensorRT</strong> 是下载后可以直接使用的。</li><li><strong>管理多个 CUDA</strong>：<ul><li>确保每个版本的 CUDA Toolkit 独立存在。</li><li>使用环境变量或工具动态切换版本。</li></ul></li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>text_to_3D</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>研究日志</tag>
+      
+      <tag>daily_p</tag>
+      
+      <tag>Nvida</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>8.13做了虾米</title>
+    <link href="/blog/2025/08/13/8.13/"/>
+    <url>/blog/2025/08/13/8.13/</url>
+    
+    <content type="html"><![CDATA[<h3 id="我觉得开学之后自己有可能丧失掉写博客的时间和能力"><a href="#我觉得开学之后自己有可能丧失掉写博客的时间和能力" class="headerlink" title="我觉得开学之后自己有可能丧失掉写博客的时间和能力"></a>我觉得开学之后自己有可能丧失掉写博客的时间和能力</h3><p>专业课很忙，电脑很重，人很懒<br>尽量坚持更新吧</p><h3 id="早上要做的事情"><a href="#早上要做的事情" class="headerlink" title="早上要做的事情"></a>早上要做的事情</h3><ol><li><p>尝试在虚拟机的电脑上面部署你自己的博客<br>虽然说这样子做会有一定暴露隐私的风险<br>但是部署一个东西感觉还是很好玩的<br>不对，虚拟机上面没有装git指令<br>但是也可以用类似的二进制文件来执行吧<br>就是感觉可能内存会有一点不够用<br>尝试一下</p></li><li><p>重新尝试tripoSR的部署，使用torchmcubes进行实践<br>想知道问题是不是出在使用了新的3D处理方式导致贴图出现了问题</p></li></ol><h3 id="哦不"><a href="#哦不" class="headerlink" title="哦不"></a>哦不</h3><p>说实话，其实我现在还沉浸在早上没有看到自己很喜欢的朝霞的忧伤之中，<br>所以让我摸鱼一会儿吧！！！！！</p><h3 id="今天做的事情"><a href="#今天做的事情" class="headerlink" title="今天做的事情"></a>今天做的事情</h3><p>今天本来是要进行二进制文件的实验的<br>但是很巧合的是，昨天研究的AI背景移除功能今天居然真的能被团队里面的人用上<br>帮朝智哥试一下吧</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>text_to_3D</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>研究日志</tag>
+      
+      <tag>daily_p</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>8.12做了虾米</title>
+    <link href="/blog/2025/08/12/8.12/"/>
+    <url>/blog/2025/08/12/8.12/</url>
+    
+    <content type="html"><![CDATA[<p>早上学习了一点知识<br>关于虚拟环境的<br>forge，mamba还有conda之间的关系<br>以后要是还想看的话可以去收藏夹重新看哦<br>感觉还是挺不错的</p><h3 id="记录一点conda的相关指令"><a href="#记录一点conda的相关指令" class="headerlink" title="记录一点conda的相关指令"></a>记录一点conda的相关指令</h3><p>conda env list我觉得conda的这个指令还挺好的，用了这个就不用自己记录那些路径的名字了，虽然其实可能也记得住，但还是方便很多。<br>conda activate envname是用来激活相关环境的</p><p>对应的conda deactivate是用来退出当前环境的</p><p>conda create -n my_app python&#x3D;3.11是用来创建环境的</p><h3 id="今天做的事情"><a href="#今天做的事情" class="headerlink" title="今天做的事情"></a>今天做的事情</h3><p>通过同时在学校的虚拟机上和我自己的电脑上部署项目，不停的比对，下载以及安装，终于成功部署好了TripoSR<br>但是似乎效果不好<br>对比于shap-e确实不会生成一些孔洞和残缺了<br>但依旧处于不可用的状态</p><h4 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h4><ol><li><p>很多的文件是需要手动下载并找到对应位置放置的，放置后路径也是需要自己来指定的，不然就要放在默认的下载位置，不然在自动运行程序用哈希值校对的时候就会找不到我们的软件。<br>但是中间很气人的点是<br>你根本不指导有哪些东西是需要再次下载的</p></li><li><p>版本兼容性问题<br>gradio，numpy和cuda的版本问题</p></li></ol><p>一定要去官网看这些包的相关信息来帮助自己判断啊<br><a href="https://pypi.org/">pypi</a></p><p>我因为cmake没有好好的安装，贪图空间，留下了一些问题，导致原来的其中一个函数无法使用叫做什么cube<br>不知道是不是因为这个<br>出来的纹理状况很不对<br>明天让ai对比所有的文件一个个来看吧</p><h3 id="回家之后要做的事情"><a href="#回家之后要做的事情" class="headerlink" title="回家之后要做的事情"></a>回家之后要做的事情</h3><p>1，找ee一起玩<br>2，拿三脚架</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>text_to_3D</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>研究日志</tag>
+      
+      <tag>daily_p</tag>
+      
+      <tag>虚拟环境</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>不上学要做的事情</title>
+    <link href="/blog/2025/08/11/%E4%B8%8D%E4%B8%8A%E5%AD%A6%E8%A6%81%E5%81%9A%E7%9A%84%E4%BA%8B%E6%83%85/"/>
+    <url>/blog/2025/08/11/%E4%B8%8D%E4%B8%8A%E5%AD%A6%E8%A6%81%E5%81%9A%E7%9A%84%E4%BA%8B%E6%83%85/</url>
+    
+    <content type="html"><![CDATA[<p>学英语<br>很好笑，现在都还没有报名去考试，真的要开始学了啊！！</p><p>学车<br>暂时计划是周天8.17的时候去合场，然后8.23(周六)的时候去考试，把那些基本的东西记住就好了，正常开肯定能过的。<br>拿了驾照可能也不会经常开哦哈哈哈</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>8.11做了虾米</title>
+    <link href="/blog/2025/08/11/8.11/"/>
+    <url>/blog/2025/08/11/8.11/</url>
+    
+    <content type="html"><![CDATA[<h3 id="今天下了非常大的暴雨"><a href="#今天下了非常大的暴雨" class="headerlink" title="今天下了非常大的暴雨"></a>今天下了非常大的暴雨</h3><ul><li>下次想把视频发b站然后附上链接，不然会有一种迷迷糊糊的感觉，附上链接就一定要有地方要存放我的视频，那要租服务器了啊，木有钱做这个事情，但是之后的时候可以考虑考虑（事后回忆版本）</li></ul><p>我总觉得自己在工位上就会有一种紧迫感，这种紧迫感会推动自己找点事情做，不至于在家里躺上一整天<br>这会不会代表，我更适合上班呢~~~</p><p>但是这种雨天真是可恶啊，没有以往的十足干劲了</p><p>还有两个星期实习就结束了</p><p>实习结束了之后应该做一点什么事情呢？</p><ul><li>出去玩？</li><li>学习？</li></ul><p>一个人就是容易发呆，我不喜欢这种感觉</p><h3 id="早上要做的事情"><a href="#早上要做的事情" class="headerlink" title="早上要做的事情"></a>早上要做的事情</h3><p>配置好tripoSR</p><p>明白safesentor模型还有ckpt模型</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>text_to_3D</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>研究日志</tag>
+      
+      <tag>daily_p</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>8.8!!!</title>
+    <link href="/blog/2025/08/08/8.8/"/>
+    <url>/blog/2025/08/08/8.8/</url>
+    
+    <content type="html"><![CDATA[<p>今天真的破防了，为什么安装环境这这这么复杂啊</p><p>我终于知道为什么要用anaconda做这些库的安装了<br>今天真破防了</p><p>因为偷懒让ai帮我看requirment需要安装的东西<br>然后就不知道ai帮我改了啥了······<br>webui成功的打开了<br>但是！！！模型不能正常使用一直报错<br>尝试了很多的方法还是不行<br>放在comfyui里面倒是没有任何问题</p><p>cuda12.4安装了<br>然后听说11.8更加兼容<br>就安装了11.8<br>真不能相信ai的啊<br>要自己的慧眼去识别</p><h3 id="后面要做的事情"><a href="#后面要做的事情" class="headerlink" title="后面要做的事情"></a>后面要做的事情</h3><p>尝试部署tripoSR在自己的本地<br>下载anaconda这个包管理器<br>删除现在用的这个miniconda</p><p>重新安装了一堆版本的东西<br>真不如有一个稳稳当当的包管理器</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>text_to_3D</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>研究日志</tag>
+      
+      <tag>daily_p</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>8.7做了虾米</title>
+    <link href="/blog/2025/08/07/8.7/"/>
+    <url>/blog/2025/08/07/8.7/</url>
+    
+    <content type="html"><![CDATA[<h3 id="上午要做的事情"><a href="#上午要做的事情" class="headerlink" title="上午要做的事情"></a>上午要做的事情</h3><ul><li>测试一下shap-e能不能生成稍微好一点的模型</li><li>查找tripoSR的环境依赖以及stable diffusion的环境依赖和自己的环境依赖来比对</li><li>配置关于stable diffusion的环境</li></ul><h3 id="下午要做的事情"><a href="#下午要做的事情" class="headerlink" title="下午要做的事情"></a>下午要做的事情</h3><p>上午的事情一点没有做<br>现在来试试呢</p><p>现在是下午五点三十七</p><p>今天下午偶然间看见了有的同学的成绩算错了，那肯定就是英方的成绩出来了，我经过一番计算，感觉大事不妙，可能我的成绩比想象中的还要再低一点，因此我迅速的打开了我的电脑，搜索了evision网站。<br>看成绩and计算成绩<br>‘’11.75’’的加权分<br>······<br>只能用非常差来形容了<br>但是因为先前就已经看过了我的成绩了所以这一次接受起来稍微比之前快一点<br>但是我内心还是非常伤心啊<br>期末很认真的努力看来是真的没有什么用处的，只能保证你没有被落下<br>平常不努力就是拿不到高分</p><p>然后经过一段时间的沉默，我开始在网上寻找相关的信息同时重新参考了一下前一段时间在网上找到的学分制度<img src="/blog/pdf/Senate-Regulation-2-from-2019-onwards-2024-10-08.pdf">来帮助自己判断后面的时间应该怎么努力<br>算下来的结果就是<br>下学期如果我还是保持11.75的分数的话，我在大四的时候就需要考到15.5的超级高分也就是全科A+<br>因此在下一个level 5我需要尽量将所有的英方课程学习到A-的水平，因为如果加权平均分达到了12.5并且有一半的课程都是A的等级的话同样可以申请英方学位</p><p>下一个学期尽量让自己的分数达到14，起码压线后面机会才更多一点！！！</p><p>然后我又发现可以从网站的这个地方找到我们的<a href="https://brunel365.sharepoint.com/sites/ProgrammeDocumentationRepository/Repository/Forms/Dept%20Electronic%20and%20Computer%20Engineering.aspx">培养方案</a></p><p>后续预习课程什么的也可以从这个上面整了</p><h3 id="下午还做的事情"><a href="#下午还做的事情" class="headerlink" title="下午还做的事情"></a>下午还做的事情</h3><p>加深了对于环境配置的理解<br>从官网下载了一个python3.13的版本但是很癫的写成了3.16hhhh</p><p>现在正在下载我的stable diffusion</p><h3 id="灵光乍现"><a href="#灵光乍现" class="headerlink" title="灵光乍现"></a>灵光乍现</h3><p>每天睡觉起来脖子都有点不舒服，这个是为什么呢？</p><p>用了好多天，终于适应这个眼药水了</p><p>英方的3+1项目有没有留服认证呢？</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>text_to_3D</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>研究日志</tag>
+      
+      <tag>daily_p</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>8.6做了虾米</title>
+    <link href="/blog/2025/08/06/8.6/"/>
+    <url>/blog/2025/08/06/8.6/</url>
+    
+    <content type="html"><![CDATA[<h3 id="上午要做的事情"><a href="#上午要做的事情" class="headerlink" title="上午要做的事情"></a>上午要做的事情</h3><p>不断地尝试学习meshlab的使用方法，但是感觉一点变化都没有<br>和我用open3D的效果差别并不大，就是根本没有任何变化</p><h3 id="目前的进度总结"><a href="#目前的进度总结" class="headerlink" title="目前的进度总结"></a>目前的进度总结</h3><h3 id="问一下gemini"><a href="#问一下gemini" class="headerlink" title="问一下gemini"></a>问一下gemini</h3><p>你知道文本生成3D应该怎么入门吗？我现在在这条路的学习上面有很大的问题。因为是在公司实习，因此我需要做的事情更多的是偏向于实际应用的开发的。而并不是自己创建一个新的东西。<br>我的导师希望我能在40天左右的时间里面做一个ai和3D建模相结合的应用，更加详细一点的来说，就是希望能应用ai技术实现文本到3D建模。我经过了一番的搜索，找到了shap-e这个开源的模型，并耗费了两三天的时间部署到了电脑上，但是和社区上的大多数人相同，我生成出来的东西效果并不是很好。结构较为简单的物品会有很多的孔洞，还有一些连接不上的地方，生成复杂的东西虽然能看出来是什么但是总体上还是坑坑洼洼的。然后我尝试了3D修复运用了cgal，open3d等开源的项目，但是不确定是不是目前的修复技术不够好，最后出来的效果还是不太理想，所以我想问问你是怎么思考这件事情的，能不能给我一些清晰而明确的建议，十分感谢！</p><h3 id="下午工作的汇总"><a href="#下午工作的汇总" class="headerlink" title="下午工作的汇总"></a>下午工作的汇总</h3><p>今天下午主要工作是和gemini对话交流</p><ul><li>了解了tripoSR是一款利用2D图像生成3D模型的开源项目</li><li>了解了stable diffusion 3D是一个基于stable diffusion的3D模型生成项目</li><li>了解了stable diffusion 可以把文字生成2D图像</li><li>了解了uv，conda，已经venv等虚拟环境到底应该使用哪一个，我可能会使用uv，想试一下</li><li><a href="https://huggingface.co/models?pipeline_tag=text-to-3d&p=1&sort=trending">hugging face很好用</a>这个网站上面很多开源的东西可以好好的学习使用，而且都是和ai应用相关的！！！</li></ul><h3 id="后续要做的事情"><a href="#后续要做的事情" class="headerlink" title="后续要做的事情"></a>后续要做的事情</h3><p>前面的工作暂时收尾<br>shap-e的开发使用到此结束吧，先不做相关的ui了直接命令行就很可以了<br>然后明天先找好两款软件的配置环境都需要什么依赖，在看看自己的电脑上面都有哪些依赖<br>如果不会冲突肯定是最好的，全都下载到全局环境<br>如果会冲突的话，再尝试使用uv来创建一个虚拟环境进行安装吧<br>苦笑<br>后续的话希望可以能学一学mehslab，总觉得这个其实也是一个好软件呢</p><h3 id="灵光乍现"><a href="#灵光乍现" class="headerlink" title="灵光乍现"></a>灵光乍现</h3><p>hexo要是可以有表情就好了哈哈哈</p><h3 id="随手小记"><a href="#随手小记" class="headerlink" title="随手小记"></a>随手小记</h3><p>今天早上突然想到了一件事情<br>这些人的生活就是围绕着工作来的<br>我平常都在上学<br>所以学习中的苦工作中的甜我全部都经历过，感受过<br>但是工作不同<br>我初来乍到还有一点兴奋的感觉在身上没有消散掉，因此工作似乎对我来说是一个还不错的选择<br>今天早上我突然有了一种感悟<br>就是为什么大家在工作了很久之后会有想跳槽的想法<br>如果是一个人工作的技术党，在一个没有什么氛围的环境下<br>虽然都可以赚到钱<br>但是心里面难免会有些空落落的，总觉得是单打独斗<br>（这个会不会有一点像读博士呢？）<br>对于年轻一点的人来说，或者对于我来说<br>完全有不想干了就不干的底气<br>因此才会想到说，要不就跳槽了吧</p><p>上班的时候脑子就很容易想到一些事情<br>比如说我想起来了自己的论文写的不是非常的优秀<br>我觉得这是一件很重要的事情<br>应该是自己的某些方面缺失了才造成的这样子的结果<br>那这个该怎么办呢<br>想办法好好的去学习怎么写好一篇论文吧</p><h3 id="下班想做的事情"><a href="#下班想做的事情" class="headerlink" title="下班想做的事情"></a>下班想做的事情</h3><p>下班之后想把3D打印的相关部件都买好了<br>要教ee学习无人机的使用<br>还有一件事情我忘记了······</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>text_to_3D</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>研究日志</tag>
+      
+      <tag>daily_p</tag>
+      
+      <tag>方向寻找</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>8.5做了虾米</title>
+    <link href="/blog/2025/08/05/8.5/"/>
+    <url>/blog/2025/08/05/8.5/</url>
+    
+    <content type="html"><![CDATA[<h3 id="上午要做的事情"><a href="#上午要做的事情" class="headerlink" title="上午要做的事情"></a>上午要做的事情</h3><p>进一步进行模型修复的工作<br>尝试做一个ui界面，让这个程序能够通过图形化的方式进行操作<br>学习吴恩达的机器学习，做一点笔记<br>进行单词PK，总之是做一点单词上面的学习<br>powerBI学习一下是做什么的</p><h3 id="目前的进展"><a href="#目前的进展" class="headerlink" title="目前的进展"></a>目前的进展</h3><p>下午求助了gpt老师，gpt老师告诉我可以实时pymeshlab这个软件，我心想meshlab不是之前电脑上面下载的吗，但是不管这么多，我立马去尝试一下，到时候实在不行的话我就去整那个很厉害的修复软件哈哈哈哈哈。</p><p>‘’最苦恼的事情’’复现这些东西就是要下载超级多的库文件，然后我就emmmmm一直在配置环境上面去了，配到了现在还没有配好真的是无语了。</p><h3 id="今天下午做的事情"><a href="#今天下午做的事情" class="headerlink" title="今天下午做的事情"></a>今天下午做的事情</h3><p>今天下午首先在尝试pymeshlab这个库，发现这个库的确是可以用的，但是我的电脑不知道为什么就是不能用，我真的很崩溃·······<br>据说是unicode之类的配置有问题，我先用图形化界面尝试一下看看能不能调试出来，后面详细的再看吧</p><p>环境配的我头晕脑胀真的很无语了</p><h3 id="明天的工作"><a href="#明天的工作" class="headerlink" title="明天的工作"></a>明天的工作</h3><p>明天好好的把这个软件学习了<br>把那两篇论文学习一下</p><p>如果meshlab的效果是可以的话想想怎么使用pymeshlab吧，能全部自动化肯定是最好的</p><p>然后尝试一下给什么样的提示词给我们的shap-e能创造出最好的模型呢。</p><h3 id="突然想起来可以做的事情"><a href="#突然想起来可以做的事情" class="headerlink" title="突然想起来可以做的事情"></a>突然想起来可以做的事情</h3><p>夜神的那个番<br>昨天抖音好像看到了一个新生儿的王者故事没有看完</p><p>3D打印的图纸设计</p><p>我总觉得这个东西不更新的话会有点对不起自己哈哈哈哈</p><p>毕竟做了一个这样的东西，自己还不维护的话会有点说不清楚的。</p><p>想起来自己很久没有更新自己的微信公众号了</p><p>这些账号我觉得就是有时间的时候去做一下就很好</p><p>想起来之前看到的那个浙江大学的硕士研究生，就做的很好，他就是很好的掌握了学习和生活的平衡，做出了周围人能有深刻感悟的视频</p><p>有时候长视频和短视频真的是大家会刻意区别的吗</p><p>早上在看mrbeast的视频，觉得他的视频节奏很快很无聊，时间会很快的流逝了。<br>一个人是有局限性的，他的目标是赚取更多的流量，打造更加氪金的人设，还有赚更多的钱。这些事情本身是没有什么问题的，但是短视的，没有根本上解决问题的行为，会让人觉得这是一种廉价的同情心的传递，是净化水资源厂家的骗局，拥有丰衣足食的能力才能真的解决水资源紧缺的问题，一年之后他们又是在喝着什么样的水呢，机器的维护又是谁来做呢。可以说，这个人选择了见效最快的方式博取了流量，背后散播的西方的怜悯，真的让人觉得心痛。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>日程规划</category>
+      
+      <category>text_to_3D</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>daily_p</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>8.4做了虾米</title>
+    <link href="/blog/2025/08/04/8.4/"/>
+    <url>/blog/2025/08/04/8.4/</url>
+    
+    <content type="html"><![CDATA[<h3 id="上午要做的事情"><a href="#上午要做的事情" class="headerlink" title="上午要做的事情"></a>上午要做的事情</h3><p>重新下载安装之前的cgal<br>虽然我不知道opencv是什么原理<br>但是它肯定是解决不了我的问题的<br>我希望下载了这个cgal能稍微的解决一点我的问题<br>让我能更好的进行模型的修复工作</p><h3 id="目前的进展"><a href="#目前的进展" class="headerlink" title="目前的进展"></a>目前的进展</h3><p>早上11：24还在下载cgal<br>但是boost已经下载好了</p><p>ai总结的很热血的一段哈哈哈哈<br>我们一起经历了一场漫长的战斗：</p><p>从安装 Visual Studio、CMake、Ninja 等基础工具开始。<br>到配置 vcpkg，解决网络超时问题。<br>再到发现并解决了最关键的“路径带空格”的问题。<br>然后我们逐一攻克了32&#x2F;64位编译器不匹配、环境变量缺失、CGAL 核心库未安装等重重难关。<br>最后，我们通过一个编译参数，解决了源代码的兼容性问题。</p><h3 id="我早上很闲的时候干的事情"><a href="#我早上很闲的时候干的事情" class="headerlink" title="我早上很闲的时候干的事情"></a>我早上很闲的时候干的事情</h3><p>回家的时候检查一下机器的状况，做好应对最糟糕的情况的准备，很有可能机器被做清洁的人弄坏了······但是要是没有弄坏的话其实也还行<br>算是一件幸运的事情，寄回去真的很麻烦啊啊啊啊啊。</p><p> 两天没有上班了，今天突然来上班真的好困<br> 受不了了，真的很想倒下去<br> 我昨天睡的也不是很晚，为什么会这个样子呢</p><p> 回家看看能不能把那个机器狗组装了，哈哈哈哈，现在需要的零件都可以购买了，感觉万事俱备只欠东风了，安装之后往机器狗里面下载一些东西，真的很帅呢。</p><p> 家里可能要安装一套换气系统了，不然我真的怕自己被毒死</p><h3 id="下午要做的事情"><a href="#下午要做的事情" class="headerlink" title="下午要做的事情"></a>下午要做的事情</h3><h2 id="下班了下班了hhh"><a href="#下班了下班了hhh" class="headerlink" title="下班了下班了hhh"></a>下班了下班了hhh</h2><p>今天下午请假了所以时间比较充裕，我果然有很强的畏难情绪，在使用3D打印机的时候 不是很想动手去尝试，但是又一直在纠结，到底设计成什么样子，做一些什么东西出来<br>稍微晚一点的时候，做了一下</p><h3 id="明天要做的事情"><a href="#明天要做的事情" class="headerlink" title="明天要做的事情"></a>明天要做的事情</h3><p>把优化你的修复模型，现在的效果不是很好，但是网上说它的能力很强，所以你要好好的去发掘</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>text_to_3D</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>摸鱼日记</tag>
+      
+      <tag>研究日志</tag>
+      
+      <tag>daily_p</tag>
+      
+      <tag>汇总</tag>
+      
+      <tag>模型修复</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>尝试链接</title>
+    <link href="/blog/2025/08/01/%E5%B0%9D%E8%AF%95%E9%93%BE%E6%8E%A5/"/>
+    <url>/blog/2025/08/01/%E5%B0%9D%E8%AF%95%E9%93%BE%E6%8E%A5/</url>
+    
+    <content type="html"><![CDATA[<h2 id="这是一个测试链接的文章"><a href="#这是一个测试链接的文章" class="headerlink" title="这是一个测试链接的文章"></a>这是一个测试链接的文章</h2><p>链接其他文章的基本格式是</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">[<span class="hljs-string">链接文本</span>](<span class="hljs-link">链接地址</span>)<br></code></pre></td></tr></table></figure><p>比如说我想链接7.31日的文章，可以这样写：</p><p><a href="/blog/2025/07/31/7.31/">7.31做了虾米</a></p><p>可以看看哦</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>hexo学习笔记</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Shape-E代码解析</title>
+    <link href="/blog/2025/08/01/Shape-E%E4%BB%A3%E7%A0%81%E8%A7%A3%E6%9E%90/"/>
+    <url>/blog/2025/08/01/Shape-E%E4%BB%A3%E7%A0%81%E8%A7%A3%E6%9E%90/</url>
+    
+    <content type="html"><![CDATA[<h3 id="还没有开始动工-8-7"><a href="#还没有开始动工-8-7" class="headerlink" title="还没有开始动工(8.7)"></a>还没有开始动工(8.7)</h3><p>可以每天做一点点工作吧<br>没有上手感觉代码能力不会增长很多</p><h3 id="每天一点小想法"><a href="#每天一点小想法" class="headerlink" title="每天一点小想法"></a>每天一点小想法</h3><p>我其实有一个疑惑<br>代码能力到底需不需要增强呢<br>我们肯定是拥有看懂代码的能力的<br>但是肯定也没有那些人看代码的能力这么强<br>对于我而言<br>可能做开发会稍微更重要一点吗？</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>研究日记</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>shap-e</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>8.1做了虾米</title>
+    <link href="/blog/2025/08/01/8.1/"/>
+    <url>/blog/2025/08/01/8.1/</url>
+    
+    <content type="html"><![CDATA[<h3 id="上午计划做的事情"><a href="#上午计划做的事情" class="headerlink" title="上午计划做的事情"></a>上午计划做的事情</h3><p>做残缺模型的修复工作</p><h3 id="修复工作的思路"><a href="#修复工作的思路" class="headerlink" title="修复工作的思路"></a>修复工作的思路</h3><p>初步考虑使用现有的库函数，因此考虑使用opencv或者是cgal来进行初步操作</p><h3 id="目前的进展"><a href="#目前的进展" class="headerlink" title="目前的进展"></a>目前的进展</h3><p>我暂时还在调试最佳的输出效果<br>尝试了马儿<br>效果真的太差了，差的我有点崩溃<img src="/blog/images/guidance5horse.png"><br>经过非常多轮的手工调试，我发现了这个东西就是不能生成动物还有人类的模型，生成的都是一些非常奇怪的东西，呵呵总之效果非常的差，<br>在选择fast的这个阈值的时候<br>经过尝试我发现guidance_scale大概在10-15之间比较合适，因此我选择12，13。</p><p>同时我也猜测一个事情<br>当resolution还有steps越长的时候，机器处理的时间就越长，那么就可以把guidance_scale尽可能的调大，最后画出来的东西会更加的好看，不知道这个想法是不是对的，还正在验证现在是16：31</p><p>得到结果了，我感觉差距不是特别的大，但是guidance&#x3D;10是我觉得最舒服的一个<br>还有, guidance越大缺失会得到越准确的图形。打个比方，guidance&#x3D;8的时候生成的红色皮革书包在背带和书包的连接处会发生非常大的断裂，这很影响后续的修复。但是在guidance&#x3D;20的时候，书包几乎是完整的，但是表面上的细节会缺失的很多，让人觉得观感不是很好。<br>调整到中间值并不是一个很好的选择，因为在guidance&#x3D;16左右的时候，整个图像断裂又多，细节又少，非常的糟心。</p><p>但是这一轮的结果又有些不一样了，guidance&#x3D;14 的时候的效果非常的好，好到让我有些惊讶了~</p><p><img src="/blog/images/image.png"></p><p>我打算在13，14，15中间再测试一轮</p><p>guidance在这三个数值左右是合适的<br>resolution和steps的值越大，guidance可以调的越大</p><p>在结束测评之后，我打算开始下载c++</p><p>是哈，这东西怎么集成到blender里面呢<br>真是个好思路</p><h3 id="关于模型补全"><a href="#关于模型补全" class="headerlink" title="关于模型补全"></a>关于模型补全</h3><p>open3D的模型补全应用在这种大面积的缺损的模型上是非常的不合适的<br>补全的效果并不是很好</p><h3 id="后续可以做的事情"><a href="#后续可以做的事情" class="headerlink" title="后续可以做的事情"></a>后续可以做的事情</h3><ul><li>研究一下支付宝的百宝箱和阿里巴巴的mcp服务有什么区别或者是关联，相关的公司有没有相关的业务</li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>text_to_3D</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>研究日志</tag>
+      
+      <tag>daily_p</tag>
+      
+      <tag>模型修复</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>hexo有的一些功能</title>
+    <link href="/blog/2025/07/31/hexo%E6%9C%89%E7%9A%84%E4%B8%80%E4%BA%9B%E5%8A%9F%E8%83%BD/"/>
+    <url>/blog/2025/07/31/hexo%E6%9C%89%E7%9A%84%E4%B8%80%E4%BA%9B%E5%8A%9F%E8%83%BD/</url>
+    
+    <content type="html"><![CDATA[<h1 id="这是关于hexo灵感的"><a href="#这是关于hexo灵感的" class="headerlink" title="这是关于hexo灵感的"></a>这是关于hexo灵感的</h1><p>hexo可以调整上方的菜单栏中的内容</p><p>下面的footer也是可以调整的</p><p>可以尝试链接在不同的文章中间做交叉引用，这在你突然被某些文章引发了灵感的时候非常的好用</p><p>可以尝试设置一个密码，这样子就可以让别人</p><p>加上一个图标</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>课余兴趣</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>hexo学习</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>7.31做了虾米</title>
+    <link href="/blog/2025/07/31/7.31/"/>
+    <url>/blog/2025/07/31/7.31/</url>
+    
+    <content type="html"><![CDATA[<h2 id="上午要做的事情"><a href="#上午要做的事情" class="headerlink" title="上午要做的事情"></a>上午要做的事情</h2><h3 id="关于数字孪生要做的事情"><a href="#关于数字孪生要做的事情" class="headerlink" title="关于数字孪生要做的事情"></a>关于数字孪生要做的事情</h3><p>做残缺模型的修复工作</p><p>尝试让shape-e能够通过图像生成3d模型<br>写一份使用报告<br>写一份调试思路<br>试用其他家的模型然后给出你的评价<br>探索一下文字生成基础图形的功能能不能用python集成到blender里面去</p><h3 id="关于hexo的要做的事情"><a href="#关于hexo的要做的事情" class="headerlink" title="关于hexo的要做的事情"></a>关于hexo的要做的事情</h3><p>修改我的hexo的域名<br>做一个友情链接的页面<br>修改一下个人介绍页面</p><h3 id="上午实际做的事情"><a href="#上午实际做的事情" class="headerlink" title="上午实际做的事情"></a>上午实际做的事情</h3><p>全部都没有实现哈哈哈哈哈，明天继续做</p><h2 id="下午要做的事情"><a href="#下午要做的事情" class="headerlink" title="下午要做的事情"></a>下午要做的事情</h2><p>学习怎么使用comfyui<br>尝试把自己做过的事情全部留档，保存在github上面</p><h3 id="实际做了的事情"><a href="#实际做了的事情" class="headerlink" title="实际做了的事情"></a>实际做了的事情</h3><p>今天下午状态不是很好，所以一直在玩，然后做了一些前几天上班太累了下班没有做的事情，感觉很舒服<br>但是自己做过的事情都留在了github上面</p><h3 id="明天要做的事情"><a href="#明天要做的事情" class="headerlink" title="明天要做的事情"></a>明天要做的事情</h3><p>进一步尝试修复你的模型<br>做好了尝试修复的那一步，pycgal<br>能不能把我的个人状态通过某些方式反映在这个博客上呢，哈哈哈感觉很有意思<br>学习comfyui的相关知识<br>购买一个自己的域名</p><h3 id="奇思妙想"><a href="#奇思妙想" class="headerlink" title="奇思妙想"></a>奇思妙想</h3><p>用3D打印机生成了相关<br>要是我的网页被攻击了会怎么样呢</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>text_to_3D</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>研究日志</tag>
+      
+      <tag>daily_p</tag>
+      
+      <tag>模型修复</tag>
+      
+      <tag>shap-e</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>7.30做了虾米</title>
+    <link href="/blog/2025/07/30/7.30/"/>
+    <url>/blog/2025/07/30/7.30/</url>
+    
+    <content type="html"><![CDATA[<h2 id="今天早上我打算做的事情"><a href="#今天早上我打算做的事情" class="headerlink" title="今天早上我打算做的事情"></a>今天早上我打算做的事情</h2><h3 id="数字孪生方面"><a href="#数字孪生方面" class="headerlink" title="数字孪生方面"></a>数字孪生方面</h3><p>跑通轻量化生成基础模块的代码</p><p>看一点吴恩达的视频<br>实测一下文字转3D的软件的效果<br>看看论文，一个新加坡国立的，清华大学的，关于文本转3D的<br>自己想办法接入一下api</p><h3 id="hexo方面"><a href="#hexo方面" class="headerlink" title="hexo方面"></a>hexo方面</h3><p>想办法怎么设置密码保护，我想写点东西在这个上面<br>每一页最下面的那个footer我也不知道叫做什么名字，看看怎么做好一点呢<br>个人介绍那一页感觉可以做的更好一点<br>有那种可以隐身的效果，尝试一下<br>导航菜单名字可以修改了</p><h3 id="后续可以做的事情"><a href="#后续可以做的事情" class="headerlink" title="后续可以做的事情"></a>后续可以做的事情</h3><p>可以更改你的字体，换一个你喜欢的好看的字体<br>优化网站的打开速度<br>修改一个域名<br>探索一下文字生成基础图形的功能能不能用python集成到blender里面去</p><h2 id="实际完成的事情"><a href="#实际完成的事情" class="headerlink" title="实际完成的事情"></a>实际完成的事情</h2><p>下载了pytorch<br>cuda正在验证是否下载成功<br>昨天的代码的确跑通了，但是一方面我不清出这个代码的作用<br>另外一方面整个代码的效果真的不是很好<br>中午去健身房走路了，也还行哈哈哈</p><h3 id="下午要做的事情"><a href="#下午要做的事情" class="headerlink" title="下午要做的事情"></a>下午要做的事情</h3><p>明白早上跑通的代码的含义，并让ai生成一个把关系网络罗列清楚<br>继续配置shape-e+cuda+争取能够应用一下<br>完整验证cuda的安装是否成功</p><h3 id="下午完成的事情"><a href="#下午完成的事情" class="headerlink" title="下午完成的事情"></a>下午完成的事情</h3><ul><li><input checked="" disabled="" type="checkbox"> 明白早上跑通的代码的含义，并让ai生成一个把关系网络罗列清楚</li><li><input checked="" disabled="" type="checkbox"> 继续配置shape-e+cuda+争取能够应用一下</li><li><input checked="" disabled="" type="checkbox"> 完整验证cuda的安装是否成功</li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>text_to_3D</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>hexo学习</tag>
+      
+      <tag>研究日志</tag>
+      
+      <tag>daily_p</tag>
+      
+      <tag>建模</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>7.24做了虾米</title>
+    <link href="/blog/2025/07/24/7.24/"/>
+    <url>/blog/2025/07/24/7.24/</url>
+    
+    <content type="html"><![CDATA[<h1 id="7-24做的事情"><a href="#7-24做的事情" class="headerlink" title="7.24做的事情"></a>7.24做的事情</h1><h2 id="上午"><a href="#上午" class="headerlink" title="上午"></a>上午</h2><p>上午的时候了解了一下人工智能相关的一些事情，理清了这些名词之间的关系。</p><h2 id="下午"><a href="#下午" class="headerlink" title="下午"></a>下午</h2><p>实践学习了hexo的使用方法，然后现在正在用hexo写这篇文章，感觉还是挺方便的，尤其是可以直接在本地预览，修改之后就可以看到效果。<br>其实上午我还没有把机器学习，深度学习和CNN之间关系的韦恩图画出来呢，没准可以让AI直接画出来</p><h3 id="下午的计划"><a href="#下午的计划" class="headerlink" title="下午的计划"></a>下午的计划</h3><ul><li>继续学习hexo的高级用法</li><li>尝试将之前的笔记迁移到hexo上</li><li>研究一下如何自定义主题</li><li>了解一下如何部署到远程服务器</li><li>继续摸鱼，放松一下心情</li></ul><h3 id="下午完成的事情"><a href="#下午完成的事情" class="headerlink" title="下午完成的事情"></a>下午完成的事情</h3><ul><li>成功的部署了hexo到github上</li></ul><h3 id="自言自语"><a href="#自言自语" class="headerlink" title="自言自语"></a>自言自语</h3><p>我还有好多的东西没有去研究，感觉好兴奋<br>哈哈哈哈哈哈哈<br>自己看到的这些东西都可以跑通吗？！<br>要找时间整理一下保存在文件夹的东西呢<br>在做路径规划的选择的时候应该有一个自己的态度，什么事情什么研究是当下需要的，什么是可以放一放的，都应该在脑子里面清晰明确，这样才让自己少被眼前的事情牵着鼻子走。</p><h3 id="灵光乍现"><a href="#灵光乍现" class="headerlink" title="灵光乍现"></a>灵光乍现</h3><p>hexo暂时来说有一个不是很好的地方<br>部署在服务器上，因此会有网络限制，这样子对同时在两台电脑上部署我的文件来说并不是非常的方便。因为，当一台电脑没有办法上传文件的时候，另外一个电脑也不能得到同步，未同步电脑的更新会覆盖我在旧电脑上的更新，到头来，我什么都没有写。所以还是就老实一点在一台电脑上弄。</p><p>我使用的是branch那是不是意味着我在main里面的那些文件是可以删除的呢<br>嘿嘿</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>课余兴趣</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>摸鱼日记</tag>
+      
+      <tag>hexo学习</tag>
+      
+      <tag>研究日志</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>7.24前的汇总</title>
+    <link href="/blog/2025/07/24/7.24%E5%89%8D%E7%9A%84%E6%B1%87%E6%80%BB/"/>
+    <url>/blog/2025/07/24/7.24%E5%89%8D%E7%9A%84%E6%B1%87%E6%80%BB/</url>
+    
+    <content type="html"><![CDATA[<p>感觉很多事情都没有很好的记录下来，在我创建这个博客之前</p><h2 id="记录一点在之前做的事情"><a href="#记录一点在之前做的事情" class="headerlink" title="记录一点在之前做的事情"></a>记录一点在之前做的事情</h2><h3 id="一些尝试-视觉生图"><a href="#一些尝试-视觉生图" class="headerlink" title="一些尝试-视觉生图"></a>一些尝试-视觉生图</h3><p>在最开始的一周里面我一直在尝试通过手机上面的3D建模软件获取usdz的数据，因为我手中的手机上面搭载了市面上面的差不多接近两千块钱的<a href="https://zhuanlan.zhihu.com/p/441161826">ToF</a>传感器，也是看见了链接里面的这个文章，我初步部署并且尝试了视觉生图，不知道是不是因为技术非常的成熟，产生的效果意想不到的好（其实我也不知道好不好，至少是说能很清除的呈现一个面的点云图）<br>要是没有删掉的话，其实可以拍几张图片过来看看（代码没有删除可以试试上传到<a href="https://github.com/silvermars">github</a>）</p><p>一个面的点云图如果都能生成的话，那要是拍摄多个面的话一定可以有完整的点云图吧<br>再利用一些扩散的算法肯定就可以生成一个完整的模型了<br>我有了这个想法之后就去网上搜索<br>本来只是想搜索有没有相关的技术<br>结果了解到了reality capture，以及nerf3D重建</p><h3 id="apple应用开发"><a href="#apple应用开发" class="headerlink" title="apple应用开发"></a>apple应用开发</h3><p>然后我就想到了要是我自己能够创建一个app然后调用app里的数据不就很方便吗，而且还能提高自己的开发能力<br>于是我就开始研究swift，研究ios的开发<br>用了差不多一两天的时间，然后就宣布计划流产，做出来的东西有一点四不像的，但是网上有很多开发流派，总觉的app开发应该是一个比较热门的东西，做好的app框架应该也比较多，把这些软件用好的问题应该不是很大，所以如果真的想做app的话多花一点时间应该还是可以完成的。</p><p>另外一个方面<br>我比较清楚自己心急的性格，如果硬着头皮继续开发的话还不清楚后面会不会再遇见什么问题，肯定还要耽误一段时间，如果确定了点云图的生成以及修复是一个可行的方案的话，那我觉得制作一个app放进我们的开发流程是完全没有问题的，而且把电脑和手机连接起来这件事情还挺有意思的哈哈哈哈。<br>但是当务之急，我觉得还是应该继续寻找该如何实现text-to-3D的方案，所以还是先不开发这个点云图了。</p><h3 id="研究nerf3D重建"><a href="#研究nerf3D重建" class="headerlink" title="研究nerf3D重建"></a>研究nerf3D重建</h3><p>第二天开始我就下载meshroom，reality capture，nerf studio等软件开始研究图片到3D的一个重建</p><p>搞了好几天，都不如直接用手机拍摄得到的模型效果好（手机配合陀螺仪等东西，有相关的位置信息）<br>面对比较大的环境复杂的物品，反而生成效果更好<br>面对背景不是很复杂的情况，效果比较差了</p><h3 id="学习基础的ai知识"><a href="#学习基础的ai知识" class="headerlink" title="学习基础的ai知识"></a>学习基础的ai知识</h3><p>我大概花了一天学习基础的ai知识，感觉挺好玩，ai能实现很多东西，但是我一点都不务实，没有做到一边学习一边研究，做到现在，做了哪些事情都乱乱的。<br>研究了最基础的名词以及相关分类，但是和学长聊了之后发现ai其实还有很多方向的分类需要去研究。</p><h3 id="开发博客"><a href="#开发博客" class="headerlink" title="开发博客"></a>开发博客</h3><p>这个是我觉得最有意思的部分，哈哈哈哈就是我现在在做的事情，把自己的很多想法记下来真的很棒！！！！</p><h3 id="研究text-to-image"><a href="#研究text-to-image" class="headerlink" title="研究text-to-image"></a>研究text-to-image</h3><p>这是现在正在研究的</p><h3 id="奇思妙想"><a href="#奇思妙想" class="headerlink" title="奇思妙想"></a>奇思妙想</h3><p>能不能有两个键盘，一个是中文输入法，一个是英文输入法</p><p>能不能开发一个硬件让照片中留下，拍摄设备和物品之间的位置信息呢。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>text_to_3D</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>hexo学习</tag>
+      
+      <tag>研究日志</tag>
+      
+      <tag>daily_p</tag>
+      
+      <tag>汇总</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  
+</search>
