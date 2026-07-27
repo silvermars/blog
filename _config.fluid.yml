@@ -95,6 +95,11 @@ footer:
     <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a>
   '
 
+  # 展示网站 PV、UV 统计
+  statistics:
+    enable: true
+    source: "busuanzi"   # 不蒜子，无需注册；可选 leancloud / umami
+
 #---------------------------
 # 功能设置
 #---------------------------
