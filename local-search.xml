@@ -33,7 +33,7 @@
     <link href="/blog/2026/09/23/final-projection-1/"/>
     <url>/blog/2026/09/23/final-projection-1/</url>
     
-    <content type="html"><![CDATA[<h2 id="今天的进展"><a href="#今天的进展" class="headerlink" title="今天的进展"></a>今天的进展</h2><p>我已经在电脑上面完全跑通了学长交接的代码，自己也尝试了进行训练集的拍摄训练和使用，整套流程也跑通了，识别的速度也非常的快。</p><p>我用的yolov5segment，而且我用的不是 TensorRT 的架构，我用的是 PyTorch 的架构。</p><p>jetsonnano 还没有刷机但是linux系统已经在我的电脑上下载好了。</p><h2 id="为什么自建数据集"><a href="#为什么自建数据集" class="headerlink" title="为什么自建数据集"></a>为什么自建数据集</h2><ol><li>我们要识别的不只是常规障碍物，通用数据集覆盖不到我们的实际场景。</li><li>这个板子上面将来有可能会跑更多的模型，所以要尽可能控制运算量，只把必须需要的数据放上去，不需要的就不去训练，尽可能的用到最少的数据，然后得到最好的结果。</li><li>而且训练平台算力并不够，我是用自己的电脑 4070 桌面机进行训练的，每次训练时间都会在 3~6 个小时左右，还是在我加速之后的情况下，因此我也必须要尽量地减少训练集。</li></ol><h2 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h2><p>但是经常会把人识别成垃圾桶，在底层代码上，垃圾桶和人都是需要躲避的障碍物，短时间可能没有什么问题，但是要是后续被人的板块想用到我这个部分的识别结果，那就容易出问题，因此我暂时在训练集上面下文章。</p><h2 id="讨论出来的解决思路"><a href="#讨论出来的解决思路" class="headerlink" title="讨论出来的解决思路"></a>讨论出来的解决思路</h2><p>按优先级排了一下：</p><ol><li><strong>先诊断</strong>：跑 <code>segment/val.py</code> 看混淆矩阵，确认 person→trash bin 错在什么置信度区间，把识别错的样本挑出来找规律（远距离小目标？光线暗？遮挡？）</li><li><strong>确认用了 COCO 预训练权重微调</strong>（<code>yolov5s-seg.pt</code>），COCO 里 person 是最强的类别；微调可以先 <code>--freeze 10</code> 冻结骨干</li><li><strong>数据侧</strong>：<ul><li>检查多边形标注质量，人的轮廓标歪了会让形状先验趋近垃圾桶</li><li>困难样本挖掘：专门拍容易混淆的样本（远处的人、蹲着的人、像人的垃圾桶）</li><li>打开 <code>copy_paste</code> 增强（<code>0.1~0.3</code>），把人连掩码贴到各种背景上扩充样本</li></ul></li><li><strong>超参</strong>：分类损失权重 <code>cls</code> 从 0.5 调到 0.7~1.0；小目标多的话 <code>--img 960</code></li><li><strong>推理侧</strong>：按类别设置置信度阈值——垃圾桶高阈值、人低阈值，宁可垃圾桶误报成人也不能漏人</li><li><strong>加目标跟踪</strong>：垃圾桶不会走路，多帧投票+运动特征可以纠正”会动的垃圾桶”</li><li><strong>给人板块上保险</strong>：并行跑一个官方 <code>yolov5s.pt</code> 只取 person 类，专门服务人的板块，和分割模型解耦</li></ol><h2 id="待办"><a href="#待办" class="headerlink" title="待办"></a>待办</h2><ul><li><input disabled="" type="checkbox"> Jetson Nano 刷机（linux系统已经在我的电脑上下载好了）</li><li><input disabled="" type="checkbox"> 明天（9.24）progress 汇报 + 未来的 plan</li><li><input disabled="" type="checkbox"> 按上面的顺序排查人→垃圾桶的混淆问题</li></ul>]]></content>
+    <content type="html"><![CDATA[<h2 id="今天的进展"><a href="#今天的进展" class="headerlink" title="今天的进展"></a>今天的进展</h2><p>我已经在电脑上面完全跑通了学长交接的代码，自己也尝试了进行训练集的拍摄训练和使用，整套流程也跑通了，识别的速度也非常的快。</p><p>我用的yolov5segment，而且我用的不是 TensorRT 的架构，我用的是 PyTorch 的架构。</p><p>jetsonnano 还没有刷机但是linux系统已经在我的电脑上下载好了。</p><h2 id="为什么自建数据集"><a href="#为什么自建数据集" class="headerlink" title="为什么自建数据集"></a>为什么自建数据集</h2><ol><li>我们要识别的不只是常规障碍物，通用数据集覆盖不到我们的实际场景。</li><li>这个板子上面将来有可能会跑更多的模型，所以要尽可能控制运算量，只把必须需要的数据放上去，不需要的就不去训练，尽可能的用到最少的数据，然后得到最好的结果。</li><li>而且训练平台算力并不够，我是用自己的电脑 4070 桌面机进行训练的，每次训练时间都会在 3~6 个小时左右，还是在我加速之后的情况下，因此我也必须要尽量地减少训练集。</li></ol><h2 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h2><p>但是经常会把人识别成垃圾桶，在底层代码上，垃圾桶和人都是需要躲避的障碍物，短时间可能没有什么问题，但是要是后续被人的板块想用到我这个部分的识别结果，那就容易出问题，因此我暂时在训练集上面下文章。</p><h2 id="讨论出来的解决思路"><a href="#讨论出来的解决思路" class="headerlink" title="讨论出来的解决思路"></a>讨论出来的解决思路</h2><p>按优先级排了一下：</p><ol><li><strong>先诊断</strong>：跑 <code>segment/val.py</code> 看混淆矩阵，确认 person→trash bin 错在什么置信度区间，把识别错的样本挑出来找规律（远距离小目标？光线暗？遮挡？）</li><li><strong>确认用了 COCO 预训练权重微调</strong>（<code>yolov5s-seg.pt</code>），COCO 里 person 是最强的类别；微调可以先 <code>--freeze 10</code> 冻结骨干</li><li><strong>数据侧</strong>：<ul><li>检查多边形标注质量，人的轮廓标歪了会让形状先验趋近垃圾桶</li><li>困难样本挖掘：专门拍容易混淆的样本（远处的人、蹲着的人、像人的垃圾桶）</li><li>打开 <code>copy_paste</code> 增强（<code>0.1~0.3</code>），把人连掩码贴到各种背景上扩充样本</li></ul></li><li><strong>超参</strong>：分类损失权重 <code>cls</code> 从 0.5 调到 0.7~1.0；小目标多的话 <code>--img 960</code></li><li><strong>推理侧</strong>：按类别设置置信度阈值——垃圾桶高阈值、人低阈值，宁可垃圾桶误报成人也不能漏人</li><li><strong>加目标跟踪</strong>：垃圾桶不会走路，多帧投票+运动特征可以纠正”会动的垃圾桶”</li><li><strong>给人板块上保险</strong>：并行跑一个官方 <code>yolov5s.pt</code> 只取 person 类，专门服务人的板块，和分割模型解耦</li></ol><h2 id="技术选型讨论（K-means-GA-神经网络-Transformer）"><a href="#技术选型讨论（K-means-GA-神经网络-Transformer）" class="headerlink" title="技术选型讨论（K-means &#x2F; GA &#x2F; 神经网络 &#x2F; Transformer）"></a>技术选型讨论（K-means &#x2F; GA &#x2F; 神经网络 &#x2F; Transformer）</h2><h3 id="K-means-聚类"><a href="#K-means-聚类" class="headerlink" title="K-means 聚类"></a>K-means 聚类</h3><ul><li>用来解决人&#x2F;垃圾桶混淆：不行。混淆是分类判别能力的问题，K-means 是无监督聚类，外观相似的两类在特征空间里本来就混在一起，聚类解决不了。</li><li>聚 anchor 框：不用做，YOLOv5 的 autoanchor 每次训练前自动跑 K-means 重算 anchor。</li><li>压缩数据集：有价值。用骨干网络抽特征做聚类，每个簇只留代表性样本，砍掉近似重复的图（core-set 思路），正好对上”用最少的数据拿到最好的结果”的需求。等数据多了训练太慢时再捡起来。</li><li>部署后聚类检测结果：别加，Nano 算力紧张，后处理加步骤只会拖帧率。</li></ul><h3 id="GA-遗传算法"><a href="#GA-遗传算法" class="headerlink" title="GA 遗传算法"></a>GA 遗传算法</h3><p>YOLOv5 内置 <code>--evolve</code> 用 GA 演化超参数，但一次训练 3~6 小时、演化要几百代，4070 上得跑几个月，直接排除。其他 GA 用法轮不到它。</p><h3 id="神经网络（二级分类器）"><a href="#神经网络（二级分类器）" class="headerlink" title="神经网络（二级分类器）"></a>神经网络（二级分类器）</h3><p>检测框出来后再用一个小分类器重新判人还是垃圾桶，可行（两阶段级联，裁剪后目标占比大、任务单一），但管线变复杂、Nano 上多一次推理，和省算力目标冲突。定位是兜底手段：先把检测器本身修好，修不好再上。</p><h3 id="换-Transformer-架构"><a href="#换-Transformer-架构" class="headerlink" title="换 Transformer 架构"></a>换 Transformer 架构</h3><p>不建议：Transformer 吃数据（小数据集打不过 YOLO）、吃算力（Nano 老架构跑 attention 帧率会崩）、部署难（Nano 的 TensorRT 版本对 Transformer 算子支持残缺）。真想换架构就平移到 YOLOv8-seg，部署链路几乎一样，风险小。</p><h2 id="待办"><a href="#待办" class="headerlink" title="待办"></a>待办</h2><ul><li><input disabled="" type="checkbox"> Jetson Nano 刷机（linux系统已经在我的电脑上下载好了）</li><li><input disabled="" type="checkbox"> 明天（9.24）progress 汇报 + 未来的 plan</li><li><input disabled="" type="checkbox"> 按上面的顺序排查人→垃圾桶的混淆问题</li></ul>]]></content>
     
     
     <categories>
@@ -282,9 +282,9 @@
     
     <tags>
       
-      <tag>研究日志</tag>
-      
       <tag>daily_p</tag>
+      
+      <tag>研究日志</tag>
       
     </tags>
     
@@ -309,9 +309,9 @@
     
     <tags>
       
-      <tag>研究日志</tag>
-      
       <tag>daily_p</tag>
+      
+      <tag>研究日志</tag>
       
     </tags>
     
@@ -336,9 +336,9 @@
     
     <tags>
       
-      <tag>研究日志</tag>
-      
       <tag>daily_p</tag>
+      
+      <tag>研究日志</tag>
       
     </tags>
     
@@ -363,9 +363,9 @@
     
     <tags>
       
-      <tag>研究日志</tag>
-      
       <tag>daily_p</tag>
+      
+      <tag>研究日志</tag>
       
       <tag>Nvida</tag>
       
@@ -392,9 +392,9 @@
     
     <tags>
       
-      <tag>研究日志</tag>
-      
       <tag>daily_p</tag>
+      
+      <tag>研究日志</tag>
       
     </tags>
     
@@ -419,9 +419,9 @@
     
     <tags>
       
-      <tag>研究日志</tag>
-      
       <tag>daily_p</tag>
+      
+      <tag>研究日志</tag>
       
       <tag>虚拟环境</tag>
       
@@ -461,9 +461,9 @@
     
     <tags>
       
-      <tag>研究日志</tag>
-      
       <tag>daily_p</tag>
+      
+      <tag>研究日志</tag>
       
     </tags>
     
@@ -488,9 +488,9 @@
     
     <tags>
       
-      <tag>研究日志</tag>
-      
       <tag>daily_p</tag>
+      
+      <tag>研究日志</tag>
       
     </tags>
     
@@ -515,9 +515,9 @@
     
     <tags>
       
-      <tag>研究日志</tag>
-      
       <tag>daily_p</tag>
+      
+      <tag>研究日志</tag>
       
     </tags>
     
@@ -542,9 +542,9 @@
     
     <tags>
       
-      <tag>研究日志</tag>
-      
       <tag>daily_p</tag>
+      
+      <tag>研究日志</tag>
       
       <tag>方向寻找</tag>
       
@@ -598,13 +598,13 @@
     
     <tags>
       
-      <tag>摸鱼日记</tag>
+      <tag>daily_p</tag>
       
       <tag>研究日志</tag>
       
-      <tag>daily_p</tag>
-      
       <tag>汇总</tag>
+      
+      <tag>摸鱼日记</tag>
       
       <tag>模型修复</tag>
       
@@ -675,9 +675,9 @@
     
     <tags>
       
-      <tag>研究日志</tag>
-      
       <tag>daily_p</tag>
+      
+      <tag>研究日志</tag>
       
       <tag>模型修复</tag>
       
@@ -729,9 +729,9 @@
     
     <tags>
       
-      <tag>研究日志</tag>
-      
       <tag>daily_p</tag>
+      
+      <tag>研究日志</tag>
       
       <tag>模型修复</tag>
       
@@ -760,42 +760,13 @@
     
     <tags>
       
-      <tag>hexo学习</tag>
-      
-      <tag>研究日志</tag>
-      
       <tag>daily_p</tag>
       
-      <tag>建模</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>7.24做了虾米</title>
-    <link href="/blog/2025/07/24/7.24/"/>
-    <url>/blog/2025/07/24/7.24/</url>
-    
-    <content type="html"><![CDATA[<h1 id="7-24做的事情"><a href="#7-24做的事情" class="headerlink" title="7.24做的事情"></a>7.24做的事情</h1><h2 id="上午"><a href="#上午" class="headerlink" title="上午"></a>上午</h2><p>上午的时候了解了一下人工智能相关的一些事情，理清了这些名词之间的关系。</p><h2 id="下午"><a href="#下午" class="headerlink" title="下午"></a>下午</h2><p>实践学习了hexo的使用方法，然后现在正在用hexo写这篇文章，感觉还是挺方便的，尤其是可以直接在本地预览，修改之后就可以看到效果。<br>其实上午我还没有把机器学习，深度学习和CNN之间关系的韦恩图画出来呢，没准可以让AI直接画出来</p><h3 id="下午的计划"><a href="#下午的计划" class="headerlink" title="下午的计划"></a>下午的计划</h3><ul><li>继续学习hexo的高级用法</li><li>尝试将之前的笔记迁移到hexo上</li><li>研究一下如何自定义主题</li><li>了解一下如何部署到远程服务器</li><li>继续摸鱼，放松一下心情</li></ul><h3 id="下午完成的事情"><a href="#下午完成的事情" class="headerlink" title="下午完成的事情"></a>下午完成的事情</h3><ul><li>成功的部署了hexo到github上</li></ul><h3 id="自言自语"><a href="#自言自语" class="headerlink" title="自言自语"></a>自言自语</h3><p>我还有好多的东西没有去研究，感觉好兴奋<br>哈哈哈哈哈哈哈<br>自己看到的这些东西都可以跑通吗？！<br>要找时间整理一下保存在文件夹的东西呢<br>在做路径规划的选择的时候应该有一个自己的态度，什么事情什么研究是当下需要的，什么是可以放一放的，都应该在脑子里面清晰明确，这样才让自己少被眼前的事情牵着鼻子走。</p><h3 id="灵光乍现"><a href="#灵光乍现" class="headerlink" title="灵光乍现"></a>灵光乍现</h3><p>hexo暂时来说有一个不是很好的地方<br>部署在服务器上，因此会有网络限制，这样子对同时在两台电脑上部署我的文件来说并不是非常的方便。因为，当一台电脑没有办法上传文件的时候，另外一个电脑也不能得到同步，未同步电脑的更新会覆盖我在旧电脑上的更新，到头来，我什么都没有写。所以还是就老实一点在一台电脑上弄。</p><p>我使用的是branch那是不是意味着我在main里面的那些文件是可以删除的呢<br>嘿嘿</p>]]></content>
-    
-    
-    <categories>
-      
-      <category>课余兴趣</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>摸鱼日记</tag>
+      <tag>研究日志</tag>
       
       <tag>hexo学习</tag>
       
-      <tag>研究日志</tag>
+      <tag>建模</tag>
       
     </tags>
     
@@ -820,13 +791,42 @@
     
     <tags>
       
-      <tag>hexo学习</tag>
+      <tag>daily_p</tag>
       
       <tag>研究日志</tag>
       
-      <tag>daily_p</tag>
+      <tag>hexo学习</tag>
       
       <tag>汇总</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>7.24做了虾米</title>
+    <link href="/blog/2025/07/24/7.24/"/>
+    <url>/blog/2025/07/24/7.24/</url>
+    
+    <content type="html"><![CDATA[<h1 id="7-24做的事情"><a href="#7-24做的事情" class="headerlink" title="7.24做的事情"></a>7.24做的事情</h1><h2 id="上午"><a href="#上午" class="headerlink" title="上午"></a>上午</h2><p>上午的时候了解了一下人工智能相关的一些事情，理清了这些名词之间的关系。</p><h2 id="下午"><a href="#下午" class="headerlink" title="下午"></a>下午</h2><p>实践学习了hexo的使用方法，然后现在正在用hexo写这篇文章，感觉还是挺方便的，尤其是可以直接在本地预览，修改之后就可以看到效果。<br>其实上午我还没有把机器学习，深度学习和CNN之间关系的韦恩图画出来呢，没准可以让AI直接画出来</p><h3 id="下午的计划"><a href="#下午的计划" class="headerlink" title="下午的计划"></a>下午的计划</h3><ul><li>继续学习hexo的高级用法</li><li>尝试将之前的笔记迁移到hexo上</li><li>研究一下如何自定义主题</li><li>了解一下如何部署到远程服务器</li><li>继续摸鱼，放松一下心情</li></ul><h3 id="下午完成的事情"><a href="#下午完成的事情" class="headerlink" title="下午完成的事情"></a>下午完成的事情</h3><ul><li>成功的部署了hexo到github上</li></ul><h3 id="自言自语"><a href="#自言自语" class="headerlink" title="自言自语"></a>自言自语</h3><p>我还有好多的东西没有去研究，感觉好兴奋<br>哈哈哈哈哈哈哈<br>自己看到的这些东西都可以跑通吗？！<br>要找时间整理一下保存在文件夹的东西呢<br>在做路径规划的选择的时候应该有一个自己的态度，什么事情什么研究是当下需要的，什么是可以放一放的，都应该在脑子里面清晰明确，这样才让自己少被眼前的事情牵着鼻子走。</p><h3 id="灵光乍现"><a href="#灵光乍现" class="headerlink" title="灵光乍现"></a>灵光乍现</h3><p>hexo暂时来说有一个不是很好的地方<br>部署在服务器上，因此会有网络限制，这样子对同时在两台电脑上部署我的文件来说并不是非常的方便。因为，当一台电脑没有办法上传文件的时候，另外一个电脑也不能得到同步，未同步电脑的更新会覆盖我在旧电脑上的更新，到头来，我什么都没有写。所以还是就老实一点在一台电脑上弄。</p><p>我使用的是branch那是不是意味着我在main里面的那些文件是可以删除的呢<br>嘿嘿</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>课余兴趣</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>研究日志</tag>
+      
+      <tag>hexo学习</tag>
+      
+      <tag>摸鱼日记</tag>
       
     </tags>
     

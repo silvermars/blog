@@ -27,7 +27,7 @@
 <meta property="og:description" content="今天的进展我已经在电脑上面完全跑通了学长交接的代码，自己也尝试了进行训练集的拍摄训练和使用，整套流程也跑通了，识别的速度也非常的快。 我用的yolov5segment，而且我用的不是 TensorRT 的架构，我用的是 PyTorch 的架构。 jetsonnano 还没有刷机但是linux系统已经在我的电脑上下载好了。 为什么自建数据集 我们要识别的不只是常规障碍物，通用数据集覆盖不到我们的实际">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2026-09-23T12:49:46.000Z">
-<meta property="article:modified_time" content="2026-09-23T13:12:39.445Z">
+<meta property="article:modified_time" content="2026-09-23T13:20:34.548Z">
 <meta property="article:author" content="jiayu Li">
 <meta property="article:tag" content="final projection">
 <meta name="twitter:card" content="summary_large_image">
@@ -279,6 +279,15 @@
 <li><strong>加目标跟踪</strong>：垃圾桶不会走路，多帧投票+运动特征可以纠正”会动的垃圾桶”</li>
 <li><strong>给人板块上保险</strong>：并行跑一个官方 <code>yolov5s.pt</code> 只取 person 类，专门服务人的板块，和分割模型解耦</li>
 </ol>
+<h2 id="技术选型讨论（K-means-GA-神经网络-Transformer）"><a href="#技术选型讨论（K-means-GA-神经网络-Transformer）" class="headerlink" title="技术选型讨论（K-means &#x2F; GA &#x2F; 神经网络 &#x2F; Transformer）"></a>技术选型讨论（K-means &#x2F; GA &#x2F; 神经网络 &#x2F; Transformer）</h2><h3 id="K-means-聚类"><a href="#K-means-聚类" class="headerlink" title="K-means 聚类"></a>K-means 聚类</h3><ul>
+<li>用来解决人&#x2F;垃圾桶混淆：不行。混淆是分类判别能力的问题，K-means 是无监督聚类，外观相似的两类在特征空间里本来就混在一起，聚类解决不了。</li>
+<li>聚 anchor 框：不用做，YOLOv5 的 autoanchor 每次训练前自动跑 K-means 重算 anchor。</li>
+<li>压缩数据集：有价值。用骨干网络抽特征做聚类，每个簇只留代表性样本，砍掉近似重复的图（core-set 思路），正好对上”用最少的数据拿到最好的结果”的需求。等数据多了训练太慢时再捡起来。</li>
+<li>部署后聚类检测结果：别加，Nano 算力紧张，后处理加步骤只会拖帧率。</li>
+</ul>
+<h3 id="GA-遗传算法"><a href="#GA-遗传算法" class="headerlink" title="GA 遗传算法"></a>GA 遗传算法</h3><p>YOLOv5 内置 <code>--evolve</code> 用 GA 演化超参数，但一次训练 3~6 小时、演化要几百代，4070 上得跑几个月，直接排除。其他 GA 用法轮不到它。</p>
+<h3 id="神经网络（二级分类器）"><a href="#神经网络（二级分类器）" class="headerlink" title="神经网络（二级分类器）"></a>神经网络（二级分类器）</h3><p>检测框出来后再用一个小分类器重新判人还是垃圾桶，可行（两阶段级联，裁剪后目标占比大、任务单一），但管线变复杂、Nano 上多一次推理，和省算力目标冲突。定位是兜底手段：先把检测器本身修好，修不好再上。</p>
+<h3 id="换-Transformer-架构"><a href="#换-Transformer-架构" class="headerlink" title="换 Transformer 架构"></a>换 Transformer 架构</h3><p>不建议：Transformer 吃数据（小数据集打不过 YOLO）、吃算力（Nano 老架构跑 attention 帧率会崩）、部署难（Nano 的 TensorRT 版本对 Transformer 算子支持残缺）。真想换架构就平移到 YOLOv8-seg，部署链路几乎一样，风险小。</p>
 <h2 id="待办"><a href="#待办" class="headerlink" title="待办"></a>待办</h2><ul>
 <li><input disabled="" type="checkbox"> Jetson Nano 刷机（linux系统已经在我的电脑上下载好了）</li>
 <li><input disabled="" type="checkbox"> 明天（9.24）progress 汇报 + 未来的 plan</li>
