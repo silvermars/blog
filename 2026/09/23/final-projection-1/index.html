@@ -27,7 +27,7 @@
 <meta property="og:description" content="今天的进展我已经在电脑上面完全跑通了学长交接的代码，自己也尝试了进行训练集的拍摄训练和使用，整套流程也跑通了，识别的速度也非常的快。 我用的yolov5segment。 jetsonnano 还没有刷机但是linux系统已经在我的电脑上下载好了。 为什么自建数据集 我们要识别的不只是常规障碍物，通用数据集覆盖不到我们的实际场景。 这个板子上面将来有可能会跑更多的模型，所以要尽可能控制运算量，只把必">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2026-09-23T12:49:46.000Z">
-<meta property="article:modified_time" content="2026-09-23T13:02:59.292Z">
+<meta property="article:modified_time" content="2026-09-23T13:09:15.494Z">
 <meta property="article:author" content="jiayu Li">
 <meta property="article:tag" content="final projection">
 <meta name="twitter:card" content="summary_large_image">
@@ -261,6 +261,7 @@
 <h2 id="为什么自建数据集"><a href="#为什么自建数据集" class="headerlink" title="为什么自建数据集"></a>为什么自建数据集</h2><ol>
 <li>我们要识别的不只是常规障碍物，通用数据集覆盖不到我们的实际场景。</li>
 <li>这个板子上面将来有可能会跑更多的模型，所以要尽可能控制运算量，只把必须需要的数据放上去，不需要的就不去训练，尽可能的用到最少的数据，然后得到最好的结果。</li>
+<li>而且训练平台算力并不够，我是用自己的电脑 4070 桌面机进行训练的，每次训练时间都会在 3~6 个小时左右，还是在我加速之后的情况下，因此我也必须要尽量地减少训练集。</li>
 </ol>
 <h2 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h2><p>但是经常会把人识别成垃圾桶，在底层代码上，垃圾桶和人都是需要躲避的障碍物，短时间可能没有什么问题，但是要是后续被人的板块想用到我这个部分的识别结果，那就容易出问题，因此我暂时在训练集上面下文章。</p>
 <h2 id="讨论出来的解决思路"><a href="#讨论出来的解决思路" class="headerlink" title="讨论出来的解决思路"></a>讨论出来的解决思路</h2><p>按优先级排了一下：</p>
