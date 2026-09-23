@@ -19,25 +19,24 @@
   <meta name="author" content="jiayu Li">
   <meta name="keywords" content="AI, 机器学习, 学术研究, Hexo, 科研日志">
   
-    <meta name="description" content="我觉得开学之后自己有可能丧失掉写博客的时间和能力专业课很忙，电脑很重，人很懒尽量坚持更新吧 早上要做的事情 尝试在虚拟机的电脑上面部署你自己的博客虽然说这样子做会有一定暴露隐私的风险但是部署一个东西感觉还是很好玩的不对，虚拟机上面没有装git指令但是也可以用类似的二进制文件来执行吧就是感觉可能内存会有一点不够用尝试一下  重新尝试tripoSR的部署，使用torchmcubes进行实践想知道问题是">
+    <meta name="description" content="今天的进展我已经在电脑上面完全跑通了学长交接的代码，自己也尝试了进行训练集的拍摄训练和使用，整套流程也跑通了，识别的速度也非常的快。 我用的yolov5segment。 jetsonnano 还没有刷机但是linux系统已经在我的电脑上下载好了。 遇到的问题但是经常会把人识别成垃圾桶，在底层代码上，垃圾桶和人都是需要躲避的障碍物，短时间可能没有什么问题，但是要是后续被人的板块想用到我这个部分的识别">
 <meta property="og:type" content="article">
-<meta property="og:title" content="8.13做了虾米">
-<meta property="og:url" content="https://silvermars.github.io/blog/2025/08/13/8.13/index.html">
+<meta property="og:title" content="final projection 记录 · 9.23">
+<meta property="og:url" content="https://silvermars.github.io/blog/2026/09/23/final-projection-1/index.html">
 <meta property="og:site_name" content="jiayu Li&#39;s Blog">
-<meta property="og:description" content="我觉得开学之后自己有可能丧失掉写博客的时间和能力专业课很忙，电脑很重，人很懒尽量坚持更新吧 早上要做的事情 尝试在虚拟机的电脑上面部署你自己的博客虽然说这样子做会有一定暴露隐私的风险但是部署一个东西感觉还是很好玩的不对，虚拟机上面没有装git指令但是也可以用类似的二进制文件来执行吧就是感觉可能内存会有一点不够用尝试一下  重新尝试tripoSR的部署，使用torchmcubes进行实践想知道问题是">
+<meta property="og:description" content="今天的进展我已经在电脑上面完全跑通了学长交接的代码，自己也尝试了进行训练集的拍摄训练和使用，整套流程也跑通了，识别的速度也非常的快。 我用的yolov5segment。 jetsonnano 还没有刷机但是linux系统已经在我的电脑上下载好了。 遇到的问题但是经常会把人识别成垃圾桶，在底层代码上，垃圾桶和人都是需要躲避的障碍物，短时间可能没有什么问题，但是要是后续被人的板块想用到我这个部分的识别">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-08-13T01:03:04.000Z">
-<meta property="article:modified_time" content="2025-08-15T02:14:38.099Z">
+<meta property="article:published_time" content="2026-09-23T12:49:46.000Z">
+<meta property="article:modified_time" content="2026-09-23T12:50:01.935Z">
 <meta property="article:author" content="jiayu Li">
-<meta property="article:tag" content="daily_p">
-<meta property="article:tag" content="研究日志">
+<meta property="article:tag" content="final projection">
 <meta name="twitter:card" content="summary_large_image">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>8.13做了虾米 - jiayu Li&#39;s Blog</title>
+  <title>final projection 记录 · 9.23 - jiayu Li&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -203,7 +202,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="8.13做了虾米"></span>
+            <span id="subtitle" data-typed-text="final projection 记录 · 9.23"></span>
           
         </div>
 
@@ -251,20 +250,35 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">8.13做了虾米</h1>
+            <h1 id="seo-header">final projection 记录 · 9.23</h1>
             
             
               <div class="markdown-body">
                 
-                <h3 id="我觉得开学之后自己有可能丧失掉写博客的时间和能力"><a href="#我觉得开学之后自己有可能丧失掉写博客的时间和能力" class="headerlink" title="我觉得开学之后自己有可能丧失掉写博客的时间和能力"></a>我觉得开学之后自己有可能丧失掉写博客的时间和能力</h3><p>专业课很忙，电脑很重，人很懒<br>尽量坚持更新吧</p>
-<h3 id="早上要做的事情"><a href="#早上要做的事情" class="headerlink" title="早上要做的事情"></a>早上要做的事情</h3><ol>
-<li><p>尝试在虚拟机的电脑上面部署你自己的博客<br>虽然说这样子做会有一定暴露隐私的风险<br>但是部署一个东西感觉还是很好玩的<br>不对，虚拟机上面没有装git指令<br>但是也可以用类似的二进制文件来执行吧<br>就是感觉可能内存会有一点不够用<br>尝试一下</p>
+                <h2 id="今天的进展"><a href="#今天的进展" class="headerlink" title="今天的进展"></a>今天的进展</h2><p>我已经在电脑上面完全跑通了学长交接的代码，自己也尝试了进行训练集的拍摄训练和使用，整套流程也跑通了，识别的速度也非常的快。</p>
+<p>我用的yolov5segment。</p>
+<p>jetsonnano 还没有刷机但是linux系统已经在我的电脑上下载好了。</p>
+<h2 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h2><p>但是经常会把人识别成垃圾桶，在底层代码上，垃圾桶和人都是需要躲避的障碍物，短时间可能没有什么问题，但是要是后续被人的板块想用到我这个部分的识别结果，那就容易出问题，因此我暂时在训练集上面下文章。</p>
+<h2 id="讨论出来的解决思路"><a href="#讨论出来的解决思路" class="headerlink" title="讨论出来的解决思路"></a>讨论出来的解决思路</h2><p>按优先级排了一下：</p>
+<ol>
+<li><strong>先诊断</strong>：跑 <code>segment/val.py</code> 看混淆矩阵，确认 person→trash bin 错在什么置信度区间，把识别错的样本挑出来找规律（远距离小目标？光线暗？遮挡？）</li>
+<li><strong>确认用了 COCO 预训练权重微调</strong>（<code>yolov5s-seg.pt</code>），COCO 里 person 是最强的类别；微调可以先 <code>--freeze 10</code> 冻结骨干</li>
+<li><strong>数据侧</strong>：<ul>
+<li>检查多边形标注质量，人的轮廓标歪了会让形状先验趋近垃圾桶</li>
+<li>困难样本挖掘：专门拍容易混淆的样本（远处的人、蹲着的人、像人的垃圾桶）</li>
+<li>打开 <code>copy_paste</code> 增强（<code>0.1~0.3</code>），把人连掩码贴到各种背景上扩充样本</li>
+</ul>
 </li>
-<li><p>重新尝试tripoSR的部署，使用torchmcubes进行实践<br>想知道问题是不是出在使用了新的3D处理方式导致贴图出现了问题</p>
-</li>
+<li><strong>超参</strong>：分类损失权重 <code>cls</code> 从 0.5 调到 0.7~1.0；小目标多的话 <code>--img 960</code></li>
+<li><strong>推理侧</strong>：按类别设置置信度阈值——垃圾桶高阈值、人低阈值，宁可垃圾桶误报成人也不能漏人</li>
+<li><strong>加目标跟踪</strong>：垃圾桶不会走路，多帧投票+运动特征可以纠正”会动的垃圾桶”</li>
+<li><strong>给人板块上保险</strong>：并行跑一个官方 <code>yolov5s.pt</code> 只取 person 类，专门服务人的板块，和分割模型解耦</li>
 </ol>
-<h3 id="哦不"><a href="#哦不" class="headerlink" title="哦不"></a>哦不</h3><p>说实话，其实我现在还沉浸在早上没有看到自己很喜欢的朝霞的忧伤之中，<br>所以让我摸鱼一会儿吧！！！！！</p>
-<h3 id="今天做的事情"><a href="#今天做的事情" class="headerlink" title="今天做的事情"></a>今天做的事情</h3><p>今天本来是要进行二进制文件的实验的<br>但是很巧合的是，昨天研究的AI背景移除功能今天居然真的能被团队里面的人用上<br>帮朝智哥试一下吧</p>
+<h2 id="待办"><a href="#待办" class="headerlink" title="待办"></a>待办</h2><ul>
+<li><input disabled="" type="checkbox"> Jetson Nano 刷机（linux系统已经在我的电脑上下载好了）</li>
+<li><input disabled="" type="checkbox"> 明天（9.24）progress 汇报 + 未来的 plan</li>
+<li><input disabled="" type="checkbox"> 按上面的顺序排查人→垃圾桶的混淆问题</li>
+</ul>
 
                 
               </div>
@@ -283,7 +297,7 @@
     
       <span class="category-chain">
         
-  <a href="/blog/categories/text-to-3D/" class="category-chain-item">text_to_3D</a>
+  <a href="/blog/categories/final-projection/" class="category-chain-item">final projection</a>
   
   
 
@@ -298,9 +312,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/blog/tags/daily-p/" class="print-no-link">#daily_p</a>
-      
-        <a href="/blog/tags/%E7%A0%94%E7%A9%B6%E6%97%A5%E5%BF%97/" class="print-no-link">#研究日志</a>
+        <a href="/blog/tags/final-projection/" class="print-no-link">#final projection</a>
       
     </div>
   
@@ -312,8 +324,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>8.13做了虾米</div>
-      <div>https://silvermars.github.io/blog/2025/08/13/8.13/</div>
+      <div>final projection 记录 · 9.23</div>
+      <div>https://silvermars.github.io/blog/2026/09/23/final-projection-1/</div>
     </div>
     <div class="license-meta">
       
@@ -325,7 +337,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2025年8月13日</div>
+          <div>2026年9月23日</div>
         </div>
       
       
@@ -357,9 +369,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/blog/2025/08/14/8.14/" title="8.14做了虾米">
+                      <a href="/blog/2026/09/23/final-projection-report-9.24/" title="final projection · 9.24汇报稿">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">8.14做了虾米</span>
+                        <span class="hidden-mobile">final projection · 9.24汇报稿</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -367,8 +379,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/blog/2025/08/12/8.12/" title="8.12做了虾米">
-                        <span class="hidden-mobile">8.12做了虾米</span>
+                      <a href="/blog/2026/09/23/final-projection-0/" title="final projection 开篇">
+                        <span class="hidden-mobile">final projection 开篇</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
